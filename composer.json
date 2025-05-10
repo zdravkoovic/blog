@@ -58,10 +58,6 @@
         "test": [
             "@php artisan config:clear --ansi",
             "@php artisan test"
-        ],
-        "ide": [
-            "php artisan clear-compiled",
-            "php artisan ide-helper:generate"
         ]
     },
     "extra": {
