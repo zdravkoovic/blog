@@ -24,8 +24,10 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Category whereId($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Category whereName($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Category whereSlug($value)
+ * @mixin \Eloquent
  */
-	class Category extends \Eloquent {}
+	#[\AllowDynamicProperties]
+	class IdeHelperCategory {}
 }
 
 namespace App\Models{
@@ -49,8 +51,10 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Comment wherePostId($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Comment whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Comment whereUserId($value)
+ * @mixin \Eloquent
  */
-	class Comment extends \Eloquent {}
+	#[\AllowDynamicProperties]
+	class IdeHelperComment {}
 }
 
 namespace App\Models{
@@ -72,8 +76,10 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Like wherePostId($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Like whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Like whereUserId($value)
+ * @mixin \Eloquent
  */
-	class Like extends \Eloquent {}
+	#[\AllowDynamicProperties]
+	class IdeHelperLike {}
 }
 
 namespace App\Models{
@@ -107,8 +113,11 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereTitle($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereUserId($value)
+ * @method \Illuminate\Database\Eloquent\Relations\BelongsToMany tags()
+ * @mixin \Eloquent
  */
-	class Post extends \Eloquent {}
+	#[\AllowDynamicProperties]
+	class IdeHelperPost {}
 }
 
 namespace App\Models{
@@ -119,8 +128,10 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PostTag newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PostTag newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PostTag query()
+ * @mixin \Eloquent
  */
-	class PostTag extends \Eloquent {}
+	#[\AllowDynamicProperties]
+	class IdeHelperPostTag {}
 }
 
 namespace App\Models{
@@ -143,8 +154,10 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Tag whereName($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Tag whereSlug($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Tag whereUpdatedAt($value)
+ * @mixin \Eloquent
  */
-	class Tag extends \Eloquent {}
+	#[\AllowDynamicProperties]
+	class IdeHelperTag {}
 }
 
 namespace App\Models{
@@ -181,7 +194,9 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|User wherePassword($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereRememberToken($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereUpdatedAt($value)
+ * @mixin \Eloquent
  */
-	class User extends \Eloquent {}
+	#[\AllowDynamicProperties]
+	class IdeHelperUser {}
 }
 
