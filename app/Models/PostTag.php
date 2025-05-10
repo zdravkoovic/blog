@@ -5,13 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Relations\Pivot;
 
 /**
- * 
- *
  * @property-read \App\Models\User|null $taggedBy
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PostTag newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PostTag newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PostTag query()
  * @mixin \Eloquent
+ * @mixin IdeHelperPostTag
  */
 class PostTag extends Pivot
 {

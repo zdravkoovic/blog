@@ -5,8 +5,6 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * 
- *
  * @property int $id
  * @property int $user_id
  * @property int|null $category_id
@@ -35,6 +33,8 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereUserId($value)
  * @mixin \Eloquent
+ * @method \Illuminate\Database\Eloquent\Relations\BelongsToMany tags()
+ * @mixin IdeHelperPost
  */
 class Post extends Model
 {
@@ -58,7 +58,7 @@ class Post extends Model
 
     public function tags()
     {
-        return $this->belongsToMany(Tag::class, 'blog_tags')
+        return $this->belongsToMany(Tag::class, 'post_tags')
                 ->using(PostTag::class)
                 ->withPivot('tagged_by_user_id')
                 ->withTimestamps();

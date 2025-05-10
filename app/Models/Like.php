@@ -5,8 +5,6 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * 
- *
  * @property int $id
  * @property int $user_id
  * @property int $post_id
@@ -23,6 +21,7 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Like whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Like whereUserId($value)
  * @mixin \Eloquent
+ * @mixin IdeHelperLike
  */
 class Like extends Model
 {
