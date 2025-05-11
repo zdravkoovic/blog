@@ -4,6 +4,8 @@ namespace App\Providers;
 
 use App\Repositories\AuthRepository;
 use App\Repositories\Interfaces\IAuthRepository;
+use App\Repositories\Interfaces\IPostRepository;
+use App\Repositories\PostRepository;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -14,7 +16,8 @@ class AppServiceProvider extends ServiceProvider
     public function register(): void
     {
         $bindings = [
-            IAuthRepository::class => AuthRepository::class
+            IAuthRepository::class => AuthRepository::class,
+            IPostRepository::class => PostRepository::class
         ];
 
         foreach ($bindings as $interface => $repository)

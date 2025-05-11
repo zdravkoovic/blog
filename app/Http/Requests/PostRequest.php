@@ -20,7 +20,7 @@ class PostRequest extends FormRequest
             'content' => ['required', 'string'],
             'category_id' => ['required', 'integer', 'exists:categories,id'],
             'tag_ids' => ['required', 'array'],
-            'tag_ids.*' => ['integer', 'exist:tags,id']
+            'tag_ids.*' => ['integer', 'exists:tags,id']
         ];
     }
 }

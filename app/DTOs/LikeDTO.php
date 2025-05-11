@@ -9,7 +9,7 @@ class LikeDTO
         public int $postId
     ){}
 
-    public function fromRequest(int $userId, int $postId): self
+    public static function fromRequest(int $userId, int $postId): self
     {
         return new self(
             $userId,
