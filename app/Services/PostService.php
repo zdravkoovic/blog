@@ -32,7 +32,7 @@ class PostService {
         return $this->postRepo->commentPost($commentDTO->toArray());
     }
 
-    public function likePost(LikeDTO $likeDTO)
+    public function toggleLikePost(LikeDTO $likeDTO)
     {
         return $this->postRepo->likePost($likeDTO->postId, $likeDTO->userId);
     }

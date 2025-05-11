@@ -10,7 +10,7 @@ class CommentDTO
         public int $userId
     ){}
 
-    public function fromRequest(array $data, int $userId): self
+    public static function formRequest(array $data, int $userId): self
     {
         return new self(
             $userId,

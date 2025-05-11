@@ -6,7 +6,6 @@ use App\Models\Comment;
 use App\Models\Like;
 use App\Models\Post;
 use App\Repositories\Interfaces\IPostRepository;
-use Log;
 
 class PostRepository implements IPostRepository
 {
@@ -15,7 +14,7 @@ class PostRepository implements IPostRepository
         return Post::with([
             'category:id,name,slug',
             'tags:id,name,slug',
-            'author:id,name,slug',
+            'author:id,name,email',
             'comments.user:id,name',
             'likes.user:id,name'
         ])

@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\DTOs\CommentDTO;
+use App\DTOs\LikeDTO;
 use App\DTOs\PostDTO;
 use App\Helpers\ResponseHelper;
 use App\Http\Requests\CommentRequest;
@@ -9,6 +11,9 @@ use App\Http\Requests\LikeRequest;
 use App\Http\Requests\PostRequest;
 use App\Services\PostService;
 
+/** 
+ * @authenticated
+ */
 class PostController extends Controller
 {
     private PostService $postService;
@@ -43,11 +48,23 @@ class PostController extends Controller
 
     public function comment(CommentRequest $request)
     {
+        $validated = $request->validated();
+        $userId = $request->user()->id;
 
+        $commentDTO = CommentDTO::formRequest($validated, $userId);
+        $comment = $this->postService->commentPost($commentDTO);
+        
+        return $comment ? ResponseHelper::success($comment) : ResponseHelper::error(status: 500, errors: $comment);
     }
 
     public function like(LikeRequest $request)
     {
+        $validated = $request->validated();
+        $userId = $request->user()->id;
 
+        $likeDTO = LikeDTO::fromRequest($userId, $validated);
+        $like = $this->postService->toggleLikePost($likeDTO);
+
+        return $like ? ResponseHelper::success($like) : ResponseHelper::error(status: 500, errors: $like);
     }
 }
