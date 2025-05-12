@@ -17,7 +17,7 @@ class PostService {
 
     public function getPosts()
     {
-        return $this->postRepo->getAll();
+        return $this->postRepo->getAllWithAuthors();
     }
 
     public function getPostById(int $id){
