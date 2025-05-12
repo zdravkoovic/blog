@@ -58,6 +58,7 @@ class PostRepository implements IPostRepository
 
         return $comment->load('user:id,name');
     }
+    
     public function likePost(int $postId, int $userId): string
     {
         $like = Like::query()->where('post_id', $postId)
