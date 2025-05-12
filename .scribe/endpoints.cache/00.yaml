@@ -155,11 +155,7 @@ endpoints:
   -
     httpMethods:
       - GET
-<<<<<<< HEAD
     uri: api/v1/post
-=======
-    uri: api/v1/users/getAll
->>>>>>> users-feature
     metadata:
       groupName: Endpoints
       groupDescription: ''
@@ -167,16 +163,10 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-<<<<<<< HEAD
       authenticated: true
       custom: []
     headers:
       Authorization: 'Bearer {YOUR_AUTH_KEY}'
-=======
-      authenticated: false
-      custom: []
-    headers:
->>>>>>> users-feature
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -188,16 +178,8 @@ endpoints:
     fileParameters: []
     responses:
       -
-<<<<<<< HEAD
         status: 401
         content: '{"message":"Unauthenticated."}'
-=======
-        status: 500
-        content: |-
-          {
-              "message": "Server Error"
-          }
->>>>>>> users-feature
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -205,14 +187,10 @@ endpoints:
         description: null
         custom: []
     responseFields: []
-<<<<<<< HEAD
     auth:
       - headers
       - Authorization
       - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
-=======
-    auth: []
->>>>>>> users-feature
     controller: null
     method: null
     route: null
@@ -220,11 +198,7 @@ endpoints:
   -
     httpMethods:
       - GET
-<<<<<<< HEAD
     uri: 'api/v1/post/{id}'
-=======
-    uri: 'api/v1/users/{id}'
->>>>>>> users-feature
     metadata:
       groupName: Endpoints
       groupDescription: ''
@@ -232,26 +206,16 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-<<<<<<< HEAD
       authenticated: true
       custom: []
     headers:
       Authorization: 'Bearer {YOUR_AUTH_KEY}'
-=======
-      authenticated: false
-      custom: []
-    headers:
->>>>>>> users-feature
       Content-Type: application/json
       Accept: application/json
     urlParameters:
       id:
         name: id
-<<<<<<< HEAD
         description: 'The ID of the post.'
-=======
-        description: 'The ID of the user.'
->>>>>>> users-feature
         required: true
         example: architecto
         type: string
@@ -268,16 +232,8 @@ endpoints:
     fileParameters: []
     responses:
       -
-<<<<<<< HEAD
         status: 401
         content: '{"message":"Unauthenticated."}'
-=======
-        status: 500
-        content: |-
-          {
-              "message": "Server Error"
-          }
->>>>>>> users-feature
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -285,7 +241,6 @@ endpoints:
         description: null
         custom: []
     responseFields: []
-<<<<<<< HEAD
     auth:
       - headers
       - Authorization
@@ -358,7 +313,7 @@ endpoints:
         custom: []
       tag_ids:
         name: tag_ids
-        description: ''
+        description: 'The <code>id</code> of an existing record in the tags table.'
         required: false
         example:
           - 16
@@ -482,9 +437,98 @@ endpoints:
       - headers
       - Authorization
       - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
-=======
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/v1/users
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 500
+        content: |-
+          {
+              "message": "Server Error"
+          }
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          vary: Origin
+        description: null
+        custom: []
+    responseFields: []
     auth: []
->>>>>>> users-feature
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/v1/users/{id}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the user.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"status":200,"success":true,"message":"Success","data":{"id":1,"name":"Nikola Zdravkovic","email":"zdravkoovic.nikola@gmail.com","email_verified_at":null,"created_at":"2025-05-05T14:10:01.000000Z","updated_at":"2025-05-05T14:10:01.000000Z"}}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          vary: Origin
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
     controller: null
     method: null
     route: null
