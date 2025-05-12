@@ -25,7 +25,10 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Category whereName($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Category whereSlug($value)
  * @mixin \Eloquent
+<<<<<<< HEAD
  * @mixin IdeHelperCategory
+=======
+>>>>>>> master
  */
 	class Category extends \Eloquent {}
 }
@@ -52,7 +55,10 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Comment whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Comment whereUserId($value)
  * @mixin \Eloquent
+<<<<<<< HEAD
  * @mixin IdeHelperComment
+=======
+>>>>>>> master
  */
 	class Comment extends \Eloquent {}
 }
@@ -77,7 +83,10 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Like whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Like whereUserId($value)
  * @mixin \Eloquent
+<<<<<<< HEAD
  * @mixin IdeHelperLike
+=======
+>>>>>>> master
  */
 	class Like extends \Eloquent {}
 }
@@ -114,8 +123,11 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereUserId($value)
  * @mixin \Eloquent
+<<<<<<< HEAD
  * @method \Illuminate\Database\Eloquent\Relations\BelongsToMany tags()
  * @mixin IdeHelperPost
+=======
+>>>>>>> master
  * @property-read int|null $comment_count
  */
 	class Post extends \Eloquent {}
@@ -130,7 +142,10 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PostTag newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PostTag query()
  * @mixin \Eloquent
+<<<<<<< HEAD
  * @mixin IdeHelperPostTag
+=======
+>>>>>>> master
  */
 	class PostTag extends \Eloquent {}
 }
@@ -156,7 +171,10 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Tag whereSlug($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Tag whereUpdatedAt($value)
  * @mixin \Eloquent
+<<<<<<< HEAD
  * @mixin IdeHelperTag
+=======
+>>>>>>> master
  */
 	class Tag extends \Eloquent {}
 }
@@ -196,7 +214,10 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereRememberToken($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereUpdatedAt($value)
  * @mixin \Eloquent
+<<<<<<< HEAD
  * @mixin IdeHelperUser
+=======
+>>>>>>> master
  */
 	class User extends \Eloquent {}
 }
