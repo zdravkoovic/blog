@@ -22,6 +22,14 @@ class PostRepository implements IPostRepository
             ->latest()
             ->get();
     }
+
+    public function getAllWithAuthors()
+    {
+        return Post::with('author:id,name')
+            ->latest()
+            ->get();
+    }
+
     public function findById(int $id): ?Post
     {
         return Post::with([
