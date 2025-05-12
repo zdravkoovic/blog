@@ -24,6 +24,7 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Category whereId($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Category whereName($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Category whereSlug($value)
+ * @mixin \Eloquent
  */
 	class Category extends \Eloquent {}
 }
@@ -49,6 +50,7 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Comment wherePostId($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Comment whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Comment whereUserId($value)
+ * @mixin \Eloquent
  */
 	class Comment extends \Eloquent {}
 }
@@ -72,6 +74,7 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Like wherePostId($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Like whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Like whereUserId($value)
+ * @mixin \Eloquent
  */
 	class Like extends \Eloquent {}
 }
@@ -107,6 +110,8 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereTitle($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereUserId($value)
+ * @mixin \Eloquent
+ * @property-read int|null $comment_count
  */
 	class Post extends \Eloquent {}
 }
@@ -119,6 +124,7 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PostTag newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PostTag newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PostTag query()
+ * @mixin \Eloquent
  */
 	class PostTag extends \Eloquent {}
 }
@@ -143,6 +149,7 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Tag whereName($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Tag whereSlug($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Tag whereUpdatedAt($value)
+ * @mixin \Eloquent
  */
 	class Tag extends \Eloquent {}
 }
@@ -181,6 +188,7 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|User wherePassword($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereRememberToken($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereUpdatedAt($value)
+ * @mixin \Eloquent
  */
 	class User extends \Eloquent {}
 }
