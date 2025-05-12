@@ -29,7 +29,7 @@ class PostDTO
     {
         return [
             'user_id' => $this->userId,
-            'title' => $this->content,
+            'title' => $this->title,
             'slug' => $this->slug,
             'content' => $this->content,
             'category_id' => $this->categoryId,
