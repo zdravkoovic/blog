@@ -64,7 +64,7 @@ class Post extends Model
                 ->withTimestamps();
     }
 
-    public function comment()
+    public function comments()
     {
         return $this->hasMany(Comment::class);
     }
