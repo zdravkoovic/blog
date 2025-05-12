@@ -80,8 +80,8 @@
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-POSTapi-v1-logout">
                                 <a href="#endpoints-POSTapi-v1-logout">POST api/v1/logout</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-users-getAll">
-                                <a href="#endpoints-GETapi-v1-users-getAll">GET api/v1/users/getAll</a>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-users">
+                                <a href="#endpoints-GETapi-v1-users">GET api/v1/users</a>
                             </li>
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-users--id-">
                                 <a href="#endpoints-GETapi-v1-users--id-">GET api/v1/users/{id}</a>
@@ -97,7 +97,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: May 9, 2025</li>
+        <li>Last updated: May 12, 2025</li>
     </ul>
 </div>
 
@@ -541,27 +541,27 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                         </form>
 
-                    <h2 id="endpoints-GETapi-v1-users-getAll">GET api/v1/users/getAll</h2>
+                    <h2 id="endpoints-GETapi-v1-users">GET api/v1/users</h2>
 
 <p>
 </p>
 
 
 
-<span id="example-requests-GETapi-v1-users-getAll">
+<span id="example-requests-GETapi-v1-users">
 <blockquote>Example request:</blockquote>
 
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/v1/users/getAll" \
+    --get "http://localhost/api/v1/users" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/v1/users/getAll"
+    "http://localhost/api/v1/users"
 );
 
 const headers = {
@@ -576,7 +576,7 @@ fetch(url, {
 
 </span>
 
-<span id="example-responses-GETapi-v1-users-getAll">
+<span id="example-responses-GETapi-v1-users">
             <blockquote>
             <p>Example response (500):</p>
         </blockquote>
@@ -594,43 +594,43 @@ vary: Origin
 }</code>
  </pre>
     </span>
-<span id="execution-results-GETapi-v1-users-getAll" hidden>
+<span id="execution-results-GETapi-v1-users" hidden>
     <blockquote>Received response<span
-                id="execution-response-status-GETapi-v1-users-getAll"></span>:
+                id="execution-response-status-GETapi-v1-users"></span>:
     </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-v1-users-getAll"
+    <pre class="json"><code id="execution-response-content-GETapi-v1-users"
       data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
 </span>
-<span id="execution-error-GETapi-v1-users-getAll" hidden>
+<span id="execution-error-GETapi-v1-users" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-v1-users-getAll">
+    <pre><code id="execution-error-message-GETapi-v1-users">
 
 Tip: Check that you&#039;re properly connected to the network.
 If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
 You can check the Dev Tools console for debugging information.</code></pre>
 </span>
-<form id="form-GETapi-v1-users-getAll" data-method="GET"
-      data-path="api/v1/users/getAll"
+<form id="form-GETapi-v1-users" data-method="GET"
+      data-path="api/v1/users"
       data-authed="0"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-users-getAll', this);">
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-users', this);">
     <h3>
         Request&nbsp;&nbsp;&nbsp;
                     <button type="button"
                     style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-v1-users-getAll"
-                    onclick="tryItOut('GETapi-v1-users-getAll');">Try it out ⚡
+                    id="btn-tryout-GETapi-v1-users"
+                    onclick="tryItOut('GETapi-v1-users');">Try it out ⚡
             </button>
             <button type="button"
                     style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-v1-users-getAll"
-                    onclick="cancelTryOut('GETapi-v1-users-getAll');" hidden>Cancel 🛑
+                    id="btn-canceltryout-GETapi-v1-users"
+                    onclick="cancelTryOut('GETapi-v1-users');" hidden>Cancel 🛑
             </button>&nbsp;&nbsp;
             <button type="submit"
                     style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-v1-users-getAll"
+                    id="btn-executetryout-GETapi-v1-users"
                     data-initial-text="Send Request 💥"
                     data-loading-text="⏱ Sending..."
                     hidden>Send Request 💥
@@ -638,7 +638,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </h3>
             <p>
             <small class="badge badge-green">GET</small>
-            <b><code>api/v1/users/getAll</code></b>
+            <b><code>api/v1/users</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
                                 <div style="padding-left: 28px; clear: unset;">
@@ -646,7 +646,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-v1-users-getAll"
+                              name="Content-Type"                data-endpoint="GETapi-v1-users"
                value="application/json"
                data-component="header">
     <br>
@@ -657,7 +657,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-v1-users-getAll"
+                              name="Accept"                data-endpoint="GETapi-v1-users"
                value="application/json"
                data-component="header">
     <br>
@@ -678,14 +678,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/v1/users/architecto" \
+    --get "http://localhost/api/v1/users/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/v1/users/architecto"
+    "http://localhost/api/v1/users/1"
 );
 
 const headers = {
@@ -702,7 +702,7 @@ fetch(url, {
 
 <span id="example-responses-GETapi-v1-users--id-">
             <blockquote>
-            <p>Example response (500):</p>
+            <p>Example response (200):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -714,7 +714,17 @@ vary: Origin
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Server Error&quot;
+    &quot;status&quot;: 200,
+    &quot;success&quot;: true,
+    &quot;message&quot;: &quot;Success&quot;,
+    &quot;data&quot;: {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
+        &quot;email&quot;: &quot;zdravkoovic.nikola@gmail.com&quot;,
+        &quot;email_verified_at&quot;: null,
+        &quot;created_at&quot;: &quot;2025-05-05T16:10:01.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-05-05T16:10:01.000000Z&quot;
+    }
 }</code>
  </pre>
     </span>
@@ -790,14 +800,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
                         <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
+<small>integer</small>&nbsp;
  &nbsp;
-                <input type="text" style="display: none"
-                              name="id"                data-endpoint="GETapi-v1-users--id-"
-               value="architecto"
+                <input type="number" style="display: none"
+               step="any"               name="id"                data-endpoint="GETapi-v1-users--id-"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the user. Example: <code>architecto</code></p>
+<p>The ID of the user. Example: <code>1</code></p>
             </div>
                     </form>
 

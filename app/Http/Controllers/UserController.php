@@ -20,7 +20,7 @@ class UserController extends Controller
         return ResponseHelper::success($data);
     }
 
-    public function findById($id)
+    public function findById(int $id)
     {
         $data = $this->userService->findById($id);
         return $data ? ResponseHelper::success($data) : ResponseHelper::error("User not found", 404);

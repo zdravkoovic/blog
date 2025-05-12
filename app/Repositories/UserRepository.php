@@ -14,8 +14,8 @@ class UserRepository implements IUserRepository
             'posts:id,user_id,category_id,title,slug',
             'posts.category:id,name,slug',
             'posts.tags:id,name,slug',
-            'comments.blog:id,title,slug',
-            'likes.blog:id,title,slug'
+            'comments.post:id,title,slug',
+            'likes.post:id,title,slug'
         ])
             ->withCount(['posts', 'comments', 'likes'])
             ->latest()
