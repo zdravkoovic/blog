@@ -5,9 +5,9 @@ namespace App\DTOs;
 class CommentDTO
 {
     public function __construct(
-        public string $content,
+        public int $userId,
         public int $postId,
-        public int $userId
+        public string $content,
     ){}
 
     public static function formRequest(array $data, int $userId): self

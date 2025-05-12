@@ -62,7 +62,7 @@ class PostController extends Controller
         $validated = $request->validated();
         $userId = $request->user()->id;
 
-        $likeDTO = LikeDTO::fromRequest($userId, $validated);
+        $likeDTO = LikeDTO::fromRequest($userId, $validated['post_id']);
         $like = $this->postService->toggleLikePost($likeDTO);
 
         return $like ? ResponseHelper::success($like) : ResponseHelper::error(status: 500, errors: $like);
