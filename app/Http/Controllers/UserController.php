@@ -14,13 +14,13 @@ class UserController extends Controller
         $this->userService = $userService;
     }
 
-    public function getAll()
+    public function index()
     {
         $data = $this->userService->getAll();
         return ResponseHelper::success($data);
     }
 
-    public function findById(int $id)
+    public function show(int $id)
     {
         $data = $this->userService->findById($id);
         return $data ? ResponseHelper::success($data) : ResponseHelper::error("User not found", 404);
