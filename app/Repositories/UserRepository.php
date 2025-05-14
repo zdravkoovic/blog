@@ -10,19 +10,13 @@ class UserRepository implements IUserRepository
 {
     public function getAll()
     {
-        return User::with([
-            'posts:id,user_id,category_id,title,slug',
-            'posts.category:id,name,slug',
-            'posts.tags:id,name,slug',
-            'comments.blog:id,title,slug',
-            'likes.blog:id,title,slug'
-        ])
-            ->withCount(['posts', 'comments', 'likes'])
+        return User::where([])
+            ->withCount(['posts'])
             ->latest()
             ->get();
     }
     public function findById(int $id): ?User
     {
-        return User::whereId($id)->first();
+        return User::whereId($id)->withCount(['posts'])->first();
     }
 }
