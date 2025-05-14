@@ -23,6 +23,9 @@ class PostController extends Controller
         $this->postService = $postService;
     }
 
+    /** 
+    * @unauthenticated
+    */
     public function index()
     {
         $posts = $this->postService->getPosts();
