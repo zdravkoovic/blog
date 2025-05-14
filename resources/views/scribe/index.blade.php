@@ -80,26 +80,20 @@
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-POSTapi-v1-logout">
                                 <a href="#endpoints-POSTapi-v1-logout">POST api/v1/logout</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-post">
-                                <a href="#endpoints-GETapi-v1-post">GET api/v1/post</a>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-posts">
+                                <a href="#endpoints-GETapi-v1-posts">GET api/v1/posts</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-post--id-">
-                                <a href="#endpoints-GETapi-v1-post--id-">GET api/v1/post/{id}</a>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-posts--id-">
+                                <a href="#endpoints-GETapi-v1-posts--id-">GET api/v1/posts/{id}</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-v1-post">
-                                <a href="#endpoints-POSTapi-v1-post">POST api/v1/post</a>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-v1-posts">
+                                <a href="#endpoints-POSTapi-v1-posts">POST api/v1/posts</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-v1-post-comment">
-                                <a href="#endpoints-POSTapi-v1-post-comment">POST api/v1/post/comment</a>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-v1-posts-comment">
+                                <a href="#endpoints-POSTapi-v1-posts-comment">POST api/v1/posts/comment</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-v1-post-like">
-                                <a href="#endpoints-POSTapi-v1-post-like">POST api/v1/post/like</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-users">
-                                <a href="#endpoints-GETapi-v1-users">GET api/v1/users</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-users--id-">
-                                <a href="#endpoints-GETapi-v1-users--id-">GET api/v1/users/{id}</a>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-v1-posts-like">
+                                <a href="#endpoints-POSTapi-v1-posts-like">POST api/v1/posts/like</a>
                             </li>
                                                                         </ul>
                             </ul>
@@ -112,7 +106,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: May 12, 2025</li>
+        <li>Last updated: May 14, 2025</li>
     </ul>
 </div>
 
@@ -556,33 +550,30 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                         </form>
 
-                    <h2 id="endpoints-GETapi-v1-post">GET api/v1/post</h2>
+                    <h2 id="endpoints-GETapi-v1-posts">GET api/v1/posts</h2>
 
 <p>
-<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
 
-<span id="example-requests-GETapi-v1-post">
+<span id="example-requests-GETapi-v1-posts">
 <blockquote>Example request:</blockquote>
 
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/v1/post" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --get "http://localhost/api/v1/posts" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/v1/post"
+    "http://localhost/api/v1/posts"
 );
 
 const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -594,7 +585,7 @@ fetch(url, {
 
 </span>
 
-<span id="example-responses-GETapi-v1-post">
+<span id="example-responses-GETapi-v1-posts">
             <blockquote>
             <p>Example response (401):</p>
         </blockquote>
@@ -612,43 +603,43 @@ vary: Origin
 }</code>
  </pre>
     </span>
-<span id="execution-results-GETapi-v1-post" hidden>
+<span id="execution-results-GETapi-v1-posts" hidden>
     <blockquote>Received response<span
-                id="execution-response-status-GETapi-v1-post"></span>:
+                id="execution-response-status-GETapi-v1-posts"></span>:
     </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-v1-post"
+    <pre class="json"><code id="execution-response-content-GETapi-v1-posts"
       data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
 </span>
-<span id="execution-error-GETapi-v1-post" hidden>
+<span id="execution-error-GETapi-v1-posts" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-v1-post">
+    <pre><code id="execution-error-message-GETapi-v1-posts">
 
 Tip: Check that you&#039;re properly connected to the network.
 If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
 You can check the Dev Tools console for debugging information.</code></pre>
 </span>
-<form id="form-GETapi-v1-post" data-method="GET"
-      data-path="api/v1/post"
-      data-authed="1"
+<form id="form-GETapi-v1-posts" data-method="GET"
+      data-path="api/v1/posts"
+      data-authed="0"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-post', this);">
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-posts', this);">
     <h3>
         Request&nbsp;&nbsp;&nbsp;
                     <button type="button"
                     style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-v1-post"
-                    onclick="tryItOut('GETapi-v1-post');">Try it out ⚡
+                    id="btn-tryout-GETapi-v1-posts"
+                    onclick="tryItOut('GETapi-v1-posts');">Try it out ⚡
             </button>
             <button type="button"
                     style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-v1-post"
-                    onclick="cancelTryOut('GETapi-v1-post');" hidden>Cancel 🛑
+                    id="btn-canceltryout-GETapi-v1-posts"
+                    onclick="cancelTryOut('GETapi-v1-posts');" hidden>Cancel 🛑
             </button>&nbsp;&nbsp;
             <button type="submit"
                     style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-v1-post"
+                    id="btn-executetryout-GETapi-v1-posts"
                     data-initial-text="Send Request 💥"
                     data-loading-text="⏱ Sending..."
                     hidden>Send Request 💥
@@ -656,26 +647,15 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </h3>
             <p>
             <small class="badge badge-green">GET</small>
-            <b><code>api/v1/post</code></b>
+            <b><code>api/v1/posts</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Authorization" class="auth-value"               data-endpoint="GETapi-v1-post"
-               value="Bearer {YOUR_AUTH_KEY}"
-               data-component="header">
-    <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
-            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-v1-post"
+                              name="Content-Type"                data-endpoint="GETapi-v1-posts"
                value="application/json"
                data-component="header">
     <br>
@@ -686,7 +666,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-v1-post"
+                              name="Accept"                data-endpoint="GETapi-v1-posts"
                value="application/json"
                data-component="header">
     <br>
@@ -694,7 +674,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                         </form>
 
-                    <h2 id="endpoints-GETapi-v1-post--id-">GET api/v1/post/{id}</h2>
+                    <h2 id="endpoints-GETapi-v1-posts--id-">GET api/v1/posts/{id}</h2>
 
 <p>
 <small class="badge badge-darkred">requires authentication</small>
@@ -702,13 +682,13 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 
 
-<span id="example-requests-GETapi-v1-post--id-">
+<span id="example-requests-GETapi-v1-posts--id-">
 <blockquote>Example request:</blockquote>
 
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/v1/post/architecto" \
+    --get "http://localhost/api/v1/posts/architecto" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -716,7 +696,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/v1/post/architecto"
+    "http://localhost/api/v1/posts/architecto"
 );
 
 const headers = {
@@ -732,7 +712,7 @@ fetch(url, {
 
 </span>
 
-<span id="example-responses-GETapi-v1-post--id-">
+<span id="example-responses-GETapi-v1-posts--id-">
             <blockquote>
             <p>Example response (401):</p>
         </blockquote>
@@ -750,43 +730,43 @@ vary: Origin
 }</code>
  </pre>
     </span>
-<span id="execution-results-GETapi-v1-post--id-" hidden>
+<span id="execution-results-GETapi-v1-posts--id-" hidden>
     <blockquote>Received response<span
-                id="execution-response-status-GETapi-v1-post--id-"></span>:
+                id="execution-response-status-GETapi-v1-posts--id-"></span>:
     </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-v1-post--id-"
+    <pre class="json"><code id="execution-response-content-GETapi-v1-posts--id-"
       data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
 </span>
-<span id="execution-error-GETapi-v1-post--id-" hidden>
+<span id="execution-error-GETapi-v1-posts--id-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-v1-post--id-">
+    <pre><code id="execution-error-message-GETapi-v1-posts--id-">
 
 Tip: Check that you&#039;re properly connected to the network.
 If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
 You can check the Dev Tools console for debugging information.</code></pre>
 </span>
-<form id="form-GETapi-v1-post--id-" data-method="GET"
-      data-path="api/v1/post/{id}"
+<form id="form-GETapi-v1-posts--id-" data-method="GET"
+      data-path="api/v1/posts/{id}"
       data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-post--id-', this);">
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-posts--id-', this);">
     <h3>
         Request&nbsp;&nbsp;&nbsp;
                     <button type="button"
                     style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-v1-post--id-"
-                    onclick="tryItOut('GETapi-v1-post--id-');">Try it out ⚡
+                    id="btn-tryout-GETapi-v1-posts--id-"
+                    onclick="tryItOut('GETapi-v1-posts--id-');">Try it out ⚡
             </button>
             <button type="button"
                     style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-v1-post--id-"
-                    onclick="cancelTryOut('GETapi-v1-post--id-');" hidden>Cancel 🛑
+                    id="btn-canceltryout-GETapi-v1-posts--id-"
+                    onclick="cancelTryOut('GETapi-v1-posts--id-');" hidden>Cancel 🛑
             </button>&nbsp;&nbsp;
             <button type="submit"
                     style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-v1-post--id-"
+                    id="btn-executetryout-GETapi-v1-posts--id-"
                     data-initial-text="Send Request 💥"
                     data-loading-text="⏱ Sending..."
                     hidden>Send Request 💥
@@ -794,7 +774,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </h3>
             <p>
             <small class="badge badge-green">GET</small>
-            <b><code>api/v1/post/{id}</code></b>
+            <b><code>api/v1/posts/{id}</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
                                 <div style="padding-left: 28px; clear: unset;">
@@ -802,7 +782,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Authorization" class="auth-value"               data-endpoint="GETapi-v1-post--id-"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-v1-posts--id-"
                value="Bearer {YOUR_AUTH_KEY}"
                data-component="header">
     <br>
@@ -813,7 +793,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-v1-post--id-"
+                              name="Content-Type"                data-endpoint="GETapi-v1-posts--id-"
                value="application/json"
                data-component="header">
     <br>
@@ -824,7 +804,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-v1-post--id-"
+                              name="Accept"                data-endpoint="GETapi-v1-posts--id-"
                value="application/json"
                data-component="header">
     <br>
@@ -836,7 +816,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <small>string</small>&nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="id"                data-endpoint="GETapi-v1-post--id-"
+                              name="id"                data-endpoint="GETapi-v1-posts--id-"
                value="architecto"
                data-component="url">
     <br>
@@ -844,7 +824,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                     </form>
 
-                    <h2 id="endpoints-POSTapi-v1-post">POST api/v1/post</h2>
+                    <h2 id="endpoints-POSTapi-v1-posts">POST api/v1/posts</h2>
 
 <p>
 <small class="badge badge-darkred">requires authentication</small>
@@ -852,13 +832,13 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 
 
-<span id="example-requests-POSTapi-v1-post">
+<span id="example-requests-POSTapi-v1-posts">
 <blockquote>Example request:</blockquote>
 
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://localhost/api/v1/post" \
+    "http://localhost/api/v1/posts" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
@@ -876,7 +856,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/v1/post"
+    "http://localhost/api/v1/posts"
 );
 
 const headers = {
@@ -903,45 +883,45 @@ fetch(url, {
 
 </span>
 
-<span id="example-responses-POSTapi-v1-post">
+<span id="example-responses-POSTapi-v1-posts">
 </span>
-<span id="execution-results-POSTapi-v1-post" hidden>
+<span id="execution-results-POSTapi-v1-posts" hidden>
     <blockquote>Received response<span
-                id="execution-response-status-POSTapi-v1-post"></span>:
+                id="execution-response-status-POSTapi-v1-posts"></span>:
     </blockquote>
-    <pre class="json"><code id="execution-response-content-POSTapi-v1-post"
+    <pre class="json"><code id="execution-response-content-POSTapi-v1-posts"
       data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
 </span>
-<span id="execution-error-POSTapi-v1-post" hidden>
+<span id="execution-error-POSTapi-v1-posts" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-POSTapi-v1-post">
+    <pre><code id="execution-error-message-POSTapi-v1-posts">
 
 Tip: Check that you&#039;re properly connected to the network.
 If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
 You can check the Dev Tools console for debugging information.</code></pre>
 </span>
-<form id="form-POSTapi-v1-post" data-method="POST"
-      data-path="api/v1/post"
+<form id="form-POSTapi-v1-posts" data-method="POST"
+      data-path="api/v1/posts"
       data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('POSTapi-v1-post', this);">
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-v1-posts', this);">
     <h3>
         Request&nbsp;&nbsp;&nbsp;
                     <button type="button"
                     style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-POSTapi-v1-post"
-                    onclick="tryItOut('POSTapi-v1-post');">Try it out ⚡
+                    id="btn-tryout-POSTapi-v1-posts"
+                    onclick="tryItOut('POSTapi-v1-posts');">Try it out ⚡
             </button>
             <button type="button"
                     style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-POSTapi-v1-post"
-                    onclick="cancelTryOut('POSTapi-v1-post');" hidden>Cancel 🛑
+                    id="btn-canceltryout-POSTapi-v1-posts"
+                    onclick="cancelTryOut('POSTapi-v1-posts');" hidden>Cancel 🛑
             </button>&nbsp;&nbsp;
             <button type="submit"
                     style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-POSTapi-v1-post"
+                    id="btn-executetryout-POSTapi-v1-posts"
                     data-initial-text="Send Request 💥"
                     data-loading-text="⏱ Sending..."
                     hidden>Send Request 💥
@@ -949,7 +929,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </h3>
             <p>
             <small class="badge badge-black">POST</small>
-            <b><code>api/v1/post</code></b>
+            <b><code>api/v1/posts</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
                                 <div style="padding-left: 28px; clear: unset;">
@@ -957,7 +937,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-v1-post"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-v1-posts"
                value="Bearer {YOUR_AUTH_KEY}"
                data-component="header">
     <br>
@@ -968,7 +948,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="POSTapi-v1-post"
+                              name="Content-Type"                data-endpoint="POSTapi-v1-posts"
                value="application/json"
                data-component="header">
     <br>
@@ -979,7 +959,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="POSTapi-v1-post"
+                              name="Accept"                data-endpoint="POSTapi-v1-posts"
                value="application/json"
                data-component="header">
     <br>
@@ -991,7 +971,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <small>string</small>&nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="title"                data-endpoint="POSTapi-v1-post"
+                              name="title"                data-endpoint="POSTapi-v1-posts"
                value="b"
                data-component="body">
     <br>
@@ -1002,7 +982,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <small>string</small>&nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="slug"                data-endpoint="POSTapi-v1-post"
+                              name="slug"                data-endpoint="POSTapi-v1-posts"
                value="n"
                data-component="body">
     <br>
@@ -1013,7 +993,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <small>string</small>&nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="content"                data-endpoint="POSTapi-v1-post"
+                              name="content"                data-endpoint="POSTapi-v1-posts"
                value="architecto"
                data-component="body">
     <br>
@@ -1024,7 +1004,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <small>integer</small>&nbsp;
  &nbsp;
                 <input type="number" style="display: none"
-               step="any"               name="category_id"                data-endpoint="POSTapi-v1-post"
+               step="any"               name="category_id"                data-endpoint="POSTapi-v1-posts"
                value="16"
                data-component="body">
     <br>
@@ -1035,17 +1015,17 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <small>integer[]</small>&nbsp;
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
-               step="any"               name="tag_ids[0]"                data-endpoint="POSTapi-v1-post"
+               step="any"               name="tag_ids[0]"                data-endpoint="POSTapi-v1-posts"
                data-component="body">
         <input type="number" style="display: none"
-               name="tag_ids[1]"                data-endpoint="POSTapi-v1-post"
+               name="tag_ids[1]"                data-endpoint="POSTapi-v1-posts"
                data-component="body">
     <br>
 <p>The <code>id</code> of an existing record in the tags table.</p>
         </div>
         </form>
 
-                    <h2 id="endpoints-POSTapi-v1-post-comment">POST api/v1/post/comment</h2>
+                    <h2 id="endpoints-POSTapi-v1-posts-comment">POST api/v1/posts/comment</h2>
 
 <p>
 <small class="badge badge-darkred">requires authentication</small>
@@ -1053,13 +1033,13 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 
 
-<span id="example-requests-POSTapi-v1-post-comment">
+<span id="example-requests-POSTapi-v1-posts-comment">
 <blockquote>Example request:</blockquote>
 
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://localhost/api/v1/post/comment" \
+    "http://localhost/api/v1/posts/comment" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
@@ -1072,7 +1052,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/v1/post/comment"
+    "http://localhost/api/v1/posts/comment"
 );
 
 const headers = {
@@ -1094,45 +1074,45 @@ fetch(url, {
 
 </span>
 
-<span id="example-responses-POSTapi-v1-post-comment">
+<span id="example-responses-POSTapi-v1-posts-comment">
 </span>
-<span id="execution-results-POSTapi-v1-post-comment" hidden>
+<span id="execution-results-POSTapi-v1-posts-comment" hidden>
     <blockquote>Received response<span
-                id="execution-response-status-POSTapi-v1-post-comment"></span>:
+                id="execution-response-status-POSTapi-v1-posts-comment"></span>:
     </blockquote>
-    <pre class="json"><code id="execution-response-content-POSTapi-v1-post-comment"
+    <pre class="json"><code id="execution-response-content-POSTapi-v1-posts-comment"
       data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
 </span>
-<span id="execution-error-POSTapi-v1-post-comment" hidden>
+<span id="execution-error-POSTapi-v1-posts-comment" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-POSTapi-v1-post-comment">
+    <pre><code id="execution-error-message-POSTapi-v1-posts-comment">
 
 Tip: Check that you&#039;re properly connected to the network.
 If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
 You can check the Dev Tools console for debugging information.</code></pre>
 </span>
-<form id="form-POSTapi-v1-post-comment" data-method="POST"
-      data-path="api/v1/post/comment"
+<form id="form-POSTapi-v1-posts-comment" data-method="POST"
+      data-path="api/v1/posts/comment"
       data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('POSTapi-v1-post-comment', this);">
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-v1-posts-comment', this);">
     <h3>
         Request&nbsp;&nbsp;&nbsp;
                     <button type="button"
                     style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-POSTapi-v1-post-comment"
-                    onclick="tryItOut('POSTapi-v1-post-comment');">Try it out ⚡
+                    id="btn-tryout-POSTapi-v1-posts-comment"
+                    onclick="tryItOut('POSTapi-v1-posts-comment');">Try it out ⚡
             </button>
             <button type="button"
                     style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-POSTapi-v1-post-comment"
-                    onclick="cancelTryOut('POSTapi-v1-post-comment');" hidden>Cancel 🛑
+                    id="btn-canceltryout-POSTapi-v1-posts-comment"
+                    onclick="cancelTryOut('POSTapi-v1-posts-comment');" hidden>Cancel 🛑
             </button>&nbsp;&nbsp;
             <button type="submit"
                     style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-POSTapi-v1-post-comment"
+                    id="btn-executetryout-POSTapi-v1-posts-comment"
                     data-initial-text="Send Request 💥"
                     data-loading-text="⏱ Sending..."
                     hidden>Send Request 💥
@@ -1140,7 +1120,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </h3>
             <p>
             <small class="badge badge-black">POST</small>
-            <b><code>api/v1/post/comment</code></b>
+            <b><code>api/v1/posts/comment</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
                                 <div style="padding-left: 28px; clear: unset;">
@@ -1148,7 +1128,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-v1-post-comment"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-v1-posts-comment"
                value="Bearer {YOUR_AUTH_KEY}"
                data-component="header">
     <br>
@@ -1159,7 +1139,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="POSTapi-v1-post-comment"
+                              name="Content-Type"                data-endpoint="POSTapi-v1-posts-comment"
                value="application/json"
                data-component="header">
     <br>
@@ -1170,7 +1150,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="POSTapi-v1-post-comment"
+                              name="Accept"                data-endpoint="POSTapi-v1-posts-comment"
                value="application/json"
                data-component="header">
     <br>
@@ -1182,7 +1162,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <small>integer</small>&nbsp;
  &nbsp;
                 <input type="number" style="display: none"
-               step="any"               name="post_id"                data-endpoint="POSTapi-v1-post-comment"
+               step="any"               name="post_id"                data-endpoint="POSTapi-v1-posts-comment"
                value="16"
                data-component="body">
     <br>
@@ -1193,7 +1173,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <small>string</small>&nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="content"                data-endpoint="POSTapi-v1-post-comment"
+                              name="content"                data-endpoint="POSTapi-v1-posts-comment"
                value="architecto"
                data-component="body">
     <br>
@@ -1201,7 +1181,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </div>
         </form>
 
-                    <h2 id="endpoints-POSTapi-v1-post-like">POST api/v1/post/like</h2>
+                    <h2 id="endpoints-POSTapi-v1-posts-like">POST api/v1/posts/like</h2>
 
 <p>
 <small class="badge badge-darkred">requires authentication</small>
@@ -1209,13 +1189,13 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 
 
-<span id="example-requests-POSTapi-v1-post-like">
+<span id="example-requests-POSTapi-v1-posts-like">
 <blockquote>Example request:</blockquote>
 
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://localhost/api/v1/post/like" \
+    "http://localhost/api/v1/posts/like" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
@@ -1227,7 +1207,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/v1/post/like"
+    "http://localhost/api/v1/posts/like"
 );
 
 const headers = {
@@ -1248,45 +1228,45 @@ fetch(url, {
 
 </span>
 
-<span id="example-responses-POSTapi-v1-post-like">
+<span id="example-responses-POSTapi-v1-posts-like">
 </span>
-<span id="execution-results-POSTapi-v1-post-like" hidden>
+<span id="execution-results-POSTapi-v1-posts-like" hidden>
     <blockquote>Received response<span
-                id="execution-response-status-POSTapi-v1-post-like"></span>:
+                id="execution-response-status-POSTapi-v1-posts-like"></span>:
     </blockquote>
-    <pre class="json"><code id="execution-response-content-POSTapi-v1-post-like"
+    <pre class="json"><code id="execution-response-content-POSTapi-v1-posts-like"
       data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
 </span>
-<span id="execution-error-POSTapi-v1-post-like" hidden>
+<span id="execution-error-POSTapi-v1-posts-like" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-POSTapi-v1-post-like">
+    <pre><code id="execution-error-message-POSTapi-v1-posts-like">
 
 Tip: Check that you&#039;re properly connected to the network.
 If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
 You can check the Dev Tools console for debugging information.</code></pre>
 </span>
-<form id="form-POSTapi-v1-post-like" data-method="POST"
-      data-path="api/v1/post/like"
+<form id="form-POSTapi-v1-posts-like" data-method="POST"
+      data-path="api/v1/posts/like"
       data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('POSTapi-v1-post-like', this);">
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-v1-posts-like', this);">
     <h3>
         Request&nbsp;&nbsp;&nbsp;
                     <button type="button"
                     style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-POSTapi-v1-post-like"
-                    onclick="tryItOut('POSTapi-v1-post-like');">Try it out ⚡
+                    id="btn-tryout-POSTapi-v1-posts-like"
+                    onclick="tryItOut('POSTapi-v1-posts-like');">Try it out ⚡
             </button>
             <button type="button"
                     style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-POSTapi-v1-post-like"
-                    onclick="cancelTryOut('POSTapi-v1-post-like');" hidden>Cancel 🛑
+                    id="btn-canceltryout-POSTapi-v1-posts-like"
+                    onclick="cancelTryOut('POSTapi-v1-posts-like');" hidden>Cancel 🛑
             </button>&nbsp;&nbsp;
             <button type="submit"
                     style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-POSTapi-v1-post-like"
+                    id="btn-executetryout-POSTapi-v1-posts-like"
                     data-initial-text="Send Request 💥"
                     data-loading-text="⏱ Sending..."
                     hidden>Send Request 💥
@@ -1294,7 +1274,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </h3>
             <p>
             <small class="badge badge-black">POST</small>
-            <b><code>api/v1/post/like</code></b>
+            <b><code>api/v1/posts/like</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
                                 <div style="padding-left: 28px; clear: unset;">
@@ -1302,7 +1282,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-v1-post-like"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-v1-posts-like"
                value="Bearer {YOUR_AUTH_KEY}"
                data-component="header">
     <br>
@@ -1313,7 +1293,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="POSTapi-v1-post-like"
+                              name="Content-Type"                data-endpoint="POSTapi-v1-posts-like"
                value="application/json"
                data-component="header">
     <br>
@@ -1324,7 +1304,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="POSTapi-v1-post-like"
+                              name="Accept"                data-endpoint="POSTapi-v1-posts-like"
                value="application/json"
                data-component="header">
     <br>
@@ -1336,7 +1316,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <small>integer</small>&nbsp;
  &nbsp;
                 <input type="number" style="display: none"
-               step="any"               name="post_id"                data-endpoint="POSTapi-v1-post-like"
+               step="any"               name="post_id"                data-endpoint="POSTapi-v1-posts-like"
                value="16"
                data-component="body">
     <br>

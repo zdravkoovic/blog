@@ -153,7 +153,7 @@ endpoints:
   -
     httpMethods:
       - GET
-    uri: api/v1/post
+    uri: api/v1/posts
     metadata:
       groupName: Endpoints
       groupDescription: ''
@@ -161,10 +161,9 @@ endpoints:
       subgroupDescription: ''
       title: ''
       description: ''
-      authenticated: true
+      authenticated: false
       custom: []
     headers:
-      Authorization: 'Bearer {YOUR_AUTH_KEY}'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -185,10 +184,7 @@ endpoints:
         description: null
         custom: []
     responseFields: []
-    auth:
-      - headers
-      - Authorization
-      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    auth: []
     controller: null
     method: null
     route: null
@@ -196,7 +192,7 @@ endpoints:
   -
     httpMethods:
       - GET
-    uri: 'api/v1/post/{id}'
+    uri: 'api/v1/posts/{id}'
     metadata:
       groupName: Endpoints
       groupDescription: ''
@@ -250,7 +246,7 @@ endpoints:
   -
     httpMethods:
       - POST
-    uri: api/v1/post
+    uri: api/v1/posts
     metadata:
       groupName: Endpoints
       groupDescription: ''
@@ -341,7 +337,7 @@ endpoints:
   -
     httpMethods:
       - POST
-    uri: api/v1/post/comment
+    uri: api/v1/posts/comment
     metadata:
       groupName: Endpoints
       groupDescription: ''
@@ -397,7 +393,7 @@ endpoints:
   -
     httpMethods:
       - POST
-    uri: api/v1/post/like
+    uri: api/v1/posts/like
     metadata:
       groupName: Endpoints
       groupDescription: ''
