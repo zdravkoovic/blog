@@ -9,6 +9,7 @@ interface IPostRepository
 {
     public function getAll();
     public function getAllWithAuthors();
+    public function getAllWithAuthorsAndAvatars();
     public function findById(int $id): ?Post;
     public function create(array $data): Post;
     public function commentPost(array $data): Comment;
