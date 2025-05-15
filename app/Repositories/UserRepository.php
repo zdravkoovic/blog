@@ -13,13 +13,7 @@ class UserRepository implements IUserRepository
         return User::with([])
             ->withCount(['posts'])
             ->latest()
-            ->get()
-            ->map(function ($user) {
-                $user->avatar = $user->avatar 
-                    ? asset($user->avatar)
-                    : null;
-                return $user;
-            });
+            ->get();
     }
     public function findById(int $id): ?User
     {
