@@ -10,7 +10,7 @@ class UserRepository implements IUserRepository
 {
     public function getAll()
     {
-        return User::where([])
+        return User::with([])
             ->withCount(['posts'])
             ->latest()
             ->get();
