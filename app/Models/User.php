@@ -59,6 +59,10 @@ class User extends Authenticatable
         'avatar'
     ];
 
+    protected $appends = [
+        'avatar_url'
+    ];
+
     /**
      * The attributes that should be hidden for serialization.
      *
@@ -71,6 +75,10 @@ class User extends Authenticatable
         'created_at',
         'updated_at'
     ];
+
+    public function getAvatarUrlAttribute(){
+        return asset($this->avatar);
+    }
 
     /**
      * Get the attributes that should be cast.
