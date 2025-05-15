@@ -25,22 +25,24 @@ class PostRepository implements IPostRepository
 
     public function getAllWithAuthors()
     {
-        return Post::with('author:id,name')
+        return Post::with(
+            'author:id,name',
+            'tags:id,name,slug',
+        )
+            ->withCount(['comments', 'likes'])
             ->latest()
             ->get();
     }
 
     public function getAllWithAuthorsAndAvatars()
     {
-        return Post::with('author:id,name,avatar')
+        return Post::with(
+            'author:id,name,avatar',
+            'tags:name'
+        )
+            ->withCount(['comments', 'likes'])
             ->latest()
-            ->get()
-            ->map(function ($post) {
-                $post->author->avatar = $post->author->avatar
-                    ? asset($post->author->avatar)
-                    : null;
-                return $post;
-            });
+            ->get();
     }
 
     public function findById(int $id): ?Post
