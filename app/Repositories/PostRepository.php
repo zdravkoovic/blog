@@ -66,7 +66,7 @@ class PostRepository implements IPostRepository
         return $post->load([
             'category:id,name,slug',
             'tags:id,name,slug',
-            'author:id,name,email'
+            'author:id,name,email,avatar'
         ]);
     }
     public function commentPost(array $data): Comment
