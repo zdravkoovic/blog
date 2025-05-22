@@ -112,7 +112,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: May 15, 2025</li>
+        <li>Last updated: May 22, 2025</li>
     </ul>
 </div>
 
@@ -618,11 +618,32 @@ vary: Origin
             &quot;content&quot;: &quot;Does anybody can explain the process of dependency injection in php in Laravel?&quot;,
             &quot;created_at&quot;: &quot;2025-05-11T23:08:43.000000Z&quot;,
             &quot;updated_at&quot;: &quot;2025-05-11T23:08:43.000000Z&quot;,
+            &quot;comments_count&quot;: 0,
+            &quot;likes_count&quot;: 0,
             &quot;author&quot;: {
                 &quot;id&quot;: 4,
                 &quot;name&quot;: &quot;Goran Zoran&quot;,
-                &quot;avatar&quot;: &quot;http://localhost/storage/images/IMG_1801.jpg&quot;
-            }
+                &quot;avatar&quot;: &quot;storage/images/IMG_1801.jpg&quot;,
+                &quot;avatar_url&quot;: &quot;http://localhost/storage/images/IMG_1801.jpg&quot;
+            },
+            &quot;tags&quot;: [
+                {
+                    &quot;name&quot;: &quot;PHP&quot;,
+                    &quot;pivot&quot;: {
+                        &quot;post_id&quot;: 2,
+                        &quot;tag_id&quot;: 1,
+                        &quot;tagged_by_user_id&quot;: 4
+                    }
+                },
+                {
+                    &quot;name&quot;: &quot;Laravel&quot;,
+                    &quot;pivot&quot;: {
+                        &quot;post_id&quot;: 2,
+                        &quot;tag_id&quot;: 2,
+                        &quot;tagged_by_user_id&quot;: 4
+                    }
+                }
+            ]
         },
         {
             &quot;id&quot;: 1,
@@ -633,11 +654,32 @@ vary: Origin
             &quot;content&quot;: &quot;Laravel je odličan framework kako za početnike tako i za naprednije korisnike. Napisan je uz pomoć C programskog jezika.&lt;br /&gt;Kakvi su va&scaron;i utisci?&quot;,
             &quot;created_at&quot;: &quot;2025-05-11T12:10:41.000000Z&quot;,
             &quot;updated_at&quot;: &quot;2025-05-11T12:10:41.000000Z&quot;,
+            &quot;comments_count&quot;: 1,
+            &quot;likes_count&quot;: 1,
             &quot;author&quot;: {
                 &quot;id&quot;: 1,
                 &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
-                &quot;avatar&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
-            }
+                &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
+                &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+            },
+            &quot;tags&quot;: [
+                {
+                    &quot;name&quot;: &quot;PHP&quot;,
+                    &quot;pivot&quot;: {
+                        &quot;post_id&quot;: 1,
+                        &quot;tag_id&quot;: 1,
+                        &quot;tagged_by_user_id&quot;: 1
+                    }
+                },
+                {
+                    &quot;name&quot;: &quot;Laravel&quot;,
+                    &quot;pivot&quot;: {
+                        &quot;post_id&quot;: 1,
+                        &quot;tag_id&quot;: 2,
+                        &quot;tagged_by_user_id&quot;: 1
+                    }
+                }
+            ]
         }
     ]
 }</code>
@@ -1422,28 +1464,32 @@ vary: Origin
             &quot;name&quot;: &quot;Goran Zoran&quot;,
             &quot;email&quot;: &quot;goranzoran@gmail.com&quot;,
             &quot;avatar&quot;: &quot;storage/images/IMG_1801.jpg&quot;,
-            &quot;posts_count&quot;: 1
+            &quot;posts_count&quot;: 1,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/images/IMG_1801.jpg&quot;
         },
         {
             &quot;id&quot;: 3,
             &quot;name&quot;: &quot;b&quot;,
             &quot;email&quot;: &quot;zbailey@example.net&quot;,
             &quot;avatar&quot;: &quot;&quot;,
-            &quot;posts_count&quot;: 0
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/&quot;
         },
         {
             &quot;id&quot;: 2,
             &quot;name&quot;: &quot;Dragana Zdravkovic&quot;,
             &quot;email&quot;: &quot;zdravkovic.dragana@gmail.com&quot;,
             &quot;avatar&quot;: &quot;&quot;,
-            &quot;posts_count&quot;: 0
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/&quot;
         },
         {
             &quot;id&quot;: 1,
             &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
             &quot;email&quot;: &quot;zdravkoovic.nikola@gmail.com&quot;,
             &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
-            &quot;posts_count&quot;: 1
+            &quot;posts_count&quot;: 1,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
         }
     ]
 }</code>
@@ -1577,7 +1623,8 @@ vary: Origin
         &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
         &quot;email&quot;: &quot;zdravkoovic.nikola@gmail.com&quot;,
         &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
-        &quot;posts_count&quot;: 1
+        &quot;posts_count&quot;: 1,
+        &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
     }
 }</code>
  </pre>

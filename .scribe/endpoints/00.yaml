@@ -176,7 +176,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"status":200,"success":true,"message":"Success","data":[{"id":2,"user_id":4,"category_id":1,"title":"Dependency injection with php","slug":"dependency-injection-with-php","content":"Does anybody can explain the process of dependency injection in php in Laravel?","created_at":"2025-05-11T23:08:43.000000Z","updated_at":"2025-05-11T23:08:43.000000Z","author":{"id":4,"name":"Goran Zoran","avatar":"http:\/\/localhost\/storage\/images\/IMG_1801.jpg"}},{"id":1,"user_id":1,"category_id":1,"title":"Laravel framework","slug":"laravel-framework","content":"Laravel je odli\u010dan framework kako za po\u010detnike tako i za naprednije korisnike. Napisan je uz pomo\u0107 C programskog jezika.<br \/>Kakvi su va\u0161i utisci?","created_at":"2025-05-11T12:10:41.000000Z","updated_at":"2025-05-11T12:10:41.000000Z","author":{"id":1,"name":"Nikola Zdravkovic","avatar":"http:\/\/localhost\/storage\/images\/DSC_0563.jpg"}}]}'
+        content: '{"status":200,"success":true,"message":"Success","data":[{"id":2,"user_id":4,"category_id":1,"title":"Dependency injection with php","slug":"dependency-injection-with-php","content":"Does anybody can explain the process of dependency injection in php in Laravel?","created_at":"2025-05-11T23:08:43.000000Z","updated_at":"2025-05-11T23:08:43.000000Z","comments_count":0,"likes_count":0,"author":{"id":4,"name":"Goran Zoran","avatar":"storage\/images\/IMG_1801.jpg","avatar_url":"http:\/\/localhost\/storage\/images\/IMG_1801.jpg"},"tags":[{"name":"PHP","pivot":{"post_id":2,"tag_id":1,"tagged_by_user_id":4}},{"name":"Laravel","pivot":{"post_id":2,"tag_id":2,"tagged_by_user_id":4}}]},{"id":1,"user_id":1,"category_id":1,"title":"Laravel framework","slug":"laravel-framework","content":"Laravel je odli\u010dan framework kako za po\u010detnike tako i za naprednije korisnike. Napisan je uz pomo\u0107 C programskog jezika.<br \/>Kakvi su va\u0161i utisci?","created_at":"2025-05-11T12:10:41.000000Z","updated_at":"2025-05-11T12:10:41.000000Z","comments_count":1,"likes_count":1,"author":{"id":1,"name":"Nikola Zdravkovic","avatar":"storage\/images\/DSC_0563.jpg","avatar_url":"http:\/\/localhost\/storage\/images\/DSC_0563.jpg"},"tags":[{"name":"PHP","pivot":{"post_id":1,"tag_id":1,"tagged_by_user_id":1}},{"name":"Laravel","pivot":{"post_id":1,"tag_id":2,"tagged_by_user_id":1}}]}]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -461,7 +461,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"status":200,"success":true,"message":"Success","data":[{"id":4,"name":"Goran Zoran","email":"goranzoran@gmail.com","avatar":"storage\/images\/IMG_1801.jpg","posts_count":1},{"id":3,"name":"b","email":"zbailey@example.net","avatar":"","posts_count":0},{"id":2,"name":"Dragana Zdravkovic","email":"zdravkovic.dragana@gmail.com","avatar":"","posts_count":0},{"id":1,"name":"Nikola Zdravkovic","email":"zdravkoovic.nikola@gmail.com","avatar":"storage\/images\/DSC_0563.jpg","posts_count":1}]}'
+        content: '{"status":200,"success":true,"message":"Success","data":[{"id":4,"name":"Goran Zoran","email":"goranzoran@gmail.com","avatar":"storage\/images\/IMG_1801.jpg","posts_count":1,"avatar_url":"http:\/\/localhost\/storage\/images\/IMG_1801.jpg"},{"id":3,"name":"b","email":"zbailey@example.net","avatar":"","posts_count":0,"avatar_url":"http:\/\/localhost\/"},{"id":2,"name":"Dragana Zdravkovic","email":"zdravkovic.dragana@gmail.com","avatar":"","posts_count":0,"avatar_url":"http:\/\/localhost\/"},{"id":1,"name":"Nikola Zdravkovic","email":"zdravkoovic.nikola@gmail.com","avatar":"storage\/images\/DSC_0563.jpg","posts_count":1,"avatar_url":"http:\/\/localhost\/storage\/images\/DSC_0563.jpg"}]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -511,7 +511,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"status":200,"success":true,"message":"Success","data":{"id":1,"name":"Nikola Zdravkovic","email":"zdravkoovic.nikola@gmail.com","avatar":"storage\/images\/DSC_0563.jpg","posts_count":1}}'
+        content: '{"status":200,"success":true,"message":"Success","data":{"id":1,"name":"Nikola Zdravkovic","email":"zdravkoovic.nikola@gmail.com","avatar":"storage\/images\/DSC_0563.jpg","posts_count":1,"avatar_url":"http:\/\/localhost\/storage\/images\/DSC_0563.jpg"}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
