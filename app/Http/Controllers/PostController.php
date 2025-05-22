@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\DTOs\CommentDTO;
 use App\DTOs\LikeDTO;
 use App\DTOs\PostDTO;
+use App\Events\NewBlog;
+use App\Events\NewPost;
 use App\Helpers\ResponseHelper;
 use App\Http\Requests\CommentRequest;
 use App\Http\Requests\LikeRequest;
@@ -45,6 +47,8 @@ class PostController extends Controller
 
         $postDTO = PostDTO::formRequest($validated, $userId);
         $post = $this->postService->createPost($postDTO);
+
+        event(new NewPost($post));
 
         return $post ? ResponseHelper::success($post) : ResponseHelper::error(status: 500, errors: $post);
     }
