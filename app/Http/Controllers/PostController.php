@@ -74,4 +74,9 @@ class PostController extends Controller
 
         return $like ? ResponseHelper::success($like) : ResponseHelper::error(status: 500, errors: $like);
     }
+
+    public function getAllTags()
+    {
+        return ResponseHelper::success($this->postService->getAllTags());
+    }
 }

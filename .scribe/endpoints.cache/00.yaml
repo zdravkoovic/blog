@@ -177,8 +177,8 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
+        status: 200
+        content: '{"status":200,"success":true,"message":"Success","data":[{"id":25,"user_id":4,"category_id":1,"title":"Laravel nije kako treba","slug":"1-laravel-nije-kako-treba","content":"Imam problema sa laravelom","created_at":"2025-05-23T12:19:21.000000Z","updated_at":"2025-05-23T12:19:21.000000Z","comments_count":0,"likes_count":0,"author":{"id":4,"name":"Goran Zoran","avatar":"storage\/images\/IMG_1801.jpg","avatar_url":"http:\/\/localhost\/storage\/images\/IMG_1801.jpg"},"tags":[]},{"id":24,"user_id":4,"category_id":1,"title":"Laravel nije kako treba","slug":"laravel-nije-kako-treba","content":"Imam problema sa laravelom","created_at":"2025-05-23T12:14:20.000000Z","updated_at":"2025-05-23T12:14:20.000000Z","comments_count":0,"likes_count":0,"author":{"id":4,"name":"Goran Zoran","avatar":"storage\/images\/IMG_1801.jpg","avatar_url":"http:\/\/localhost\/storage\/images\/IMG_1801.jpg"},"tags":[]},{"id":23,"user_id":4,"category_id":1,"title":"Projekat u Laravel-u","slug":"projekat-u-laravel-u","content":"Hteo bih da \u010dujem razna iskustva sa Laravelom.","created_at":"2025-05-23T12:02:29.000000Z","updated_at":"2025-05-23T12:02:29.000000Z","comments_count":0,"likes_count":0,"author":{"id":4,"name":"Goran Zoran","avatar":"storage\/images\/IMG_1801.jpg","avatar_url":"http:\/\/localhost\/storage\/images\/IMG_1801.jpg"},"tags":[{"name":"PHP","pivot":{"post_id":23,"tag_id":1,"tagged_by_user_id":4}},{"name":"Laravel","pivot":{"post_id":23,"tag_id":2,"tagged_by_user_id":4}}]},{"id":22,"user_id":1,"category_id":3,"title":"Sviram bas gitaru 10 i mrsim muda","slug":"sviram-bas-gitaru-10-i-mrsim-muda","content":"Kupujem klasi\u010dnu gitaru, javite mi se.","created_at":"2025-05-22T17:37:35.000000Z","updated_at":"2025-05-22T17:37:35.000000Z","comments_count":0,"likes_count":0,"author":{"id":1,"name":"Nikola Zdravkovic","avatar":"storage\/images\/DSC_0563.jpg","avatar_url":"http:\/\/localhost\/storage\/images\/DSC_0563.jpg"},"tags":[{"name":"PHP","pivot":{"post_id":22,"tag_id":1,"tagged_by_user_id":1}},{"name":"Gitara","pivot":{"post_id":22,"tag_id":6,"tagged_by_user_id":1}}]},{"id":21,"user_id":1,"category_id":3,"title":"Sviram bas gitaru 9 i mrsim muda","slug":"sviram-bas-gitaru-9-i-mrsim-muda","content":"Kupujem klasi\u010dnu gitaru, javite mi se.","created_at":"2025-05-22T17:36:19.000000Z","updated_at":"2025-05-22T17:36:19.000000Z","comments_count":0,"likes_count":0,"author":{"id":1,"name":"Nikola Zdravkovic","avatar":"storage\/images\/DSC_0563.jpg","avatar_url":"http:\/\/localhost\/storage\/images\/DSC_0563.jpg"},"tags":[{"name":"PHP","pivot":{"post_id":21,"tag_id":1,"tagged_by_user_id":1}},{"name":"Gitara","pivot":{"post_id":21,"tag_id":6,"tagged_by_user_id":1}}]},{"id":20,"user_id":1,"category_id":3,"title":"Sviram bas gitaru 8 i mrsim muda","slug":"sviram-bas-gitaru-8-i-mrsim-muda","content":"Kupujem klasi\u010dnu gitaru, javite mi se.","created_at":"2025-05-22T17:13:13.000000Z","updated_at":"2025-05-22T17:13:13.000000Z","comments_count":0,"likes_count":0,"author":{"id":1,"name":"Nikola Zdravkovic","avatar":"storage\/images\/DSC_0563.jpg","avatar_url":"http:\/\/localhost\/storage\/images\/DSC_0563.jpg"},"tags":[{"name":"PHP","pivot":{"post_id":20,"tag_id":1,"tagged_by_user_id":1}},{"name":"Gitara","pivot":{"post_id":20,"tag_id":6,"tagged_by_user_id":1}}]},{"id":19,"user_id":1,"category_id":3,"title":"Sviram bas gitaru 7 i mrsim muda","slug":"sviram-bas-gitaru-7-i-mrsim-muda","content":"Kupujem klasi\u010dnu gitaru, javite mi se.","created_at":"2025-05-22T17:01:39.000000Z","updated_at":"2025-05-22T17:01:39.000000Z","comments_count":0,"likes_count":0,"author":{"id":1,"name":"Nikola Zdravkovic","avatar":"storage\/images\/DSC_0563.jpg","avatar_url":"http:\/\/localhost\/storage\/images\/DSC_0563.jpg"},"tags":[{"name":"PHP","pivot":{"post_id":19,"tag_id":1,"tagged_by_user_id":1}},{"name":"Gitara","pivot":{"post_id":19,"tag_id":6,"tagged_by_user_id":1}}]},{"id":18,"user_id":1,"category_id":3,"title":"Sviram bas gitaru 6 i mrsim muda","slug":"sviram-bas-gitaru-6-i-mrsim-muda","content":"Kupujem klasi\u010dnu gitaru, javite mi se.","created_at":"2025-05-22T14:58:05.000000Z","updated_at":"2025-05-22T14:58:05.000000Z","comments_count":0,"likes_count":0,"author":{"id":1,"name":"Nikola Zdravkovic","avatar":"storage\/images\/DSC_0563.jpg","avatar_url":"http:\/\/localhost\/storage\/images\/DSC_0563.jpg"},"tags":[{"name":"PHP","pivot":{"post_id":18,"tag_id":1,"tagged_by_user_id":1}},{"name":"Gitara","pivot":{"post_id":18,"tag_id":6,"tagged_by_user_id":1}}]},{"id":17,"user_id":1,"category_id":3,"title":"Sviram bas gitaru 5 i mrsim muda","slug":"sviram-bas-gitaru-5-i-mrsim-muda","content":"Kupujem klasi\u010dnu gitaru, javite mi se.","created_at":"2025-05-22T14:40:41.000000Z","updated_at":"2025-05-22T14:40:41.000000Z","comments_count":0,"likes_count":0,"author":{"id":1,"name":"Nikola Zdravkovic","avatar":"storage\/images\/DSC_0563.jpg","avatar_url":"http:\/\/localhost\/storage\/images\/DSC_0563.jpg"},"tags":[{"name":"PHP","pivot":{"post_id":17,"tag_id":1,"tagged_by_user_id":1}},{"name":"Gitara","pivot":{"post_id":17,"tag_id":6,"tagged_by_user_id":1}}]},{"id":16,"user_id":1,"category_id":3,"title":"Sviram bas gitaru 4 i mrsim muda","slug":"sviram-bas-gitaru-4-i-mrsim-muda","content":"Kupujem klasi\u010dnu gitaru, javite mi se.","created_at":"2025-05-22T14:37:59.000000Z","updated_at":"2025-05-22T14:37:59.000000Z","comments_count":0,"likes_count":0,"author":{"id":1,"name":"Nikola Zdravkovic","avatar":"storage\/images\/DSC_0563.jpg","avatar_url":"http:\/\/localhost\/storage\/images\/DSC_0563.jpg"},"tags":[{"name":"PHP","pivot":{"post_id":16,"tag_id":1,"tagged_by_user_id":1}},{"name":"Gitara","pivot":{"post_id":16,"tag_id":6,"tagged_by_user_id":1}}]},{"id":15,"user_id":1,"category_id":3,"title":"Sviram bas gitaru 3 i mrsim muda","slug":"sviram-bas-gitaru-3-i-mrsim-muda","content":"Kupujem klasi\u010dnu gitaru, javite mi se.","created_at":"2025-05-22T14:35:00.000000Z","updated_at":"2025-05-22T14:35:00.000000Z","comments_count":0,"likes_count":0,"author":{"id":1,"name":"Nikola Zdravkovic","avatar":"storage\/images\/DSC_0563.jpg","avatar_url":"http:\/\/localhost\/storage\/images\/DSC_0563.jpg"},"tags":[{"name":"PHP","pivot":{"post_id":15,"tag_id":1,"tagged_by_user_id":1}},{"name":"Gitara","pivot":{"post_id":15,"tag_id":6,"tagged_by_user_id":1}}]},{"id":14,"user_id":1,"category_id":3,"title":"Sviram bas gitaru 2 i mrsim muda","slug":"sviram-bas-gitaru-2-i-mrsim-muda","content":"Kupujem klasi\u010dnu gitaru, javite mi se.","created_at":"2025-05-22T14:32:32.000000Z","updated_at":"2025-05-22T14:32:32.000000Z","comments_count":0,"likes_count":0,"author":{"id":1,"name":"Nikola Zdravkovic","avatar":"storage\/images\/DSC_0563.jpg","avatar_url":"http:\/\/localhost\/storage\/images\/DSC_0563.jpg"},"tags":[{"name":"PHP","pivot":{"post_id":14,"tag_id":1,"tagged_by_user_id":1}},{"name":"Gitara","pivot":{"post_id":14,"tag_id":6,"tagged_by_user_id":1}}]},{"id":13,"user_id":1,"category_id":3,"title":"Sviram bas gitaru i mrsim muda","slug":"sviram-bas-gitaru-i-mrsim-muda","content":"Kupujem klasi\u010dnu gitaru, javite mi se.","created_at":"2025-05-22T14:30:56.000000Z","updated_at":"2025-05-22T14:30:56.000000Z","comments_count":0,"likes_count":0,"author":{"id":1,"name":"Nikola Zdravkovic","avatar":"storage\/images\/DSC_0563.jpg","avatar_url":"http:\/\/localhost\/storage\/images\/DSC_0563.jpg"},"tags":[{"name":"PHP","pivot":{"post_id":13,"tag_id":1,"tagged_by_user_id":1}},{"name":"Gitara","pivot":{"post_id":13,"tag_id":6,"tagged_by_user_id":1}}]},{"id":12,"user_id":1,"category_id":3,"title":"Sviram klasi\u010dnu gitaru i mrsim muda","slug":"sviram-klasicnu-gitaru-i-mrsim-muda","content":"Kupujem klasi\u010dnu gitaru, javite mi se.","created_at":"2025-05-22T14:22:42.000000Z","updated_at":"2025-05-22T14:22:42.000000Z","comments_count":0,"likes_count":0,"author":{"id":1,"name":"Nikola Zdravkovic","avatar":"storage\/images\/DSC_0563.jpg","avatar_url":"http:\/\/localhost\/storage\/images\/DSC_0563.jpg"},"tags":[{"name":"PHP","pivot":{"post_id":12,"tag_id":1,"tagged_by_user_id":1}},{"name":"Gitara","pivot":{"post_id":12,"tag_id":6,"tagged_by_user_id":1}}]},{"id":11,"user_id":1,"category_id":3,"title":"Sviram elektri\u010dnu gitaru i mrsim muda","slug":"sviram-elektricnu-gitaru-i-mrsim-muda","content":"Kupujem klasi\u010dnu gitaru, javite mi se.","created_at":"2025-05-22T14:01:21.000000Z","updated_at":"2025-05-22T14:01:21.000000Z","comments_count":0,"likes_count":0,"author":{"id":1,"name":"Nikola Zdravkovic","avatar":"storage\/images\/DSC_0563.jpg","avatar_url":"http:\/\/localhost\/storage\/images\/DSC_0563.jpg"},"tags":[{"name":"PHP","pivot":{"post_id":11,"tag_id":1,"tagged_by_user_id":1}},{"name":"Gitara","pivot":{"post_id":11,"tag_id":6,"tagged_by_user_id":1}}]},{"id":10,"user_id":1,"category_id":3,"title":"Sviram elektri\u010dnu gitaru","slug":"sviram-elektricnu-gitaru","content":"Kupujem klasi\u010dnu gitaru, javite mi se.","created_at":"2025-05-22T14:00:19.000000Z","updated_at":"2025-05-22T14:00:19.000000Z","comments_count":0,"likes_count":0,"author":{"id":1,"name":"Nikola Zdravkovic","avatar":"storage\/images\/DSC_0563.jpg","avatar_url":"http:\/\/localhost\/storage\/images\/DSC_0563.jpg"},"tags":[{"name":"PHP","pivot":{"post_id":10,"tag_id":1,"tagged_by_user_id":1}},{"name":"Gitara","pivot":{"post_id":10,"tag_id":6,"tagged_by_user_id":1}}]},{"id":9,"user_id":1,"category_id":3,"title":"Prodajem elektri\u010dnu gitaru","slug":"prodajem-elektricnu-gitaru","content":"Kupujem klasi\u010dnu gitaru, javite mi se.","created_at":"2025-05-22T13:59:35.000000Z","updated_at":"2025-05-22T13:59:35.000000Z","comments_count":0,"likes_count":0,"author":{"id":1,"name":"Nikola Zdravkovic","avatar":"storage\/images\/DSC_0563.jpg","avatar_url":"http:\/\/localhost\/storage\/images\/DSC_0563.jpg"},"tags":[{"name":"PHP","pivot":{"post_id":9,"tag_id":1,"tagged_by_user_id":1}},{"name":"Gitara","pivot":{"post_id":9,"tag_id":6,"tagged_by_user_id":1}}]},{"id":8,"user_id":1,"category_id":3,"title":"Kupujem elektri\u010dnu gitaru","slug":"kupujem-elektricnu-gitaru","content":"Kupujem klasi\u010dnu gitaru, javite mi se.","created_at":"2025-05-22T13:58:45.000000Z","updated_at":"2025-05-22T13:58:45.000000Z","comments_count":0,"likes_count":0,"author":{"id":1,"name":"Nikola Zdravkovic","avatar":"storage\/images\/DSC_0563.jpg","avatar_url":"http:\/\/localhost\/storage\/images\/DSC_0563.jpg"},"tags":[{"name":"PHP","pivot":{"post_id":8,"tag_id":1,"tagged_by_user_id":1}},{"name":"Gitara","pivot":{"post_id":8,"tag_id":6,"tagged_by_user_id":1}}]},{"id":7,"user_id":1,"category_id":3,"title":"Pravim klasi\u010dnu gitaru","slug":"pravim-klasi\u010dnu-gitaru","content":"Kupujem klasi\u010dnu gitaru, javite mi se.","created_at":"2025-05-22T13:57:50.000000Z","updated_at":"2025-05-22T13:57:50.000000Z","comments_count":0,"likes_count":0,"author":{"id":1,"name":"Nikola Zdravkovic","avatar":"storage\/images\/DSC_0563.jpg","avatar_url":"http:\/\/localhost\/storage\/images\/DSC_0563.jpg"},"tags":[{"name":"PHP","pivot":{"post_id":7,"tag_id":1,"tagged_by_user_id":1}},{"name":"Gitara","pivot":{"post_id":7,"tag_id":6,"tagged_by_user_id":1}}]},{"id":6,"user_id":1,"category_id":3,"title":"Prodajem klasi\u010dnu gitaru","slug":"prodajem-klasi\u010dnu-gitaru","content":"Kupujem klasi\u010dnu gitaru, javite mi se.","created_at":"2025-05-22T13:56:46.000000Z","updated_at":"2025-05-22T13:56:46.000000Z","comments_count":0,"likes_count":0,"author":{"id":1,"name":"Nikola Zdravkovic","avatar":"storage\/images\/DSC_0563.jpg","avatar_url":"http:\/\/localhost\/storage\/images\/DSC_0563.jpg"},"tags":[{"name":"PHP","pivot":{"post_id":6,"tag_id":1,"tagged_by_user_id":1}},{"name":"Gitara","pivot":{"post_id":6,"tag_id":6,"tagged_by_user_id":1}}]},{"id":5,"user_id":1,"category_id":3,"title":"Kupujem klasi\u010dnu gitaru","slug":"kupujem-klasi\u010dnu-gitaru","content":"Kupujem klasi\u010dnu gitaru, javite mi se.","created_at":"2025-05-22T13:50:52.000000Z","updated_at":"2025-05-22T13:50:52.000000Z","comments_count":0,"likes_count":0,"author":{"id":1,"name":"Nikola Zdravkovic","avatar":"storage\/images\/DSC_0563.jpg","avatar_url":"http:\/\/localhost\/storage\/images\/DSC_0563.jpg"},"tags":[{"name":"PHP","pivot":{"post_id":5,"tag_id":1,"tagged_by_user_id":1}},{"name":"Gitara","pivot":{"post_id":5,"tag_id":6,"tagged_by_user_id":1}}]},{"id":4,"user_id":1,"category_id":3,"title":"Popravka klasi\u010dne gitare","slug":"popravka-klasi\u010dne-gitare","content":"Da li neko mo\u017eda popravlja klasi\u010dne gitare? <br \/> Potrebno je da se utegne i zamene pragovi.","created_at":"2025-05-22T13:16:14.000000Z","updated_at":"2025-05-22T13:16:14.000000Z","comments_count":0,"likes_count":0,"author":{"id":1,"name":"Nikola Zdravkovic","avatar":"storage\/images\/DSC_0563.jpg","avatar_url":"http:\/\/localhost\/storage\/images\/DSC_0563.jpg"},"tags":[{"name":"PHP","pivot":{"post_id":4,"tag_id":1,"tagged_by_user_id":1}},{"name":"Gitara","pivot":{"post_id":4,"tag_id":6,"tagged_by_user_id":1}}]},{"id":3,"user_id":1,"category_id":1,"title":"Laravel i web soketi","slug":"laravel-i-web-soketi","content":"Da li neko moze da mi pomogne sa integracijom web soketa u laravel? <br \/> Da li da koristim Reverb ili preporucujete neku drugu, poput Pusher ili Abys?","created_at":"2025-05-21T23:09:33.000000Z","updated_at":"2025-05-21T23:09:33.000000Z","comments_count":0,"likes_count":0,"author":{"id":1,"name":"Nikola Zdravkovic","avatar":"storage\/images\/DSC_0563.jpg","avatar_url":"http:\/\/localhost\/storage\/images\/DSC_0563.jpg"},"tags":[{"name":"PHP","pivot":{"post_id":3,"tag_id":1,"tagged_by_user_id":1}},{"name":"Laravel","pivot":{"post_id":3,"tag_id":2,"tagged_by_user_id":1}}]},{"id":2,"user_id":4,"category_id":1,"title":"Dependency injection with php","slug":"dependency-injection-with-php","content":"Does anybody can explain the process of dependency injection in php in Laravel?","created_at":"2025-05-11T23:08:43.000000Z","updated_at":"2025-05-11T23:08:43.000000Z","comments_count":0,"likes_count":0,"author":{"id":4,"name":"Goran Zoran","avatar":"storage\/images\/IMG_1801.jpg","avatar_url":"http:\/\/localhost\/storage\/images\/IMG_1801.jpg"},"tags":[{"name":"PHP","pivot":{"post_id":2,"tag_id":1,"tagged_by_user_id":4}},{"name":"Laravel","pivot":{"post_id":2,"tag_id":2,"tagged_by_user_id":4}}]},{"id":1,"user_id":1,"category_id":1,"title":"Laravel framework","slug":"laravel-framework","content":"Laravel je odli\u010dan framework kako za po\u010detnike tako i za naprednije korisnike. Napisan je uz pomo\u0107 C programskog jezika.<br \/>Kakvi su va\u0161i utisci?","created_at":"2025-05-11T12:10:41.000000Z","updated_at":"2025-05-11T12:10:41.000000Z","comments_count":1,"likes_count":1,"author":{"id":1,"name":"Nikola Zdravkovic","avatar":"storage\/images\/DSC_0563.jpg","avatar_url":"http:\/\/localhost\/storage\/images\/DSC_0563.jpg"},"tags":[{"name":"PHP","pivot":{"post_id":1,"tag_id":1,"tagged_by_user_id":1}},{"name":"Laravel","pivot":{"post_id":1,"tag_id":2,"tagged_by_user_id":1}}]}]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -187,6 +187,49 @@ endpoints:
         custom: []
     responseFields: []
     auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/v1/posts/tags
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"status":200,"success":true,"message":"Success","data":[{"id":1,"name":"PHP","slug":"php","created_at":"2025-05-11T14:08:16.000000Z","updated_at":"2025-05-11T14:08:16.000000Z"},{"id":2,"name":"Laravel","slug":"laravel","created_at":"2025-05-11T14:08:16.000000Z","updated_at":"2025-05-11T14:08:16.000000Z"},{"id":3,"name":"JavaScript","slug":"javascript","created_at":"2025-05-11T14:08:16.000000Z","updated_at":"2025-05-11T14:08:16.000000Z"},{"id":4,"name":"Vue.js","slug":"vue-js","created_at":"2025-05-11T14:08:16.000000Z","updated_at":"2025-05-11T14:08:16.000000Z"},{"id":5,"name":"MySQL","slug":"mysql","created_at":"2025-05-11T14:08:16.000000Z","updated_at":"2025-05-11T14:08:16.000000Z"},{"id":6,"name":"Gitara","slug":"gitara","created_at":"2025-05-11T14:08:16.000000Z","updated_at":"2025-05-11T14:08:16.000000Z"}]}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          vary: Origin
+        description: null
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
     controller: null
     method: null
     route: null
@@ -213,14 +256,14 @@ endpoints:
         name: id
         description: 'The ID of the post.'
         required: true
-        example: architecto
-        type: string
+        example: 1
+        type: integer
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         custom: []
     cleanUrlParameters:
-      id: architecto
+      id: 1
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -309,11 +352,11 @@ endpoints:
         custom: []
       tag_ids:
         name: tag_ids
-        description: 'The <code>id</code> of an existing record in the tags table.'
+        description: ''
         required: false
         example:
-          - 16
-        type: 'integer[]'
+          - architecto
+        type: 'string[]'
         enumValues: []
         exampleWasSpecified: false
         nullable: false
@@ -324,7 +367,7 @@ endpoints:
       content: architecto
       category_id: 16
       tag_ids:
-        - 16
+        - architecto
     fileParameters: []
     responses: []
     responseFields: []

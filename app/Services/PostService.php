@@ -5,6 +5,8 @@ namespace App\Services;
 use App\DTOs\CommentDTO;
 use App\DTOs\LikeDTO;
 use App\DTOs\PostDTO;
+use App\DTOs\TagDTO;
+use App\Models\Tag;
 use App\Repositories\Interfaces\IPostRepository;
 
 class PostService {
@@ -25,6 +27,7 @@ class PostService {
     }
 
     public function createPost(PostDTO $postDTO){
+        $postDTO->tagsIdRealOne = $this->postRepo->getIdsOfTags($postDTO->tagsId);
         return $this->postRepo->create($postDTO->toArray());
     }
 
@@ -35,5 +38,15 @@ class PostService {
     public function toggleLikePost(LikeDTO $likeDTO)
     {
         return $this->postRepo->likePost($likeDTO->postId, $likeDTO->userId);
+    }
+
+    public function getAllTags()
+    {
+        return $this->postRepo->getAllTags();
+    }
+
+    public function createTag(TagDTO $tagDTO)
+    {
+        $this->postRepo->createTag($tagDTO->toArray());
     }
 }
