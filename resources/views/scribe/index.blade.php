@@ -605,874 +605,340 @@ vary: Origin
     &quot;status&quot;: 200,
     &quot;success&quot;: true,
     &quot;message&quot;: &quot;Success&quot;,
-    &quot;data&quot;: [
-        {
-            &quot;id&quot;: 25,
-            &quot;user_id&quot;: 4,
-            &quot;category_id&quot;: 1,
-            &quot;title&quot;: &quot;Laravel nije kako treba&quot;,
-            &quot;slug&quot;: &quot;1-laravel-nije-kako-treba&quot;,
-            &quot;content&quot;: &quot;Imam problema sa laravelom&quot;,
-            &quot;created_at&quot;: &quot;2025-05-23T12:19:21.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-05-23T12:19:21.000000Z&quot;,
-            &quot;comments_count&quot;: 0,
-            &quot;likes_count&quot;: 0,
-            &quot;author&quot;: {
-                &quot;id&quot;: 4,
-                &quot;name&quot;: &quot;Goran Zoran&quot;,
-                &quot;avatar&quot;: &quot;storage/images/IMG_1801.jpg&quot;,
-                &quot;avatar_url&quot;: &quot;http://localhost/storage/images/IMG_1801.jpg&quot;
-            },
-            &quot;tags&quot;: []
-        },
-        {
-            &quot;id&quot;: 24,
-            &quot;user_id&quot;: 4,
-            &quot;category_id&quot;: 1,
-            &quot;title&quot;: &quot;Laravel nije kako treba&quot;,
-            &quot;slug&quot;: &quot;laravel-nije-kako-treba&quot;,
-            &quot;content&quot;: &quot;Imam problema sa laravelom&quot;,
-            &quot;created_at&quot;: &quot;2025-05-23T12:14:20.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-05-23T12:14:20.000000Z&quot;,
-            &quot;comments_count&quot;: 0,
-            &quot;likes_count&quot;: 0,
-            &quot;author&quot;: {
-                &quot;id&quot;: 4,
-                &quot;name&quot;: &quot;Goran Zoran&quot;,
-                &quot;avatar&quot;: &quot;storage/images/IMG_1801.jpg&quot;,
-                &quot;avatar_url&quot;: &quot;http://localhost/storage/images/IMG_1801.jpg&quot;
-            },
-            &quot;tags&quot;: []
-        },
-        {
-            &quot;id&quot;: 23,
-            &quot;user_id&quot;: 4,
-            &quot;category_id&quot;: 1,
-            &quot;title&quot;: &quot;Projekat u Laravel-u&quot;,
-            &quot;slug&quot;: &quot;projekat-u-laravel-u&quot;,
-            &quot;content&quot;: &quot;Hteo bih da čujem razna iskustva sa Laravelom.&quot;,
-            &quot;created_at&quot;: &quot;2025-05-23T12:02:29.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-05-23T12:02:29.000000Z&quot;,
-            &quot;comments_count&quot;: 0,
-            &quot;likes_count&quot;: 0,
-            &quot;author&quot;: {
-                &quot;id&quot;: 4,
-                &quot;name&quot;: &quot;Goran Zoran&quot;,
-                &quot;avatar&quot;: &quot;storage/images/IMG_1801.jpg&quot;,
-                &quot;avatar_url&quot;: &quot;http://localhost/storage/images/IMG_1801.jpg&quot;
-            },
-            &quot;tags&quot;: [
-                {
-                    &quot;name&quot;: &quot;PHP&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 23,
-                        &quot;tag_id&quot;: 1,
-                        &quot;tagged_by_user_id&quot;: 4
-                    }
+    &quot;data&quot;: {
+        &quot;current_page&quot;: 1,
+        &quot;data&quot;: [
+            {
+                &quot;id&quot;: 35,
+                &quot;user_id&quot;: 4,
+                &quot;category_id&quot;: 1,
+                &quot;title&quot;: &quot;Post od Gorana Zorana&quot;,
+                &quot;slug&quot;: &quot;post-od-gorana-zorana&quot;,
+                &quot;content&quot;: &quot;Moze&quot;,
+                &quot;created_at&quot;: &quot;2025-05-23T18:28:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-23T18:28:51.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;author&quot;: {
+                    &quot;id&quot;: 4,
+                    &quot;name&quot;: &quot;Goran Zoran&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/IMG_1801.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/IMG_1801.jpg&quot;
                 },
-                {
-                    &quot;name&quot;: &quot;Laravel&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 23,
-                        &quot;tag_id&quot;: 2,
-                        &quot;tagged_by_user_id&quot;: 4
+                &quot;tags&quot;: [
+                    {
+                        &quot;name&quot;: &quot;MySQL&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 35,
+                            &quot;tag_id&quot;: 5,
+                            &quot;tagged_by_user_id&quot;: 4
+                        }
                     }
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 22,
-            &quot;user_id&quot;: 1,
-            &quot;category_id&quot;: 3,
-            &quot;title&quot;: &quot;Sviram bas gitaru 10 i mrsim muda&quot;,
-            &quot;slug&quot;: &quot;sviram-bas-gitaru-10-i-mrsim-muda&quot;,
-            &quot;content&quot;: &quot;Kupujem klasičnu gitaru, javite mi se.&quot;,
-            &quot;created_at&quot;: &quot;2025-05-22T17:37:35.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-05-22T17:37:35.000000Z&quot;,
-            &quot;comments_count&quot;: 0,
-            &quot;likes_count&quot;: 0,
-            &quot;author&quot;: {
-                &quot;id&quot;: 1,
-                &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
-                &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
-                &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+                ]
             },
-            &quot;tags&quot;: [
-                {
-                    &quot;name&quot;: &quot;PHP&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 22,
-                        &quot;tag_id&quot;: 1,
-                        &quot;tagged_by_user_id&quot;: 1
-                    }
+            {
+                &quot;id&quot;: 34,
+                &quot;user_id&quot;: 1,
+                &quot;category_id&quot;: 1,
+                &quot;title&quot;: &quot;Nesto cudno&quot;,
+                &quot;slug&quot;: &quot;nesto-cudno&quot;,
+                &quot;content&quot;: &quot;Nesto cudno se desava&quot;,
+                &quot;created_at&quot;: &quot;2025-05-23T17:50:11.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-23T17:50:11.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;author&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
                 },
-                {
-                    &quot;name&quot;: &quot;Gitara&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 22,
-                        &quot;tag_id&quot;: 6,
-                        &quot;tagged_by_user_id&quot;: 1
+                &quot;tags&quot;: [
+                    {
+                        &quot;name&quot;: &quot;Laravel&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 34,
+                            &quot;tag_id&quot;: 2,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
                     }
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 21,
-            &quot;user_id&quot;: 1,
-            &quot;category_id&quot;: 3,
-            &quot;title&quot;: &quot;Sviram bas gitaru 9 i mrsim muda&quot;,
-            &quot;slug&quot;: &quot;sviram-bas-gitaru-9-i-mrsim-muda&quot;,
-            &quot;content&quot;: &quot;Kupujem klasičnu gitaru, javite mi se.&quot;,
-            &quot;created_at&quot;: &quot;2025-05-22T17:36:19.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-05-22T17:36:19.000000Z&quot;,
-            &quot;comments_count&quot;: 0,
-            &quot;likes_count&quot;: 0,
-            &quot;author&quot;: {
-                &quot;id&quot;: 1,
-                &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
-                &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
-                &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+                ]
             },
-            &quot;tags&quot;: [
-                {
-                    &quot;name&quot;: &quot;PHP&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 21,
-                        &quot;tag_id&quot;: 1,
-                        &quot;tagged_by_user_id&quot;: 1
-                    }
+            {
+                &quot;id&quot;: 33,
+                &quot;user_id&quot;: 1,
+                &quot;category_id&quot;: 1,
+                &quot;title&quot;: &quot;Sumnjivo lice&quot;,
+                &quot;slug&quot;: &quot;sumnjivo-lice&quot;,
+                &quot;content&quot;: &quot;Sumnjivo lice&quot;,
+                &quot;created_at&quot;: &quot;2025-05-23T17:48:50.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-23T17:48:50.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;author&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
                 },
-                {
-                    &quot;name&quot;: &quot;Gitara&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 21,
-                        &quot;tag_id&quot;: 6,
-                        &quot;tagged_by_user_id&quot;: 1
+                &quot;tags&quot;: [
+                    {
+                        &quot;name&quot;: &quot;PHP&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 33,
+                            &quot;tag_id&quot;: 1,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
                     }
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 20,
-            &quot;user_id&quot;: 1,
-            &quot;category_id&quot;: 3,
-            &quot;title&quot;: &quot;Sviram bas gitaru 8 i mrsim muda&quot;,
-            &quot;slug&quot;: &quot;sviram-bas-gitaru-8-i-mrsim-muda&quot;,
-            &quot;content&quot;: &quot;Kupujem klasičnu gitaru, javite mi se.&quot;,
-            &quot;created_at&quot;: &quot;2025-05-22T17:13:13.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-05-22T17:13:13.000000Z&quot;,
-            &quot;comments_count&quot;: 0,
-            &quot;likes_count&quot;: 0,
-            &quot;author&quot;: {
-                &quot;id&quot;: 1,
-                &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
-                &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
-                &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+                ]
             },
-            &quot;tags&quot;: [
-                {
-                    &quot;name&quot;: &quot;PHP&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 20,
-                        &quot;tag_id&quot;: 1,
-                        &quot;tagged_by_user_id&quot;: 1
-                    }
+            {
+                &quot;id&quot;: 32,
+                &quot;user_id&quot;: 1,
+                &quot;category_id&quot;: 1,
+                &quot;title&quot;: &quot;Skoro pa gotovo&quot;,
+                &quot;slug&quot;: &quot;skoro-pa-gotovo&quot;,
+                &quot;content&quot;: &quot;Novi fosili recimi tiho&quot;,
+                &quot;created_at&quot;: &quot;2025-05-23T15:45:36.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-23T15:45:36.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;author&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
                 },
-                {
-                    &quot;name&quot;: &quot;Gitara&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 20,
-                        &quot;tag_id&quot;: 6,
-                        &quot;tagged_by_user_id&quot;: 1
+                &quot;tags&quot;: [
+                    {
+                        &quot;name&quot;: &quot;Gitara&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 32,
+                            &quot;tag_id&quot;: 6,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
                     }
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 19,
-            &quot;user_id&quot;: 1,
-            &quot;category_id&quot;: 3,
-            &quot;title&quot;: &quot;Sviram bas gitaru 7 i mrsim muda&quot;,
-            &quot;slug&quot;: &quot;sviram-bas-gitaru-7-i-mrsim-muda&quot;,
-            &quot;content&quot;: &quot;Kupujem klasičnu gitaru, javite mi se.&quot;,
-            &quot;created_at&quot;: &quot;2025-05-22T17:01:39.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-05-22T17:01:39.000000Z&quot;,
-            &quot;comments_count&quot;: 0,
-            &quot;likes_count&quot;: 0,
-            &quot;author&quot;: {
-                &quot;id&quot;: 1,
-                &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
-                &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
-                &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+                ]
             },
-            &quot;tags&quot;: [
-                {
-                    &quot;name&quot;: &quot;PHP&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 19,
-                        &quot;tag_id&quot;: 1,
-                        &quot;tagged_by_user_id&quot;: 1
-                    }
+            {
+                &quot;id&quot;: 31,
+                &quot;user_id&quot;: 1,
+                &quot;category_id&quot;: 1,
+                &quot;title&quot;: &quot;Sumnjivo je i dalje&quot;,
+                &quot;slug&quot;: &quot;sumnjivo-je-i-dalje&quot;,
+                &quot;content&quot;: &quot;Mozda ce da radi&quot;,
+                &quot;created_at&quot;: &quot;2025-05-23T15:44:21.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-23T15:44:21.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;author&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
                 },
-                {
-                    &quot;name&quot;: &quot;Gitara&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 19,
-                        &quot;tag_id&quot;: 6,
-                        &quot;tagged_by_user_id&quot;: 1
+                &quot;tags&quot;: [
+                    {
+                        &quot;name&quot;: &quot;Laravel&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 31,
+                            &quot;tag_id&quot;: 2,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
                     }
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 18,
-            &quot;user_id&quot;: 1,
-            &quot;category_id&quot;: 3,
-            &quot;title&quot;: &quot;Sviram bas gitaru 6 i mrsim muda&quot;,
-            &quot;slug&quot;: &quot;sviram-bas-gitaru-6-i-mrsim-muda&quot;,
-            &quot;content&quot;: &quot;Kupujem klasičnu gitaru, javite mi se.&quot;,
-            &quot;created_at&quot;: &quot;2025-05-22T14:58:05.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-05-22T14:58:05.000000Z&quot;,
-            &quot;comments_count&quot;: 0,
-            &quot;likes_count&quot;: 0,
-            &quot;author&quot;: {
-                &quot;id&quot;: 1,
-                &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
-                &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
-                &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+                ]
             },
-            &quot;tags&quot;: [
-                {
-                    &quot;name&quot;: &quot;PHP&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 18,
-                        &quot;tag_id&quot;: 1,
-                        &quot;tagged_by_user_id&quot;: 1
-                    }
+            {
+                &quot;id&quot;: 30,
+                &quot;user_id&quot;: 1,
+                &quot;category_id&quot;: 1,
+                &quot;title&quot;: &quot;Sumnjivo je&quot;,
+                &quot;slug&quot;: &quot;sumnjivo-je&quot;,
+                &quot;content&quot;: &quot;Mozda ce da radi&quot;,
+                &quot;created_at&quot;: &quot;2025-05-23T15:41:59.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-23T15:41:59.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;author&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
                 },
-                {
-                    &quot;name&quot;: &quot;Gitara&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 18,
-                        &quot;tag_id&quot;: 6,
-                        &quot;tagged_by_user_id&quot;: 1
+                &quot;tags&quot;: [
+                    {
+                        &quot;name&quot;: &quot;Laravel&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 30,
+                            &quot;tag_id&quot;: 2,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
+                    },
+                    {
+                        &quot;name&quot;: &quot;Vue.js&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 30,
+                            &quot;tag_id&quot;: 4,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
                     }
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 17,
-            &quot;user_id&quot;: 1,
-            &quot;category_id&quot;: 3,
-            &quot;title&quot;: &quot;Sviram bas gitaru 5 i mrsim muda&quot;,
-            &quot;slug&quot;: &quot;sviram-bas-gitaru-5-i-mrsim-muda&quot;,
-            &quot;content&quot;: &quot;Kupujem klasičnu gitaru, javite mi se.&quot;,
-            &quot;created_at&quot;: &quot;2025-05-22T14:40:41.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-05-22T14:40:41.000000Z&quot;,
-            &quot;comments_count&quot;: 0,
-            &quot;likes_count&quot;: 0,
-            &quot;author&quot;: {
-                &quot;id&quot;: 1,
-                &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
-                &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
-                &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+                ]
             },
-            &quot;tags&quot;: [
-                {
-                    &quot;name&quot;: &quot;PHP&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 17,
-                        &quot;tag_id&quot;: 1,
-                        &quot;tagged_by_user_id&quot;: 1
-                    }
+            {
+                &quot;id&quot;: 29,
+                &quot;user_id&quot;: 1,
+                &quot;category_id&quot;: 1,
+                &quot;title&quot;: &quot;Jos malo samo&quot;,
+                &quot;slug&quot;: &quot;jos-malo-samo&quot;,
+                &quot;content&quot;: &quot;Samo jos malo i bice&quot;,
+                &quot;created_at&quot;: &quot;2025-05-23T15:38:14.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-23T15:38:14.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;author&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
                 },
-                {
-                    &quot;name&quot;: &quot;Gitara&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 17,
-                        &quot;tag_id&quot;: 6,
-                        &quot;tagged_by_user_id&quot;: 1
+                &quot;tags&quot;: [
+                    {
+                        &quot;name&quot;: &quot;Laravel&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 29,
+                            &quot;tag_id&quot;: 2,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
                     }
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 16,
-            &quot;user_id&quot;: 1,
-            &quot;category_id&quot;: 3,
-            &quot;title&quot;: &quot;Sviram bas gitaru 4 i mrsim muda&quot;,
-            &quot;slug&quot;: &quot;sviram-bas-gitaru-4-i-mrsim-muda&quot;,
-            &quot;content&quot;: &quot;Kupujem klasičnu gitaru, javite mi se.&quot;,
-            &quot;created_at&quot;: &quot;2025-05-22T14:37:59.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-05-22T14:37:59.000000Z&quot;,
-            &quot;comments_count&quot;: 0,
-            &quot;likes_count&quot;: 0,
-            &quot;author&quot;: {
-                &quot;id&quot;: 1,
-                &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
-                &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
-                &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+                ]
             },
-            &quot;tags&quot;: [
-                {
-                    &quot;name&quot;: &quot;PHP&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 16,
-                        &quot;tag_id&quot;: 1,
-                        &quot;tagged_by_user_id&quot;: 1
-                    }
+            {
+                &quot;id&quot;: 28,
+                &quot;user_id&quot;: 1,
+                &quot;category_id&quot;: 1,
+                &quot;title&quot;: &quot;Mislim da ce ovo da proradi&quot;,
+                &quot;slug&quot;: &quot;mislim-da-ce-ovo-da-proradi&quot;,
+                &quot;content&quot;: &quot;Ovo mora sad da proradi - sad ili nikad!&quot;,
+                &quot;created_at&quot;: &quot;2025-05-23T15:29:04.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-23T15:29:04.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;author&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
                 },
-                {
-                    &quot;name&quot;: &quot;Gitara&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 16,
-                        &quot;tag_id&quot;: 6,
-                        &quot;tagged_by_user_id&quot;: 1
+                &quot;tags&quot;: [
+                    {
+                        &quot;name&quot;: &quot;Laravel&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 28,
+                            &quot;tag_id&quot;: 2,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
                     }
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 15,
-            &quot;user_id&quot;: 1,
-            &quot;category_id&quot;: 3,
-            &quot;title&quot;: &quot;Sviram bas gitaru 3 i mrsim muda&quot;,
-            &quot;slug&quot;: &quot;sviram-bas-gitaru-3-i-mrsim-muda&quot;,
-            &quot;content&quot;: &quot;Kupujem klasičnu gitaru, javite mi se.&quot;,
-            &quot;created_at&quot;: &quot;2025-05-22T14:35:00.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-05-22T14:35:00.000000Z&quot;,
-            &quot;comments_count&quot;: 0,
-            &quot;likes_count&quot;: 0,
-            &quot;author&quot;: {
-                &quot;id&quot;: 1,
-                &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
-                &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
-                &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+                ]
             },
-            &quot;tags&quot;: [
-                {
-                    &quot;name&quot;: &quot;PHP&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 15,
-                        &quot;tag_id&quot;: 1,
-                        &quot;tagged_by_user_id&quot;: 1
-                    }
+            {
+                &quot;id&quot;: 27,
+                &quot;user_id&quot;: 4,
+                &quot;category_id&quot;: 1,
+                &quot;title&quot;: &quot;Laravel 1&quot;,
+                &quot;slug&quot;: &quot;1-laravel-1&quot;,
+                &quot;content&quot;: &quot;Laravel...&quot;,
+                &quot;created_at&quot;: &quot;2025-05-23T14:10:47.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-23T14:10:47.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;author&quot;: {
+                    &quot;id&quot;: 4,
+                    &quot;name&quot;: &quot;Goran Zoran&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/IMG_1801.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/IMG_1801.jpg&quot;
                 },
-                {
-                    &quot;name&quot;: &quot;Gitara&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 15,
-                        &quot;tag_id&quot;: 6,
-                        &quot;tagged_by_user_id&quot;: 1
+                &quot;tags&quot;: [
+                    {
+                        &quot;name&quot;: &quot;PHP&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 27,
+                            &quot;tag_id&quot;: 1,
+                            &quot;tagged_by_user_id&quot;: 4
+                        }
+                    },
+                    {
+                        &quot;name&quot;: &quot;Laravel&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 27,
+                            &quot;tag_id&quot;: 2,
+                            &quot;tagged_by_user_id&quot;: 4
+                        }
                     }
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 14,
-            &quot;user_id&quot;: 1,
-            &quot;category_id&quot;: 3,
-            &quot;title&quot;: &quot;Sviram bas gitaru 2 i mrsim muda&quot;,
-            &quot;slug&quot;: &quot;sviram-bas-gitaru-2-i-mrsim-muda&quot;,
-            &quot;content&quot;: &quot;Kupujem klasičnu gitaru, javite mi se.&quot;,
-            &quot;created_at&quot;: &quot;2025-05-22T14:32:32.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-05-22T14:32:32.000000Z&quot;,
-            &quot;comments_count&quot;: 0,
-            &quot;likes_count&quot;: 0,
-            &quot;author&quot;: {
-                &quot;id&quot;: 1,
-                &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
-                &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
-                &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+                ]
             },
-            &quot;tags&quot;: [
-                {
-                    &quot;name&quot;: &quot;PHP&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 14,
-                        &quot;tag_id&quot;: 1,
-                        &quot;tagged_by_user_id&quot;: 1
-                    }
+            {
+                &quot;id&quot;: 26,
+                &quot;user_id&quot;: 4,
+                &quot;category_id&quot;: 1,
+                &quot;title&quot;: &quot;Laravel 1&quot;,
+                &quot;slug&quot;: &quot;laravel-1&quot;,
+                &quot;content&quot;: &quot;Laravel...&quot;,
+                &quot;created_at&quot;: &quot;2025-05-23T14:04:37.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-23T14:04:37.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;author&quot;: {
+                    &quot;id&quot;: 4,
+                    &quot;name&quot;: &quot;Goran Zoran&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/IMG_1801.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/IMG_1801.jpg&quot;
                 },
-                {
-                    &quot;name&quot;: &quot;Gitara&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 14,
-                        &quot;tag_id&quot;: 6,
-                        &quot;tagged_by_user_id&quot;: 1
-                    }
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 13,
-            &quot;user_id&quot;: 1,
-            &quot;category_id&quot;: 3,
-            &quot;title&quot;: &quot;Sviram bas gitaru i mrsim muda&quot;,
-            &quot;slug&quot;: &quot;sviram-bas-gitaru-i-mrsim-muda&quot;,
-            &quot;content&quot;: &quot;Kupujem klasičnu gitaru, javite mi se.&quot;,
-            &quot;created_at&quot;: &quot;2025-05-22T14:30:56.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-05-22T14:30:56.000000Z&quot;,
-            &quot;comments_count&quot;: 0,
-            &quot;likes_count&quot;: 0,
-            &quot;author&quot;: {
-                &quot;id&quot;: 1,
-                &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
-                &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
-                &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+                &quot;tags&quot;: []
+            }
+        ],
+        &quot;first_page_url&quot;: &quot;http://localhost/api/v1/posts?page=1&quot;,
+        &quot;from&quot;: 1,
+        &quot;last_page&quot;: 4,
+        &quot;last_page_url&quot;: &quot;http://localhost/api/v1/posts?page=4&quot;,
+        &quot;links&quot;: [
+            {
+                &quot;url&quot;: null,
+                &quot;label&quot;: &quot;&amp;laquo; Previous&quot;,
+                &quot;active&quot;: false
             },
-            &quot;tags&quot;: [
-                {
-                    &quot;name&quot;: &quot;PHP&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 13,
-                        &quot;tag_id&quot;: 1,
-                        &quot;tagged_by_user_id&quot;: 1
-                    }
-                },
-                {
-                    &quot;name&quot;: &quot;Gitara&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 13,
-                        &quot;tag_id&quot;: 6,
-                        &quot;tagged_by_user_id&quot;: 1
-                    }
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 12,
-            &quot;user_id&quot;: 1,
-            &quot;category_id&quot;: 3,
-            &quot;title&quot;: &quot;Sviram klasičnu gitaru i mrsim muda&quot;,
-            &quot;slug&quot;: &quot;sviram-klasicnu-gitaru-i-mrsim-muda&quot;,
-            &quot;content&quot;: &quot;Kupujem klasičnu gitaru, javite mi se.&quot;,
-            &quot;created_at&quot;: &quot;2025-05-22T14:22:42.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-05-22T14:22:42.000000Z&quot;,
-            &quot;comments_count&quot;: 0,
-            &quot;likes_count&quot;: 0,
-            &quot;author&quot;: {
-                &quot;id&quot;: 1,
-                &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
-                &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
-                &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+            {
+                &quot;url&quot;: &quot;http://localhost/api/v1/posts?page=1&quot;,
+                &quot;label&quot;: &quot;1&quot;,
+                &quot;active&quot;: true
             },
-            &quot;tags&quot;: [
-                {
-                    &quot;name&quot;: &quot;PHP&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 12,
-                        &quot;tag_id&quot;: 1,
-                        &quot;tagged_by_user_id&quot;: 1
-                    }
-                },
-                {
-                    &quot;name&quot;: &quot;Gitara&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 12,
-                        &quot;tag_id&quot;: 6,
-                        &quot;tagged_by_user_id&quot;: 1
-                    }
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 11,
-            &quot;user_id&quot;: 1,
-            &quot;category_id&quot;: 3,
-            &quot;title&quot;: &quot;Sviram električnu gitaru i mrsim muda&quot;,
-            &quot;slug&quot;: &quot;sviram-elektricnu-gitaru-i-mrsim-muda&quot;,
-            &quot;content&quot;: &quot;Kupujem klasičnu gitaru, javite mi se.&quot;,
-            &quot;created_at&quot;: &quot;2025-05-22T14:01:21.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-05-22T14:01:21.000000Z&quot;,
-            &quot;comments_count&quot;: 0,
-            &quot;likes_count&quot;: 0,
-            &quot;author&quot;: {
-                &quot;id&quot;: 1,
-                &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
-                &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
-                &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+            {
+                &quot;url&quot;: &quot;http://localhost/api/v1/posts?page=2&quot;,
+                &quot;label&quot;: &quot;2&quot;,
+                &quot;active&quot;: false
             },
-            &quot;tags&quot;: [
-                {
-                    &quot;name&quot;: &quot;PHP&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 11,
-                        &quot;tag_id&quot;: 1,
-                        &quot;tagged_by_user_id&quot;: 1
-                    }
-                },
-                {
-                    &quot;name&quot;: &quot;Gitara&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 11,
-                        &quot;tag_id&quot;: 6,
-                        &quot;tagged_by_user_id&quot;: 1
-                    }
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 10,
-            &quot;user_id&quot;: 1,
-            &quot;category_id&quot;: 3,
-            &quot;title&quot;: &quot;Sviram električnu gitaru&quot;,
-            &quot;slug&quot;: &quot;sviram-elektricnu-gitaru&quot;,
-            &quot;content&quot;: &quot;Kupujem klasičnu gitaru, javite mi se.&quot;,
-            &quot;created_at&quot;: &quot;2025-05-22T14:00:19.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-05-22T14:00:19.000000Z&quot;,
-            &quot;comments_count&quot;: 0,
-            &quot;likes_count&quot;: 0,
-            &quot;author&quot;: {
-                &quot;id&quot;: 1,
-                &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
-                &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
-                &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+            {
+                &quot;url&quot;: &quot;http://localhost/api/v1/posts?page=3&quot;,
+                &quot;label&quot;: &quot;3&quot;,
+                &quot;active&quot;: false
             },
-            &quot;tags&quot;: [
-                {
-                    &quot;name&quot;: &quot;PHP&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 10,
-                        &quot;tag_id&quot;: 1,
-                        &quot;tagged_by_user_id&quot;: 1
-                    }
-                },
-                {
-                    &quot;name&quot;: &quot;Gitara&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 10,
-                        &quot;tag_id&quot;: 6,
-                        &quot;tagged_by_user_id&quot;: 1
-                    }
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 9,
-            &quot;user_id&quot;: 1,
-            &quot;category_id&quot;: 3,
-            &quot;title&quot;: &quot;Prodajem električnu gitaru&quot;,
-            &quot;slug&quot;: &quot;prodajem-elektricnu-gitaru&quot;,
-            &quot;content&quot;: &quot;Kupujem klasičnu gitaru, javite mi se.&quot;,
-            &quot;created_at&quot;: &quot;2025-05-22T13:59:35.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-05-22T13:59:35.000000Z&quot;,
-            &quot;comments_count&quot;: 0,
-            &quot;likes_count&quot;: 0,
-            &quot;author&quot;: {
-                &quot;id&quot;: 1,
-                &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
-                &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
-                &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+            {
+                &quot;url&quot;: &quot;http://localhost/api/v1/posts?page=4&quot;,
+                &quot;label&quot;: &quot;4&quot;,
+                &quot;active&quot;: false
             },
-            &quot;tags&quot;: [
-                {
-                    &quot;name&quot;: &quot;PHP&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 9,
-                        &quot;tag_id&quot;: 1,
-                        &quot;tagged_by_user_id&quot;: 1
-                    }
-                },
-                {
-                    &quot;name&quot;: &quot;Gitara&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 9,
-                        &quot;tag_id&quot;: 6,
-                        &quot;tagged_by_user_id&quot;: 1
-                    }
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 8,
-            &quot;user_id&quot;: 1,
-            &quot;category_id&quot;: 3,
-            &quot;title&quot;: &quot;Kupujem električnu gitaru&quot;,
-            &quot;slug&quot;: &quot;kupujem-elektricnu-gitaru&quot;,
-            &quot;content&quot;: &quot;Kupujem klasičnu gitaru, javite mi se.&quot;,
-            &quot;created_at&quot;: &quot;2025-05-22T13:58:45.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-05-22T13:58:45.000000Z&quot;,
-            &quot;comments_count&quot;: 0,
-            &quot;likes_count&quot;: 0,
-            &quot;author&quot;: {
-                &quot;id&quot;: 1,
-                &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
-                &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
-                &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
-            },
-            &quot;tags&quot;: [
-                {
-                    &quot;name&quot;: &quot;PHP&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 8,
-                        &quot;tag_id&quot;: 1,
-                        &quot;tagged_by_user_id&quot;: 1
-                    }
-                },
-                {
-                    &quot;name&quot;: &quot;Gitara&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 8,
-                        &quot;tag_id&quot;: 6,
-                        &quot;tagged_by_user_id&quot;: 1
-                    }
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 7,
-            &quot;user_id&quot;: 1,
-            &quot;category_id&quot;: 3,
-            &quot;title&quot;: &quot;Pravim klasičnu gitaru&quot;,
-            &quot;slug&quot;: &quot;pravim-klasičnu-gitaru&quot;,
-            &quot;content&quot;: &quot;Kupujem klasičnu gitaru, javite mi se.&quot;,
-            &quot;created_at&quot;: &quot;2025-05-22T13:57:50.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-05-22T13:57:50.000000Z&quot;,
-            &quot;comments_count&quot;: 0,
-            &quot;likes_count&quot;: 0,
-            &quot;author&quot;: {
-                &quot;id&quot;: 1,
-                &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
-                &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
-                &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
-            },
-            &quot;tags&quot;: [
-                {
-                    &quot;name&quot;: &quot;PHP&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 7,
-                        &quot;tag_id&quot;: 1,
-                        &quot;tagged_by_user_id&quot;: 1
-                    }
-                },
-                {
-                    &quot;name&quot;: &quot;Gitara&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 7,
-                        &quot;tag_id&quot;: 6,
-                        &quot;tagged_by_user_id&quot;: 1
-                    }
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 6,
-            &quot;user_id&quot;: 1,
-            &quot;category_id&quot;: 3,
-            &quot;title&quot;: &quot;Prodajem klasičnu gitaru&quot;,
-            &quot;slug&quot;: &quot;prodajem-klasičnu-gitaru&quot;,
-            &quot;content&quot;: &quot;Kupujem klasičnu gitaru, javite mi se.&quot;,
-            &quot;created_at&quot;: &quot;2025-05-22T13:56:46.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-05-22T13:56:46.000000Z&quot;,
-            &quot;comments_count&quot;: 0,
-            &quot;likes_count&quot;: 0,
-            &quot;author&quot;: {
-                &quot;id&quot;: 1,
-                &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
-                &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
-                &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
-            },
-            &quot;tags&quot;: [
-                {
-                    &quot;name&quot;: &quot;PHP&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 6,
-                        &quot;tag_id&quot;: 1,
-                        &quot;tagged_by_user_id&quot;: 1
-                    }
-                },
-                {
-                    &quot;name&quot;: &quot;Gitara&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 6,
-                        &quot;tag_id&quot;: 6,
-                        &quot;tagged_by_user_id&quot;: 1
-                    }
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 5,
-            &quot;user_id&quot;: 1,
-            &quot;category_id&quot;: 3,
-            &quot;title&quot;: &quot;Kupujem klasičnu gitaru&quot;,
-            &quot;slug&quot;: &quot;kupujem-klasičnu-gitaru&quot;,
-            &quot;content&quot;: &quot;Kupujem klasičnu gitaru, javite mi se.&quot;,
-            &quot;created_at&quot;: &quot;2025-05-22T13:50:52.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-05-22T13:50:52.000000Z&quot;,
-            &quot;comments_count&quot;: 0,
-            &quot;likes_count&quot;: 0,
-            &quot;author&quot;: {
-                &quot;id&quot;: 1,
-                &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
-                &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
-                &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
-            },
-            &quot;tags&quot;: [
-                {
-                    &quot;name&quot;: &quot;PHP&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 5,
-                        &quot;tag_id&quot;: 1,
-                        &quot;tagged_by_user_id&quot;: 1
-                    }
-                },
-                {
-                    &quot;name&quot;: &quot;Gitara&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 5,
-                        &quot;tag_id&quot;: 6,
-                        &quot;tagged_by_user_id&quot;: 1
-                    }
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 4,
-            &quot;user_id&quot;: 1,
-            &quot;category_id&quot;: 3,
-            &quot;title&quot;: &quot;Popravka klasične gitare&quot;,
-            &quot;slug&quot;: &quot;popravka-klasične-gitare&quot;,
-            &quot;content&quot;: &quot;Da li neko možda popravlja klasične gitare? &lt;br /&gt; Potrebno je da se utegne i zamene pragovi.&quot;,
-            &quot;created_at&quot;: &quot;2025-05-22T13:16:14.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-05-22T13:16:14.000000Z&quot;,
-            &quot;comments_count&quot;: 0,
-            &quot;likes_count&quot;: 0,
-            &quot;author&quot;: {
-                &quot;id&quot;: 1,
-                &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
-                &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
-                &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
-            },
-            &quot;tags&quot;: [
-                {
-                    &quot;name&quot;: &quot;PHP&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 4,
-                        &quot;tag_id&quot;: 1,
-                        &quot;tagged_by_user_id&quot;: 1
-                    }
-                },
-                {
-                    &quot;name&quot;: &quot;Gitara&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 4,
-                        &quot;tag_id&quot;: 6,
-                        &quot;tagged_by_user_id&quot;: 1
-                    }
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 3,
-            &quot;user_id&quot;: 1,
-            &quot;category_id&quot;: 1,
-            &quot;title&quot;: &quot;Laravel i web soketi&quot;,
-            &quot;slug&quot;: &quot;laravel-i-web-soketi&quot;,
-            &quot;content&quot;: &quot;Da li neko moze da mi pomogne sa integracijom web soketa u laravel? &lt;br /&gt; Da li da koristim Reverb ili preporucujete neku drugu, poput Pusher ili Abys?&quot;,
-            &quot;created_at&quot;: &quot;2025-05-21T23:09:33.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-05-21T23:09:33.000000Z&quot;,
-            &quot;comments_count&quot;: 0,
-            &quot;likes_count&quot;: 0,
-            &quot;author&quot;: {
-                &quot;id&quot;: 1,
-                &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
-                &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
-                &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
-            },
-            &quot;tags&quot;: [
-                {
-                    &quot;name&quot;: &quot;PHP&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 3,
-                        &quot;tag_id&quot;: 1,
-                        &quot;tagged_by_user_id&quot;: 1
-                    }
-                },
-                {
-                    &quot;name&quot;: &quot;Laravel&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 3,
-                        &quot;tag_id&quot;: 2,
-                        &quot;tagged_by_user_id&quot;: 1
-                    }
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 2,
-            &quot;user_id&quot;: 4,
-            &quot;category_id&quot;: 1,
-            &quot;title&quot;: &quot;Dependency injection with php&quot;,
-            &quot;slug&quot;: &quot;dependency-injection-with-php&quot;,
-            &quot;content&quot;: &quot;Does anybody can explain the process of dependency injection in php in Laravel?&quot;,
-            &quot;created_at&quot;: &quot;2025-05-11T23:08:43.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-05-11T23:08:43.000000Z&quot;,
-            &quot;comments_count&quot;: 0,
-            &quot;likes_count&quot;: 0,
-            &quot;author&quot;: {
-                &quot;id&quot;: 4,
-                &quot;name&quot;: &quot;Goran Zoran&quot;,
-                &quot;avatar&quot;: &quot;storage/images/IMG_1801.jpg&quot;,
-                &quot;avatar_url&quot;: &quot;http://localhost/storage/images/IMG_1801.jpg&quot;
-            },
-            &quot;tags&quot;: [
-                {
-                    &quot;name&quot;: &quot;PHP&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 2,
-                        &quot;tag_id&quot;: 1,
-                        &quot;tagged_by_user_id&quot;: 4
-                    }
-                },
-                {
-                    &quot;name&quot;: &quot;Laravel&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 2,
-                        &quot;tag_id&quot;: 2,
-                        &quot;tagged_by_user_id&quot;: 4
-                    }
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 1,
-            &quot;user_id&quot;: 1,
-            &quot;category_id&quot;: 1,
-            &quot;title&quot;: &quot;Laravel framework&quot;,
-            &quot;slug&quot;: &quot;laravel-framework&quot;,
-            &quot;content&quot;: &quot;Laravel je odličan framework kako za početnike tako i za naprednije korisnike. Napisan je uz pomoć C programskog jezika.&lt;br /&gt;Kakvi su va&scaron;i utisci?&quot;,
-            &quot;created_at&quot;: &quot;2025-05-11T12:10:41.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-05-11T12:10:41.000000Z&quot;,
-            &quot;comments_count&quot;: 1,
-            &quot;likes_count&quot;: 1,
-            &quot;author&quot;: {
-                &quot;id&quot;: 1,
-                &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
-                &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
-                &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
-            },
-            &quot;tags&quot;: [
-                {
-                    &quot;name&quot;: &quot;PHP&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 1,
-                        &quot;tag_id&quot;: 1,
-                        &quot;tagged_by_user_id&quot;: 1
-                    }
-                },
-                {
-                    &quot;name&quot;: &quot;Laravel&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 1,
-                        &quot;tag_id&quot;: 2,
-                        &quot;tagged_by_user_id&quot;: 1
-                    }
-                }
-            ]
-        }
-    ]
+            {
+                &quot;url&quot;: &quot;http://localhost/api/v1/posts?page=2&quot;,
+                &quot;label&quot;: &quot;Next &amp;raquo;&quot;,
+                &quot;active&quot;: false
+            }
+        ],
+        &quot;next_page_url&quot;: &quot;http://localhost/api/v1/posts?page=2&quot;,
+        &quot;path&quot;: &quot;http://localhost/api/v1/posts&quot;,
+        &quot;per_page&quot;: 10,
+        &quot;prev_page_url&quot;: null,
+        &quot;to&quot;: 10,
+        &quot;total&quot;: 35
+    }
 }</code>
  </pre>
     </span>
