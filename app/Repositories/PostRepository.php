@@ -22,7 +22,7 @@ class PostRepository implements IPostRepository
         ])
             ->withCount(['comments', 'likes'])
             ->latest()
-            ->get();
+            ->paginate(10);
     }
 
     public function getAllWithAuthors()
@@ -40,7 +40,7 @@ class PostRepository implements IPostRepository
         )
             ->latest()
             ->withCount(['comments', 'likes'])
-            ->get();
+            ->paginate(10);
     }
 
     public function findById(int $id): ?Post
