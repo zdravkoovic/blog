@@ -38,4 +38,9 @@ class Tag extends Model
                 ->withPivot('tagged_by_user_id')
                 ->withTimestamps();
     }
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
 }
