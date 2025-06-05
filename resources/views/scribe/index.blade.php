@@ -83,6 +83,9 @@
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-posts">
                                 <a href="#endpoints-GETapi-v1-posts">GET api/v1/posts</a>
                             </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-posts-tags">
+                                <a href="#endpoints-GETapi-v1-posts-tags">GET api/v1/posts/tags</a>
+                            </li>
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-posts--id-">
                                 <a href="#endpoints-GETapi-v1-posts--id-">GET api/v1/posts/{id}</a>
                             </li>
@@ -112,7 +115,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: May 22, 2025</li>
+        <li>Last updated: June 3, 2025</li>
     </ul>
 </div>
 
@@ -608,80 +611,305 @@ vary: Origin
     &quot;status&quot;: 200,
     &quot;success&quot;: true,
     &quot;message&quot;: &quot;Success&quot;,
-    &quot;data&quot;: [
-        {
-            &quot;id&quot;: 2,
-            &quot;user_id&quot;: 4,
-            &quot;category_id&quot;: 1,
-            &quot;title&quot;: &quot;Dependency injection with php&quot;,
-            &quot;slug&quot;: &quot;dependency-injection-with-php&quot;,
-            &quot;content&quot;: &quot;Does anybody can explain the process of dependency injection in php in Laravel?&quot;,
-            &quot;created_at&quot;: &quot;2025-05-11T23:08:43.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-05-11T23:08:43.000000Z&quot;,
-            &quot;comments_count&quot;: 0,
-            &quot;likes_count&quot;: 0,
-            &quot;author&quot;: {
-                &quot;id&quot;: 4,
-                &quot;name&quot;: &quot;Goran Zoran&quot;,
-                &quot;avatar&quot;: &quot;storage/images/IMG_1801.jpg&quot;,
-                &quot;avatar_url&quot;: &quot;http://localhost/storage/images/IMG_1801.jpg&quot;
-            },
-            &quot;tags&quot;: [
-                {
-                    &quot;name&quot;: &quot;PHP&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 2,
-                        &quot;tag_id&quot;: 1,
-                        &quot;tagged_by_user_id&quot;: 4
-                    }
+    &quot;data&quot;: {
+        &quot;current_page&quot;: 1,
+        &quot;data&quot;: [
+            {
+                &quot;id&quot;: 37,
+                &quot;user_id&quot;: 67,
+                &quot;category_id&quot;: 7,
+                &quot;title&quot;: &quot;Odit enim labore error.&quot;,
+                &quot;slug&quot;: &quot;odit-enim-labore-error&quot;,
+                &quot;content&quot;: &quot;Et doloremque sit rem ullam voluptatum. Reiciendis eum esse nemo reiciendis. Et tempore aut minima consequuntur ducimus. Molestias velit aut qui rem.\n\nIure dignissimos doloribus atque ducimus rem culpa. Ullam voluptates nam dicta consectetur itaque. Et eaque autem impedit impedit et deleniti.\n\nCupiditate delectus assumenda non beatae magnam doloribus quidem doloremque. Omnis sed ipsa dolorem rerum non voluptatibus. Nihil qui repellendus esse reprehenderit exercitationem.\n\nOfficia ut perferendis amet tenetur sit. Eum delectus et sed sint amet ex illum occaecati. Aut molestias adipisci veniam sed. Soluta et quia quis laboriosam aperiam consequatur. Dignissimos iste consequatur non molestias distinctio sapiente.\n\nVitae rem fugit dolorem explicabo. At eveniet a ea reprehenderit. Praesentium sed velit rerum et velit sed nobis.\n\nVeritatis assumenda unde voluptatem iure nostrum. Quos magnam ut ad ut nesciunt numquam. Culpa expedita ut pariatur sequi.&quot;,
+                &quot;created_at&quot;: &quot;2025-05-31T22:17:37.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-31T22:17:37.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;author&quot;: {
+                    &quot;id&quot;: 67,
+                    &quot;name&quot;: &quot;Prof. Agustin Simonis Jr.&quot;,
+                    &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
                 },
-                {
-                    &quot;name&quot;: &quot;Laravel&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 2,
-                        &quot;tag_id&quot;: 2,
-                        &quot;tagged_by_user_id&quot;: 4
-                    }
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 1,
-            &quot;user_id&quot;: 1,
-            &quot;category_id&quot;: 1,
-            &quot;title&quot;: &quot;Laravel framework&quot;,
-            &quot;slug&quot;: &quot;laravel-framework&quot;,
-            &quot;content&quot;: &quot;Laravel je odličan framework kako za početnike tako i za naprednije korisnike. Napisan je uz pomoć C programskog jezika.&lt;br /&gt;Kakvi su va&scaron;i utisci?&quot;,
-            &quot;created_at&quot;: &quot;2025-05-11T12:10:41.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-05-11T12:10:41.000000Z&quot;,
-            &quot;comments_count&quot;: 1,
-            &quot;likes_count&quot;: 1,
-            &quot;author&quot;: {
-                &quot;id&quot;: 1,
-                &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
-                &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
-                &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+                &quot;tags&quot;: []
             },
-            &quot;tags&quot;: [
-                {
-                    &quot;name&quot;: &quot;PHP&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 1,
-                        &quot;tag_id&quot;: 1,
-                        &quot;tagged_by_user_id&quot;: 1
-                    }
+            {
+                &quot;id&quot;: 38,
+                &quot;user_id&quot;: 68,
+                &quot;category_id&quot;: 8,
+                &quot;title&quot;: &quot;Possimus rem repudiandae cupiditate magnam repudiandae quo.&quot;,
+                &quot;slug&quot;: &quot;possimus-rem-repudiandae-cupiditate-magnam-repudiandae-quo&quot;,
+                &quot;content&quot;: &quot;Harum consequuntur dolor maiores quisquam officia. Et excepturi id laudantium quibusdam ex distinctio. Aperiam repellat consequatur veniam totam.\n\nSaepe voluptatem magnam nam nesciunt odio velit necessitatibus. Sit excepturi ipsam numquam optio. Accusamus dicta alias officia perferendis necessitatibus expedita. Quia blanditiis incidunt esse quia ut.\n\nConsequatur quos aut libero libero cumque eum iusto blanditiis. Id quos recusandae quia quo accusantium optio. Quae ut incidunt mollitia odio sunt. Dolorum assumenda unde labore beatae tempore.\n\nAccusamus modi voluptas sit est velit ea. Ut optio earum soluta non totam itaque qui sint. Aut omnis qui at debitis sit non. Ipsa repellendus libero labore ut enim mollitia nihil sed.\n\nAdipisci minima eius nihil qui libero architecto. Maiores ea voluptatem non natus nihil quis. Cumque et non aliquid iusto.\n\nAccusamus suscipit minus dicta autem. Iusto autem sunt qui dolor aperiam quaerat ex. Dignissimos ullam quasi asperiores.&quot;,
+                &quot;created_at&quot;: &quot;2025-05-31T22:17:37.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-31T22:17:37.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;author&quot;: {
+                    &quot;id&quot;: 68,
+                    &quot;name&quot;: &quot;Eddie Haley&quot;,
+                    &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
                 },
-                {
-                    &quot;name&quot;: &quot;Laravel&quot;,
-                    &quot;pivot&quot;: {
-                        &quot;post_id&quot;: 1,
-                        &quot;tag_id&quot;: 2,
-                        &quot;tagged_by_user_id&quot;: 1
+                &quot;tags&quot;: []
+            },
+            {
+                &quot;id&quot;: 39,
+                &quot;user_id&quot;: 69,
+                &quot;category_id&quot;: 9,
+                &quot;title&quot;: &quot;Minima sit molestiae molestiae optio.&quot;,
+                &quot;slug&quot;: &quot;minima-sit-molestiae-molestiae-optio&quot;,
+                &quot;content&quot;: &quot;Eaque sit incidunt laudantium. Modi qui excepturi quis doloribus quia eos blanditiis enim. Rerum iste quisquam tempore velit et a officiis dolor. Qui esse omnis explicabo qui voluptates vel.\n\nNatus distinctio neque omnis iure. Dolor illum harum facilis accusantium et voluptatem enim voluptatibus. Quis natus nisi error.\n\nIllum quidem et voluptas ut maxime. Quis quam neque aperiam error tenetur adipisci sed.\n\nLibero dolor perferendis nobis corrupti. Doloremque nisi perspiciatis sit et.\n\nA id molestias iure. Dolore natus recusandae quasi ut sint temporibus rerum. Eum sit libero vero et quis.\n\nAdipisci sed eos quasi temporibus et ipsum et qui. Necessitatibus modi nobis magni reiciendis dolorem sit eum. Placeat minus repellendus fugit eaque nisi. Nobis quidem expedita enim molestiae aliquid praesentium aut reiciendis.&quot;,
+                &quot;created_at&quot;: &quot;2025-05-31T22:17:37.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-31T22:17:37.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;author&quot;: {
+                    &quot;id&quot;: 69,
+                    &quot;name&quot;: &quot;Agnes Hodkiewicz&quot;,
+                    &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+                },
+                &quot;tags&quot;: []
+            },
+            {
+                &quot;id&quot;: 36,
+                &quot;user_id&quot;: 4,
+                &quot;category_id&quot;: 1,
+                &quot;title&quot;: &quot;Ke&scaron; post&quot;,
+                &quot;slug&quot;: &quot;kes-post&quot;,
+                &quot;content&quot;: &quot;Ovo je post za proveru ke&scaron;a&quot;,
+                &quot;created_at&quot;: &quot;2025-05-29T12:53:15.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-29T12:53:15.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;author&quot;: {
+                    &quot;id&quot;: 4,
+                    &quot;name&quot;: &quot;Goran Zoran&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/IMG_1801.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/IMG_1801.jpg&quot;
+                },
+                &quot;tags&quot;: []
+            },
+            {
+                &quot;id&quot;: 35,
+                &quot;user_id&quot;: 4,
+                &quot;category_id&quot;: 1,
+                &quot;title&quot;: &quot;Post od Gorana Zorana&quot;,
+                &quot;slug&quot;: &quot;post-od-gorana-zorana&quot;,
+                &quot;content&quot;: &quot;Moze&quot;,
+                &quot;created_at&quot;: &quot;2025-05-23T18:28:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-23T18:28:51.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;author&quot;: {
+                    &quot;id&quot;: 4,
+                    &quot;name&quot;: &quot;Goran Zoran&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/IMG_1801.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/IMG_1801.jpg&quot;
+                },
+                &quot;tags&quot;: [
+                    {
+                        &quot;name&quot;: &quot;MySQL&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 35,
+                            &quot;tag_id&quot;: 5,
+                            &quot;tagged_by_user_id&quot;: 4
+                        }
                     }
-                }
-            ]
-        }
-    ]
+                ]
+            },
+            {
+                &quot;id&quot;: 34,
+                &quot;user_id&quot;: 1,
+                &quot;category_id&quot;: 1,
+                &quot;title&quot;: &quot;Nesto cudno&quot;,
+                &quot;slug&quot;: &quot;nesto-cudno&quot;,
+                &quot;content&quot;: &quot;Nesto cudno se desava&quot;,
+                &quot;created_at&quot;: &quot;2025-05-23T17:50:11.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-23T17:50:11.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;author&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+                },
+                &quot;tags&quot;: [
+                    {
+                        &quot;name&quot;: &quot;Laravel&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 34,
+                            &quot;tag_id&quot;: 2,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
+                    }
+                ]
+            },
+            {
+                &quot;id&quot;: 33,
+                &quot;user_id&quot;: 1,
+                &quot;category_id&quot;: 1,
+                &quot;title&quot;: &quot;Sumnjivo lice&quot;,
+                &quot;slug&quot;: &quot;sumnjivo-lice&quot;,
+                &quot;content&quot;: &quot;Sumnjivo lice&quot;,
+                &quot;created_at&quot;: &quot;2025-05-23T17:48:50.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-23T17:48:50.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;author&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+                },
+                &quot;tags&quot;: [
+                    {
+                        &quot;name&quot;: &quot;PHP&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 33,
+                            &quot;tag_id&quot;: 1,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
+                    }
+                ]
+            },
+            {
+                &quot;id&quot;: 32,
+                &quot;user_id&quot;: 1,
+                &quot;category_id&quot;: 1,
+                &quot;title&quot;: &quot;Skoro pa gotovo&quot;,
+                &quot;slug&quot;: &quot;skoro-pa-gotovo&quot;,
+                &quot;content&quot;: &quot;Novi fosili recimi tiho&quot;,
+                &quot;created_at&quot;: &quot;2025-05-23T15:45:36.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-23T15:45:36.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;author&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+                },
+                &quot;tags&quot;: [
+                    {
+                        &quot;name&quot;: &quot;Gitara&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 32,
+                            &quot;tag_id&quot;: 6,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
+                    }
+                ]
+            },
+            {
+                &quot;id&quot;: 31,
+                &quot;user_id&quot;: 1,
+                &quot;category_id&quot;: 1,
+                &quot;title&quot;: &quot;Sumnjivo je i dalje&quot;,
+                &quot;slug&quot;: &quot;sumnjivo-je-i-dalje&quot;,
+                &quot;content&quot;: &quot;Mozda ce da radi&quot;,
+                &quot;created_at&quot;: &quot;2025-05-23T15:44:21.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-23T15:44:21.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;author&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+                },
+                &quot;tags&quot;: [
+                    {
+                        &quot;name&quot;: &quot;Laravel&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 31,
+                            &quot;tag_id&quot;: 2,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
+                    }
+                ]
+            },
+            {
+                &quot;id&quot;: 30,
+                &quot;user_id&quot;: 1,
+                &quot;category_id&quot;: 1,
+                &quot;title&quot;: &quot;Sumnjivo je&quot;,
+                &quot;slug&quot;: &quot;sumnjivo-je&quot;,
+                &quot;content&quot;: &quot;Mozda ce da radi&quot;,
+                &quot;created_at&quot;: &quot;2025-05-23T15:41:59.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-23T15:41:59.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;author&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+                },
+                &quot;tags&quot;: [
+                    {
+                        &quot;name&quot;: &quot;Laravel&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 30,
+                            &quot;tag_id&quot;: 2,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
+                    },
+                    {
+                        &quot;name&quot;: &quot;Vue.js&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 30,
+                            &quot;tag_id&quot;: 4,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
+                    }
+                ]
+            }
+        ],
+        &quot;first_page_url&quot;: &quot;http://localhost/api/v1/posts?page=1&quot;,
+        &quot;from&quot;: 1,
+        &quot;last_page&quot;: 4,
+        &quot;last_page_url&quot;: &quot;http://localhost/api/v1/posts?page=4&quot;,
+        &quot;links&quot;: [
+            {
+                &quot;url&quot;: null,
+                &quot;label&quot;: &quot;&amp;laquo; Previous&quot;,
+                &quot;active&quot;: false
+            },
+            {
+                &quot;url&quot;: &quot;http://localhost/api/v1/posts?page=1&quot;,
+                &quot;label&quot;: &quot;1&quot;,
+                &quot;active&quot;: true
+            },
+            {
+                &quot;url&quot;: &quot;http://localhost/api/v1/posts?page=2&quot;,
+                &quot;label&quot;: &quot;2&quot;,
+                &quot;active&quot;: false
+            },
+            {
+                &quot;url&quot;: &quot;http://localhost/api/v1/posts?page=3&quot;,
+                &quot;label&quot;: &quot;3&quot;,
+                &quot;active&quot;: false
+            },
+            {
+                &quot;url&quot;: &quot;http://localhost/api/v1/posts?page=4&quot;,
+                &quot;label&quot;: &quot;4&quot;,
+                &quot;active&quot;: false
+            },
+            {
+                &quot;url&quot;: &quot;http://localhost/api/v1/posts?page=2&quot;,
+                &quot;label&quot;: &quot;Next &amp;raquo;&quot;,
+                &quot;active&quot;: false
+            }
+        ],
+        &quot;next_page_url&quot;: &quot;http://localhost/api/v1/posts?page=2&quot;,
+        &quot;path&quot;: &quot;http://localhost/api/v1/posts&quot;,
+        &quot;per_page&quot;: 10,
+        &quot;prev_page_url&quot;: null,
+        &quot;to&quot;: 10,
+        &quot;total&quot;: 39
+    }
 }</code>
  </pre>
     </span>
@@ -749,6 +977,190 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Accept"                data-endpoint="GETapi-v1-posts"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="endpoints-GETapi-v1-posts-tags">GET api/v1/posts/tags</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-GETapi-v1-posts-tags">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/v1/posts/tags" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/v1/posts/tags"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-v1-posts-tags">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+vary: Origin
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;status&quot;: 200,
+    &quot;success&quot;: true,
+    &quot;message&quot;: &quot;Success&quot;,
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: 1,
+            &quot;name&quot;: &quot;PHP&quot;,
+            &quot;slug&quot;: &quot;php&quot;,
+            &quot;created_at&quot;: &quot;2025-05-11T14:08:16.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-05-11T14:08:16.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 2,
+            &quot;name&quot;: &quot;Laravel&quot;,
+            &quot;slug&quot;: &quot;laravel&quot;,
+            &quot;created_at&quot;: &quot;2025-05-11T14:08:16.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-05-11T14:08:16.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 3,
+            &quot;name&quot;: &quot;JavaScript&quot;,
+            &quot;slug&quot;: &quot;javascript&quot;,
+            &quot;created_at&quot;: &quot;2025-05-11T14:08:16.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-05-11T14:08:16.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 4,
+            &quot;name&quot;: &quot;Vue.js&quot;,
+            &quot;slug&quot;: &quot;vue-js&quot;,
+            &quot;created_at&quot;: &quot;2025-05-11T14:08:16.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-05-11T14:08:16.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 5,
+            &quot;name&quot;: &quot;MySQL&quot;,
+            &quot;slug&quot;: &quot;mysql&quot;,
+            &quot;created_at&quot;: &quot;2025-05-11T14:08:16.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-05-11T14:08:16.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 6,
+            &quot;name&quot;: &quot;Gitara&quot;,
+            &quot;slug&quot;: &quot;gitara&quot;,
+            &quot;created_at&quot;: &quot;2025-05-11T14:08:16.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-05-11T14:08:16.000000Z&quot;
+        }
+    ]
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-v1-posts-tags" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-v1-posts-tags"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-v1-posts-tags"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-v1-posts-tags" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-v1-posts-tags">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-v1-posts-tags" data-method="GET"
+      data-path="api/v1/posts/tags"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-posts-tags', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-v1-posts-tags"
+                    onclick="tryItOut('GETapi-v1-posts-tags');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-v1-posts-tags"
+                    onclick="cancelTryOut('GETapi-v1-posts-tags');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-v1-posts-tags"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/v1/posts/tags</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-v1-posts-tags"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-v1-posts-tags"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-v1-posts-tags"
                value="application/json"
                data-component="header">
     <br>
@@ -930,7 +1342,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     \"content\": \"architecto\",
     \"category_id\": 16,
     \"tag_ids\": [
-        16
+        \"architecto\"
     ]
 }"
 </code></pre></div>
@@ -953,7 +1365,7 @@ let body = {
     "content": "architecto",
     "category_id": 16,
     "tag_ids": [
-        16
+        "architecto"
     ]
 };
 
@@ -1094,16 +1506,16 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>tag_ids</code></b>&nbsp;&nbsp;
-<small>integer[]</small>&nbsp;
+<small>string[]</small>&nbsp;
 <i>optional</i> &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="tag_ids[0]"                data-endpoint="POSTapi-v1-posts"
+                <input type="text" style="display: none"
+                              name="tag_ids[0]"                data-endpoint="POSTapi-v1-posts"
                data-component="body">
-        <input type="number" style="display: none"
+        <input type="text" style="display: none"
                name="tag_ids[1]"                data-endpoint="POSTapi-v1-posts"
                data-component="body">
     <br>
-<p>The <code>id</code> of an existing record in the tags table.</p>
+
         </div>
         </form>
 

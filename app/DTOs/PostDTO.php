@@ -4,6 +4,13 @@ namespace App\DTOs;
 
 class PostDTO
 {
+    /**
+     * @var string[] $tagsIdRealOne
+     */
+    public array $tagsIdRealOne;
+    /**
+     * @param string[] $tagsId
+     */
     public function __construct(
         public int $userId,
         public string $title,
@@ -33,7 +40,8 @@ class PostDTO
             'slug' => $this->slug,
             'content' => $this->content,
             'category_id' => $this->categoryId,
-            'tag_ids' => $this->tagsId
+            'tag_ids' => $this->tagsId,
+            'tag_ids_real' => $this->tagsIdRealOne
         ];
     }
 }
