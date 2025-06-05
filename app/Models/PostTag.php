@@ -14,6 +14,8 @@ use Illuminate\Database\Eloquent\Relations\Pivot;
  */
 class PostTag extends Pivot
 {
+    // public $timestamps = false;
+
     protected $fillable = [
         'post_id',
         'tag_id',

@@ -26,6 +26,7 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Category whereSlug($value)
  * @mixin \Eloquent
  * @mixin IdeHelperCategory
+ * @method static \Database\Factories\CategoryFactory factory($count = null, $state = [])
  */
 	class Category extends \Eloquent {}
 }
@@ -118,6 +119,7 @@ namespace App\Models{
  * @mixin IdeHelperPost
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \App\Models\Comment> $comments
  * @property-read int|null $comments_count
+ * @method static \Database\Factories\PostFactory factory($count = null, $state = [])
  */
 	class Post extends \Eloquent {}
 }
@@ -158,6 +160,7 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Tag whereUpdatedAt($value)
  * @mixin \Eloquent
  * @mixin IdeHelperTag
+ * @method static \Database\Factories\TagFactory factory($count = null, $state = [])
  */
 	class Tag extends \Eloquent {}
 }
