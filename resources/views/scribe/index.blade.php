@@ -98,9 +98,6 @@
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-POSTapi-v1-posts-like">
                                 <a href="#endpoints-POSTapi-v1-posts-like">POST api/v1/posts/like</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-test-redis">
-                                <a href="#endpoints-GETapi-test-redis">GET api/test-redis</a>
-                            </li>
                                                                         </ul>
                             </ul>
             </div>
@@ -112,7 +109,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: May 28, 2025</li>
+        <li>Last updated: June 3, 2025</li>
     </ul>
 </div>
 
@@ -612,6 +609,82 @@ vary: Origin
         &quot;current_page&quot;: 1,
         &quot;data&quot;: [
             {
+                &quot;id&quot;: 37,
+                &quot;user_id&quot;: 67,
+                &quot;category_id&quot;: 7,
+                &quot;title&quot;: &quot;Odit enim labore error.&quot;,
+                &quot;slug&quot;: &quot;odit-enim-labore-error&quot;,
+                &quot;content&quot;: &quot;Et doloremque sit rem ullam voluptatum. Reiciendis eum esse nemo reiciendis. Et tempore aut minima consequuntur ducimus. Molestias velit aut qui rem.\n\nIure dignissimos doloribus atque ducimus rem culpa. Ullam voluptates nam dicta consectetur itaque. Et eaque autem impedit impedit et deleniti.\n\nCupiditate delectus assumenda non beatae magnam doloribus quidem doloremque. Omnis sed ipsa dolorem rerum non voluptatibus. Nihil qui repellendus esse reprehenderit exercitationem.\n\nOfficia ut perferendis amet tenetur sit. Eum delectus et sed sint amet ex illum occaecati. Aut molestias adipisci veniam sed. Soluta et quia quis laboriosam aperiam consequatur. Dignissimos iste consequatur non molestias distinctio sapiente.\n\nVitae rem fugit dolorem explicabo. At eveniet a ea reprehenderit. Praesentium sed velit rerum et velit sed nobis.\n\nVeritatis assumenda unde voluptatem iure nostrum. Quos magnam ut ad ut nesciunt numquam. Culpa expedita ut pariatur sequi.&quot;,
+                &quot;created_at&quot;: &quot;2025-05-31T22:17:37.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-31T22:17:37.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;author&quot;: {
+                    &quot;id&quot;: 67,
+                    &quot;name&quot;: &quot;Prof. Agustin Simonis Jr.&quot;,
+                    &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+                },
+                &quot;tags&quot;: []
+            },
+            {
+                &quot;id&quot;: 38,
+                &quot;user_id&quot;: 68,
+                &quot;category_id&quot;: 8,
+                &quot;title&quot;: &quot;Possimus rem repudiandae cupiditate magnam repudiandae quo.&quot;,
+                &quot;slug&quot;: &quot;possimus-rem-repudiandae-cupiditate-magnam-repudiandae-quo&quot;,
+                &quot;content&quot;: &quot;Harum consequuntur dolor maiores quisquam officia. Et excepturi id laudantium quibusdam ex distinctio. Aperiam repellat consequatur veniam totam.\n\nSaepe voluptatem magnam nam nesciunt odio velit necessitatibus. Sit excepturi ipsam numquam optio. Accusamus dicta alias officia perferendis necessitatibus expedita. Quia blanditiis incidunt esse quia ut.\n\nConsequatur quos aut libero libero cumque eum iusto blanditiis. Id quos recusandae quia quo accusantium optio. Quae ut incidunt mollitia odio sunt. Dolorum assumenda unde labore beatae tempore.\n\nAccusamus modi voluptas sit est velit ea. Ut optio earum soluta non totam itaque qui sint. Aut omnis qui at debitis sit non. Ipsa repellendus libero labore ut enim mollitia nihil sed.\n\nAdipisci minima eius nihil qui libero architecto. Maiores ea voluptatem non natus nihil quis. Cumque et non aliquid iusto.\n\nAccusamus suscipit minus dicta autem. Iusto autem sunt qui dolor aperiam quaerat ex. Dignissimos ullam quasi asperiores.&quot;,
+                &quot;created_at&quot;: &quot;2025-05-31T22:17:37.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-31T22:17:37.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;author&quot;: {
+                    &quot;id&quot;: 68,
+                    &quot;name&quot;: &quot;Eddie Haley&quot;,
+                    &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+                },
+                &quot;tags&quot;: []
+            },
+            {
+                &quot;id&quot;: 39,
+                &quot;user_id&quot;: 69,
+                &quot;category_id&quot;: 9,
+                &quot;title&quot;: &quot;Minima sit molestiae molestiae optio.&quot;,
+                &quot;slug&quot;: &quot;minima-sit-molestiae-molestiae-optio&quot;,
+                &quot;content&quot;: &quot;Eaque sit incidunt laudantium. Modi qui excepturi quis doloribus quia eos blanditiis enim. Rerum iste quisquam tempore velit et a officiis dolor. Qui esse omnis explicabo qui voluptates vel.\n\nNatus distinctio neque omnis iure. Dolor illum harum facilis accusantium et voluptatem enim voluptatibus. Quis natus nisi error.\n\nIllum quidem et voluptas ut maxime. Quis quam neque aperiam error tenetur adipisci sed.\n\nLibero dolor perferendis nobis corrupti. Doloremque nisi perspiciatis sit et.\n\nA id molestias iure. Dolore natus recusandae quasi ut sint temporibus rerum. Eum sit libero vero et quis.\n\nAdipisci sed eos quasi temporibus et ipsum et qui. Necessitatibus modi nobis magni reiciendis dolorem sit eum. Placeat minus repellendus fugit eaque nisi. Nobis quidem expedita enim molestiae aliquid praesentium aut reiciendis.&quot;,
+                &quot;created_at&quot;: &quot;2025-05-31T22:17:37.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-31T22:17:37.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;author&quot;: {
+                    &quot;id&quot;: 69,
+                    &quot;name&quot;: &quot;Agnes Hodkiewicz&quot;,
+                    &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+                },
+                &quot;tags&quot;: []
+            },
+            {
+                &quot;id&quot;: 36,
+                &quot;user_id&quot;: 4,
+                &quot;category_id&quot;: 1,
+                &quot;title&quot;: &quot;Ke&scaron; post&quot;,
+                &quot;slug&quot;: &quot;kes-post&quot;,
+                &quot;content&quot;: &quot;Ovo je post za proveru ke&scaron;a&quot;,
+                &quot;created_at&quot;: &quot;2025-05-29T12:53:15.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-29T12:53:15.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;author&quot;: {
+                    &quot;id&quot;: 4,
+                    &quot;name&quot;: &quot;Goran Zoran&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/IMG_1801.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/IMG_1801.jpg&quot;
+                },
+                &quot;tags&quot;: []
+            },
+            {
                 &quot;id&quot;: 35,
                 &quot;user_id&quot;: 4,
                 &quot;category_id&quot;: 1,
@@ -786,117 +859,6 @@ vary: Origin
                         }
                     }
                 ]
-            },
-            {
-                &quot;id&quot;: 29,
-                &quot;user_id&quot;: 1,
-                &quot;category_id&quot;: 1,
-                &quot;title&quot;: &quot;Jos malo samo&quot;,
-                &quot;slug&quot;: &quot;jos-malo-samo&quot;,
-                &quot;content&quot;: &quot;Samo jos malo i bice&quot;,
-                &quot;created_at&quot;: &quot;2025-05-23T15:38:14.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2025-05-23T15:38:14.000000Z&quot;,
-                &quot;comments_count&quot;: 0,
-                &quot;likes_count&quot;: 0,
-                &quot;author&quot;: {
-                    &quot;id&quot;: 1,
-                    &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
-                    &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
-                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
-                },
-                &quot;tags&quot;: [
-                    {
-                        &quot;name&quot;: &quot;Laravel&quot;,
-                        &quot;pivot&quot;: {
-                            &quot;post_id&quot;: 29,
-                            &quot;tag_id&quot;: 2,
-                            &quot;tagged_by_user_id&quot;: 1
-                        }
-                    }
-                ]
-            },
-            {
-                &quot;id&quot;: 28,
-                &quot;user_id&quot;: 1,
-                &quot;category_id&quot;: 1,
-                &quot;title&quot;: &quot;Mislim da ce ovo da proradi&quot;,
-                &quot;slug&quot;: &quot;mislim-da-ce-ovo-da-proradi&quot;,
-                &quot;content&quot;: &quot;Ovo mora sad da proradi - sad ili nikad!&quot;,
-                &quot;created_at&quot;: &quot;2025-05-23T15:29:04.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2025-05-23T15:29:04.000000Z&quot;,
-                &quot;comments_count&quot;: 0,
-                &quot;likes_count&quot;: 0,
-                &quot;author&quot;: {
-                    &quot;id&quot;: 1,
-                    &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
-                    &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
-                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
-                },
-                &quot;tags&quot;: [
-                    {
-                        &quot;name&quot;: &quot;Laravel&quot;,
-                        &quot;pivot&quot;: {
-                            &quot;post_id&quot;: 28,
-                            &quot;tag_id&quot;: 2,
-                            &quot;tagged_by_user_id&quot;: 1
-                        }
-                    }
-                ]
-            },
-            {
-                &quot;id&quot;: 27,
-                &quot;user_id&quot;: 4,
-                &quot;category_id&quot;: 1,
-                &quot;title&quot;: &quot;Laravel 1&quot;,
-                &quot;slug&quot;: &quot;1-laravel-1&quot;,
-                &quot;content&quot;: &quot;Laravel...&quot;,
-                &quot;created_at&quot;: &quot;2025-05-23T14:10:47.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2025-05-23T14:10:47.000000Z&quot;,
-                &quot;comments_count&quot;: 0,
-                &quot;likes_count&quot;: 0,
-                &quot;author&quot;: {
-                    &quot;id&quot;: 4,
-                    &quot;name&quot;: &quot;Goran Zoran&quot;,
-                    &quot;avatar&quot;: &quot;storage/images/IMG_1801.jpg&quot;,
-                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/IMG_1801.jpg&quot;
-                },
-                &quot;tags&quot;: [
-                    {
-                        &quot;name&quot;: &quot;PHP&quot;,
-                        &quot;pivot&quot;: {
-                            &quot;post_id&quot;: 27,
-                            &quot;tag_id&quot;: 1,
-                            &quot;tagged_by_user_id&quot;: 4
-                        }
-                    },
-                    {
-                        &quot;name&quot;: &quot;Laravel&quot;,
-                        &quot;pivot&quot;: {
-                            &quot;post_id&quot;: 27,
-                            &quot;tag_id&quot;: 2,
-                            &quot;tagged_by_user_id&quot;: 4
-                        }
-                    }
-                ]
-            },
-            {
-                &quot;id&quot;: 26,
-                &quot;user_id&quot;: 4,
-                &quot;category_id&quot;: 1,
-                &quot;title&quot;: &quot;Laravel 1&quot;,
-                &quot;slug&quot;: &quot;laravel-1&quot;,
-                &quot;content&quot;: &quot;Laravel...&quot;,
-                &quot;created_at&quot;: &quot;2025-05-23T14:04:37.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2025-05-23T14:04:37.000000Z&quot;,
-                &quot;comments_count&quot;: 0,
-                &quot;likes_count&quot;: 0,
-                &quot;author&quot;: {
-                    &quot;id&quot;: 4,
-                    &quot;name&quot;: &quot;Goran Zoran&quot;,
-                    &quot;avatar&quot;: &quot;storage/images/IMG_1801.jpg&quot;,
-                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/IMG_1801.jpg&quot;
-                },
-                &quot;tags&quot;: []
             }
         ],
         &quot;first_page_url&quot;: &quot;http://localhost/api/v1/posts?page=1&quot;,
@@ -940,7 +902,7 @@ vary: Origin
         &quot;per_page&quot;: 10,
         &quot;prev_page_url&quot;: null,
         &quot;to&quot;: 10,
-        &quot;total&quot;: 35
+        &quot;total&quot;: 39
     }
 }</code>
  </pre>
@@ -1849,130 +1811,6 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <p>The <code>id</code> of an existing record in the posts table. Example: <code>16</code></p>
         </div>
         </form>
-
-                    <h2 id="endpoints-GETapi-test-redis">GET api/test-redis</h2>
-
-<p>
-</p>
-
-
-
-<span id="example-requests-GETapi-test-redis">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/test-redis" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/test-redis"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-test-redis">
-            <blockquote>
-            <p>Example response (500):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
-vary: Origin
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Server Error&quot;
-}</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-test-redis" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-test-redis"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-test-redis"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-test-redis" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-test-redis">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-GETapi-test-redis" data-method="GET"
-      data-path="api/test-redis"
-      data-authed="0"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-test-redis', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-test-redis"
-                    onclick="tryItOut('GETapi-test-redis');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-test-redis"
-                    onclick="cancelTryOut('GETapi-test-redis');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-test-redis"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/test-redis</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-test-redis"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-test-redis"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        </form>
 
             
 

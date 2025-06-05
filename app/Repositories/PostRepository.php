@@ -40,7 +40,8 @@ class PostRepository implements IPostRepository
         )
             ->latest()
             ->withCount(['comments', 'likes'])
-            ->paginate(10);
+            ->paginate(10)
+            ->jsonSerialize();
     }
 
     public function findById(int $id): ?Post

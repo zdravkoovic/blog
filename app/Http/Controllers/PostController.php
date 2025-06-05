@@ -30,7 +30,9 @@ class PostController extends Controller
     */
     public function index()
     {
-        $posts = $this->postService->getPosts();
+        $page = request('page', 1);
+
+        $posts = $this->postService->getPosts((int)$page);
         return ResponseHelper::success($posts);
     }
 
@@ -48,7 +50,7 @@ class PostController extends Controller
         $postDTO = PostDTO::formRequest($validated, $userId);
         $post = $this->postService->createPost($postDTO);
 
-        event(new NewPost($post));
+        // event(new NewPost($post));
 
         return $post ? ResponseHelper::success($post) : ResponseHelper::error(status: 500, errors: $post);
     }
