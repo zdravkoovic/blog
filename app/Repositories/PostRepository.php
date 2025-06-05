@@ -5,7 +5,9 @@ namespace App\Repositories;
 use App\Models\Comment;
 use App\Models\Like;
 use App\Models\Post;
+use App\Models\Tag;
 use App\Repositories\Interfaces\IPostRepository;
+use Illuminate\Database\Eloquent\Collection;
 
 class PostRepository implements IPostRepository
 {
@@ -20,7 +22,7 @@ class PostRepository implements IPostRepository
         ])
             ->withCount(['comments', 'likes'])
             ->latest()
-            ->get();
+            ->paginate(10);
     }
 
     public function getAllWithAuthors()
@@ -38,11 +40,12 @@ class PostRepository implements IPostRepository
     {
         return Post::with(
             'author:id,name,avatar',
-            'tags:name'
+            'tags:name',
         )
-            ->withCount(['comments', 'likes'])
             ->latest()
-            ->get();
+            ->withCount(['comments', 'likes'])
+            ->paginate(10)
+            ->jsonSerialize();
     }
 
     public function findById(int $id): ?Post
@@ -61,9 +64,9 @@ class PostRepository implements IPostRepository
     {
         /**@var \App\Models\Post $post */
         $post = Post::create($data);
-        if(!empty($data['tag_ids'])){
+        if(!empty($data['tag_ids_real'])){
             $tagData = [];
-            foreach($data['tag_ids'] as $tagId){
+            foreach($data['tag_ids_real'] as $tagId){
                 $tagData[$tagId] = ['tagged_by_user_id' => $data['user_id']];
             }
             $post->tags()->attach($tagData);
@@ -72,7 +75,8 @@ class PostRepository implements IPostRepository
             'category:id,name,slug',
             'tags:id,name,slug',
             'author:id,name,email,avatar'
-        ]);
+        ])
+        ->loadCount(['comments', 'likes']);
     }
     public function commentPost(array $data): Comment
     {
@@ -99,5 +103,27 @@ class PostRepository implements IPostRepository
         ]);
         
         return 'liked';
+    }
+
+    public function getAllTags(): Collection
+    {
+        return Tag::all();
+    }
+
+    public function createTag(array $data): Tag
+    {
+        /**@var \App\Models\Tag $tag */
+        $tag = Tag::create($data);
+
+        return $tag->load([]);
+    }
+
+    /**
+     * @param string[] $slugs
+     * @return string[]
+     */
+    public function getIdsOfTags(array $slugs): array
+    {
+        return Tag::whereIn('slug', $slugs)->pluck('id')->toArray();
     }
 }

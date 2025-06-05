@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 /**
@@ -26,6 +27,8 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Tag extends Model
 {
+    use HasFactory;
+
     protected $fillable = [
         'name',
         'slug'
@@ -37,5 +40,10 @@ class Tag extends Model
                 ->using(PostTag::class)
                 ->withPivot('tagged_by_user_id')
                 ->withTimestamps();
+    }
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
     }
 }
