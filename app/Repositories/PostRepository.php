@@ -40,7 +40,7 @@ class PostRepository implements IPostRepository
     {
         return Post::with(
             'author:id,name,avatar',
-            'tags:name',
+            'tags:id,name,slug'
         )
             ->latest()
             ->withCount(['comments', 'likes'])

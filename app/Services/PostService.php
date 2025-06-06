@@ -25,8 +25,8 @@ class PostService {
         $cacheVersion = Cache::get('blog_cache_version', 1);
         $cacheKey = "blogs_page_{$page}_v{$cacheVersion}";
 
+        return $this->postRepo->getAllWithAuthorsAndAvatars();
         $blogs = Cache::tags(['blogs'])->remember($cacheKey, now()->addMinutes(30), function () {
-            return $this->postRepo->getAllWithAuthorsAndAvatars();
         });
 
         return $blogs;
@@ -37,6 +37,7 @@ class PostService {
     }
 
     public function createPost(PostDTO $postDTO){
+        Cache::tags('blogs')->flush();
         $postDTO->tagsIdRealOne = $this->postRepo->getIdsOfTags($postDTO->tagsId);
         return $this->postRepo->create($postDTO->toArray());
     }

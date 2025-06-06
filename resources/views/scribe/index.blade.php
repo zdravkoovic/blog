@@ -104,6 +104,9 @@
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-users--id-">
                                 <a href="#endpoints-GETapi-v1-users--id-">GET api/v1/users/{id}</a>
                             </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-me">
+                                <a href="#endpoints-GETapi-v1-me">GET api/v1/me</a>
+                            </li>
                                                                         </ul>
                             </ul>
             </div>
@@ -115,7 +118,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: June 3, 2025</li>
+        <li>Last updated: June 5, 2025</li>
     </ul>
 </div>
 
@@ -615,6 +618,55 @@ vary: Origin
         &quot;current_page&quot;: 1,
         &quot;data&quot;: [
             {
+                &quot;id&quot;: 41,
+                &quot;user_id&quot;: 4,
+                &quot;category_id&quot;: 1,
+                &quot;title&quot;: &quot;Proba1&quot;,
+                &quot;slug&quot;: &quot;proba1&quot;,
+                &quot;content&quot;: &quot;`Bearer ${req.cookies.access_token}`&quot;,
+                &quot;created_at&quot;: &quot;2025-06-05T19:01:51.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-06-05T19:01:51.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;author&quot;: {
+                    &quot;id&quot;: 4,
+                    &quot;name&quot;: &quot;Goran Zoran&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/IMG_1801.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/IMG_1801.jpg&quot;
+                },
+                &quot;tags&quot;: [
+                    {
+                        &quot;id&quot;: 2,
+                        &quot;name&quot;: &quot;Laravel&quot;,
+                        &quot;slug&quot;: &quot;laravel&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 41,
+                            &quot;tag_id&quot;: 2,
+                            &quot;tagged_by_user_id&quot;: 4
+                        }
+                    }
+                ]
+            },
+            {
+                &quot;id&quot;: 40,
+                &quot;user_id&quot;: 1,
+                &quot;category_id&quot;: 1,
+                &quot;title&quot;: &quot;Proba&quot;,
+                &quot;slug&quot;: &quot;proba&quot;,
+                &quot;content&quot;: &quot;Da probamo da li radi dodavanje bloga&quot;,
+                &quot;created_at&quot;: &quot;2025-06-05T18:46:55.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-06-05T18:46:55.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;author&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+                },
+                &quot;tags&quot;: []
+            },
+            {
                 &quot;id&quot;: 37,
                 &quot;user_id&quot;: 67,
                 &quot;category_id&quot;: 7,
@@ -709,7 +761,9 @@ vary: Origin
                 },
                 &quot;tags&quot;: [
                     {
+                        &quot;id&quot;: 5,
                         &quot;name&quot;: &quot;MySQL&quot;,
+                        &quot;slug&quot;: &quot;mysql&quot;,
                         &quot;pivot&quot;: {
                             &quot;post_id&quot;: 35,
                             &quot;tag_id&quot;: 5,
@@ -737,7 +791,9 @@ vary: Origin
                 },
                 &quot;tags&quot;: [
                     {
+                        &quot;id&quot;: 2,
                         &quot;name&quot;: &quot;Laravel&quot;,
+                        &quot;slug&quot;: &quot;laravel&quot;,
                         &quot;pivot&quot;: {
                             &quot;post_id&quot;: 34,
                             &quot;tag_id&quot;: 2,
@@ -765,7 +821,9 @@ vary: Origin
                 },
                 &quot;tags&quot;: [
                     {
+                        &quot;id&quot;: 1,
                         &quot;name&quot;: &quot;PHP&quot;,
+                        &quot;slug&quot;: &quot;php&quot;,
                         &quot;pivot&quot;: {
                             &quot;post_id&quot;: 33,
                             &quot;tag_id&quot;: 1,
@@ -793,74 +851,12 @@ vary: Origin
                 },
                 &quot;tags&quot;: [
                     {
+                        &quot;id&quot;: 6,
                         &quot;name&quot;: &quot;Gitara&quot;,
+                        &quot;slug&quot;: &quot;gitara&quot;,
                         &quot;pivot&quot;: {
                             &quot;post_id&quot;: 32,
                             &quot;tag_id&quot;: 6,
-                            &quot;tagged_by_user_id&quot;: 1
-                        }
-                    }
-                ]
-            },
-            {
-                &quot;id&quot;: 31,
-                &quot;user_id&quot;: 1,
-                &quot;category_id&quot;: 1,
-                &quot;title&quot;: &quot;Sumnjivo je i dalje&quot;,
-                &quot;slug&quot;: &quot;sumnjivo-je-i-dalje&quot;,
-                &quot;content&quot;: &quot;Mozda ce da radi&quot;,
-                &quot;created_at&quot;: &quot;2025-05-23T15:44:21.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2025-05-23T15:44:21.000000Z&quot;,
-                &quot;comments_count&quot;: 0,
-                &quot;likes_count&quot;: 0,
-                &quot;author&quot;: {
-                    &quot;id&quot;: 1,
-                    &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
-                    &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
-                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
-                },
-                &quot;tags&quot;: [
-                    {
-                        &quot;name&quot;: &quot;Laravel&quot;,
-                        &quot;pivot&quot;: {
-                            &quot;post_id&quot;: 31,
-                            &quot;tag_id&quot;: 2,
-                            &quot;tagged_by_user_id&quot;: 1
-                        }
-                    }
-                ]
-            },
-            {
-                &quot;id&quot;: 30,
-                &quot;user_id&quot;: 1,
-                &quot;category_id&quot;: 1,
-                &quot;title&quot;: &quot;Sumnjivo je&quot;,
-                &quot;slug&quot;: &quot;sumnjivo-je&quot;,
-                &quot;content&quot;: &quot;Mozda ce da radi&quot;,
-                &quot;created_at&quot;: &quot;2025-05-23T15:41:59.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2025-05-23T15:41:59.000000Z&quot;,
-                &quot;comments_count&quot;: 0,
-                &quot;likes_count&quot;: 0,
-                &quot;author&quot;: {
-                    &quot;id&quot;: 1,
-                    &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
-                    &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
-                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
-                },
-                &quot;tags&quot;: [
-                    {
-                        &quot;name&quot;: &quot;Laravel&quot;,
-                        &quot;pivot&quot;: {
-                            &quot;post_id&quot;: 30,
-                            &quot;tag_id&quot;: 2,
-                            &quot;tagged_by_user_id&quot;: 1
-                        }
-                    },
-                    {
-                        &quot;name&quot;: &quot;Vue.js&quot;,
-                        &quot;pivot&quot;: {
-                            &quot;post_id&quot;: 30,
-                            &quot;tag_id&quot;: 4,
                             &quot;tagged_by_user_id&quot;: 1
                         }
                     }
@@ -869,8 +865,8 @@ vary: Origin
         ],
         &quot;first_page_url&quot;: &quot;http://localhost/api/v1/posts?page=1&quot;,
         &quot;from&quot;: 1,
-        &quot;last_page&quot;: 4,
-        &quot;last_page_url&quot;: &quot;http://localhost/api/v1/posts?page=4&quot;,
+        &quot;last_page&quot;: 5,
+        &quot;last_page_url&quot;: &quot;http://localhost/api/v1/posts?page=5&quot;,
         &quot;links&quot;: [
             {
                 &quot;url&quot;: null,
@@ -898,6 +894,11 @@ vary: Origin
                 &quot;active&quot;: false
             },
             {
+                &quot;url&quot;: &quot;http://localhost/api/v1/posts?page=5&quot;,
+                &quot;label&quot;: &quot;5&quot;,
+                &quot;active&quot;: false
+            },
+            {
                 &quot;url&quot;: &quot;http://localhost/api/v1/posts?page=2&quot;,
                 &quot;label&quot;: &quot;Next &amp;raquo;&quot;,
                 &quot;active&quot;: false
@@ -908,7 +909,7 @@ vary: Origin
         &quot;per_page&quot;: 10,
         &quot;prev_page_url&quot;: null,
         &quot;to&quot;: 10,
-        &quot;total&quot;: 39
+        &quot;total&quot;: 41
     }
 }</code>
  </pre>
@@ -1872,35 +1873,555 @@ vary: Origin
     &quot;message&quot;: &quot;Success&quot;,
     &quot;data&quot;: [
         {
+            &quot;id&quot;: 69,
+            &quot;name&quot;: &quot;Agnes Hodkiewicz&quot;,
+            &quot;email&quot;: &quot;georgianna.haley@example.net&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 1,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 67,
+            &quot;name&quot;: &quot;Prof. Agustin Simonis Jr.&quot;,
+            &quot;email&quot;: &quot;garland97@example.net&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 1,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 68,
+            &quot;name&quot;: &quot;Eddie Haley&quot;,
+            &quot;email&quot;: &quot;kamille40@example.org&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 1,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 64,
+            &quot;name&quot;: &quot;Aletha Corwin DDS&quot;,
+            &quot;email&quot;: &quot;stark.alvah@example.net&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 65,
+            &quot;name&quot;: &quot;Ernie Steuber II&quot;,
+            &quot;email&quot;: &quot;ewalker@example.org&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 66,
+            &quot;name&quot;: &quot;Ada Romaguera&quot;,
+            &quot;email&quot;: &quot;estevan.hills@example.com&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 63,
+            &quot;name&quot;: &quot;Mrs. Ethelyn Becker&quot;,
+            &quot;email&quot;: &quot;isabella35@example.org&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 62,
+            &quot;name&quot;: &quot;Prof. Dee Abshire&quot;,
+            &quot;email&quot;: &quot;cory.hauck@example.net&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 61,
+            &quot;name&quot;: &quot;Prof. Haylie Baumbach III&quot;,
+            &quot;email&quot;: &quot;braun.rahul@example.net&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 60,
+            &quot;name&quot;: &quot;Urban Borer&quot;,
+            &quot;email&quot;: &quot;lrath@example.com&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 59,
+            &quot;name&quot;: &quot;Miss Annabell Kuphal Jr.&quot;,
+            &quot;email&quot;: &quot;skye.streich@example.net&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 58,
+            &quot;name&quot;: &quot;Daryl Swift&quot;,
+            &quot;email&quot;: &quot;zschmidt@example.net&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 57,
+            &quot;name&quot;: &quot;Brody Rutherford&quot;,
+            &quot;email&quot;: &quot;linwood.mueller@example.org&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 56,
+            &quot;name&quot;: &quot;Greyson Stamm DDS&quot;,
+            &quot;email&quot;: &quot;jonatan23@example.org&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 14,
+            &quot;name&quot;: &quot;Prof. Bernie Kihn&quot;,
+            &quot;email&quot;: &quot;deron.hamill@example.org&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 15,
+            &quot;name&quot;: &quot;Mrs. Lucienne Kuhn PhD&quot;,
+            &quot;email&quot;: &quot;glennie51@example.com&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 16,
+            &quot;name&quot;: &quot;Paul Reilly&quot;,
+            &quot;email&quot;: &quot;rebecca78@example.org&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 18,
+            &quot;name&quot;: &quot;Ettie Abernathy&quot;,
+            &quot;email&quot;: &quot;heller.anahi@example.net&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 19,
+            &quot;name&quot;: &quot;Logan Walter&quot;,
+            &quot;email&quot;: &quot;lyda30@example.org&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 20,
+            &quot;name&quot;: &quot;Reagan Reynolds&quot;,
+            &quot;email&quot;: &quot;kihn.emmitt@example.com&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 21,
+            &quot;name&quot;: &quot;Devante Mann&quot;,
+            &quot;email&quot;: &quot;nmacejkovic@example.org&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 22,
+            &quot;name&quot;: &quot;Prof. Nils Turner Sr.&quot;,
+            &quot;email&quot;: &quot;wdenesik@example.com&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 23,
+            &quot;name&quot;: &quot;Margret Erdman&quot;,
+            &quot;email&quot;: &quot;ngrady@example.net&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 24,
+            &quot;name&quot;: &quot;Jalen Funk&quot;,
+            &quot;email&quot;: &quot;delfina.pollich@example.org&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 25,
+            &quot;name&quot;: &quot;Prof. Devin Wuckert DVM&quot;,
+            &quot;email&quot;: &quot;heathcote.delphia@example.com&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 26,
+            &quot;name&quot;: &quot;Ms. Glenna Larkin MD&quot;,
+            &quot;email&quot;: &quot;ocie63@example.org&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 27,
+            &quot;name&quot;: &quot;Jaylon Cummings&quot;,
+            &quot;email&quot;: &quot;xkiehn@example.org&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 28,
+            &quot;name&quot;: &quot;Prof. Jan Quigley III&quot;,
+            &quot;email&quot;: &quot;urutherford@example.com&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 29,
+            &quot;name&quot;: &quot;Kyla Reinger&quot;,
+            &quot;email&quot;: &quot;giovani.lockman@example.com&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 30,
+            &quot;name&quot;: &quot;Josefa Turner&quot;,
+            &quot;email&quot;: &quot;gleichner.alphonso@example.org&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 31,
+            &quot;name&quot;: &quot;Dewitt Rath MD&quot;,
+            &quot;email&quot;: &quot;elisha41@example.com&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 32,
+            &quot;name&quot;: &quot;Dr. Orval Kozey&quot;,
+            &quot;email&quot;: &quot;mariam04@example.org&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 33,
+            &quot;name&quot;: &quot;Luciano Paucek&quot;,
+            &quot;email&quot;: &quot;vandervort.gerhard@example.net&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 34,
+            &quot;name&quot;: &quot;Taya Powlowski&quot;,
+            &quot;email&quot;: &quot;cali42@example.com&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 17,
+            &quot;name&quot;: &quot;Verna Rau Jr.&quot;,
+            &quot;email&quot;: &quot;tavares.raynor@example.com&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 36,
+            &quot;name&quot;: &quot;Prof. Myles Okuneva DVM&quot;,
+            &quot;email&quot;: &quot;halvorson.helena@example.com&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 37,
+            &quot;name&quot;: &quot;Mason Denesik&quot;,
+            &quot;email&quot;: &quot;marquardt.mercedes@example.com&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 38,
+            &quot;name&quot;: &quot;Jerald Wolf&quot;,
+            &quot;email&quot;: &quot;thurman77@example.com&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 39,
+            &quot;name&quot;: &quot;Hilda Collins II&quot;,
+            &quot;email&quot;: &quot;owatsica@example.org&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 40,
+            &quot;name&quot;: &quot;Avery Hammes&quot;,
+            &quot;email&quot;: &quot;eterry@example.com&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 41,
+            &quot;name&quot;: &quot;Efren Jacobi&quot;,
+            &quot;email&quot;: &quot;jensen.schinner@example.com&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 42,
+            &quot;name&quot;: &quot;Mr. Omari Stokes I&quot;,
+            &quot;email&quot;: &quot;cconn@example.net&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 43,
+            &quot;name&quot;: &quot;Abraham Schroeder&quot;,
+            &quot;email&quot;: &quot;zoie02@example.net&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 44,
+            &quot;name&quot;: &quot;Annalise Tremblay PhD&quot;,
+            &quot;email&quot;: &quot;gleichner.bryon@example.org&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 45,
+            &quot;name&quot;: &quot;Zander Effertz&quot;,
+            &quot;email&quot;: &quot;ukoch@example.com&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 46,
+            &quot;name&quot;: &quot;Miss Aracely Schmeler III&quot;,
+            &quot;email&quot;: &quot;vgreenholt@example.org&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 47,
+            &quot;name&quot;: &quot;Anabelle Kautzer&quot;,
+            &quot;email&quot;: &quot;eduardo.boyle@example.org&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 48,
+            &quot;name&quot;: &quot;Prof. Deven Morissette I&quot;,
+            &quot;email&quot;: &quot;qpacocha@example.com&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 49,
+            &quot;name&quot;: &quot;Prof. Deondre Kozey DDS&quot;,
+            &quot;email&quot;: &quot;gibson.jules@example.net&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 50,
+            &quot;name&quot;: &quot;Lillian Osinski&quot;,
+            &quot;email&quot;: &quot;hjaskolski@example.net&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 51,
+            &quot;name&quot;: &quot;Prof. Bud Schoen&quot;,
+            &quot;email&quot;: &quot;ohara.hailie@example.net&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 52,
+            &quot;name&quot;: &quot;Kellie Larson&quot;,
+            &quot;email&quot;: &quot;vergie65@example.net&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 54,
+            &quot;name&quot;: &quot;Miss Erna Morissette II&quot;,
+            &quot;email&quot;: &quot;taurean11@example.org&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 55,
+            &quot;name&quot;: &quot;Deanna Langworth&quot;,
+            &quot;email&quot;: &quot;kohler.beryl@example.net&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 9,
+            &quot;name&quot;: &quot;Mr. Lucious Rau&quot;,
+            &quot;email&quot;: &quot;bswaniawski@example.net&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 35,
+            &quot;name&quot;: &quot;Alexandrea Kunde&quot;,
+            &quot;email&quot;: &quot;gmante@example.com&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 6,
+            &quot;name&quot;: &quot;Miss Eleanora Zboncak II&quot;,
+            &quot;email&quot;: &quot;foconner@example.com&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 7,
+            &quot;name&quot;: &quot;Yasmin Lesch&quot;,
+            &quot;email&quot;: &quot;veum.donnell@example.net&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 8,
+            &quot;name&quot;: &quot;Prof. Anya Heaney V&quot;,
+            &quot;email&quot;: &quot;hauck.reilly@example.com&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 10,
+            &quot;name&quot;: &quot;Roy Gerlach&quot;,
+            &quot;email&quot;: &quot;stoltenberg.josephine@example.net&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 11,
+            &quot;name&quot;: &quot;Prof. Rowan Barrows&quot;,
+            &quot;email&quot;: &quot;selmer.marvin@example.net&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 12,
+            &quot;name&quot;: &quot;Gregoria Kerluke&quot;,
+            &quot;email&quot;: &quot;nklocko@example.com&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 13,
+            &quot;name&quot;: &quot;Dr. Raina Corwin Jr.&quot;,
+            &quot;email&quot;: &quot;fohara@example.net&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 53,
+            &quot;name&quot;: &quot;Jamie Shields&quot;,
+            &quot;email&quot;: &quot;linda.von@example.net&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
+            &quot;id&quot;: 5,
+            &quot;name&quot;: &quot;Chesley Haag&quot;,
+            &quot;email&quot;: &quot;darius78@example.com&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+            &quot;posts_count&quot;: 0,
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+        },
+        {
             &quot;id&quot;: 4,
             &quot;name&quot;: &quot;Goran Zoran&quot;,
             &quot;email&quot;: &quot;goranzoran@gmail.com&quot;,
             &quot;avatar&quot;: &quot;storage/images/IMG_1801.jpg&quot;,
-            &quot;posts_count&quot;: 1,
+            &quot;posts_count&quot;: 9,
             &quot;avatar_url&quot;: &quot;http://localhost/storage/images/IMG_1801.jpg&quot;
         },
         {
             &quot;id&quot;: 3,
             &quot;name&quot;: &quot;b&quot;,
             &quot;email&quot;: &quot;zbailey@example.net&quot;,
-            &quot;avatar&quot;: &quot;&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
             &quot;posts_count&quot;: 0,
-            &quot;avatar_url&quot;: &quot;http://localhost/&quot;
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
         },
         {
             &quot;id&quot;: 2,
             &quot;name&quot;: &quot;Dragana Zdravkovic&quot;,
             &quot;email&quot;: &quot;zdravkovic.dragana@gmail.com&quot;,
-            &quot;avatar&quot;: &quot;&quot;,
+            &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
             &quot;posts_count&quot;: 0,
-            &quot;avatar_url&quot;: &quot;http://localhost/&quot;
+            &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
         },
         {
             &quot;id&quot;: 1,
             &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
             &quot;email&quot;: &quot;zdravkoovic.nikola@gmail.com&quot;,
             &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
-            &quot;posts_count&quot;: 1,
+            &quot;posts_count&quot;: 29,
             &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
         }
     ]
@@ -2035,7 +2556,7 @@ vary: Origin
         &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
         &quot;email&quot;: &quot;zdravkoovic.nikola@gmail.com&quot;,
         &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
-        &quot;posts_count&quot;: 1,
+        &quot;posts_count&quot;: 29,
         &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
     }
 }</code>
@@ -2123,6 +2644,144 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <p>The ID of the user. Example: <code>1</code></p>
             </div>
                     </form>
+
+                    <h2 id="endpoints-GETapi-v1-me">GET api/v1/me</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-GETapi-v1-me">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/v1/me" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/v1/me"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-v1-me">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+vary: Origin
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-v1-me" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-v1-me"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-v1-me"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-v1-me" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-v1-me">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-v1-me" data-method="GET"
+      data-path="api/v1/me"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-me', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-v1-me"
+                    onclick="tryItOut('GETapi-v1-me');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-v1-me"
+                    onclick="cancelTryOut('GETapi-v1-me');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-v1-me"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/v1/me</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-v1-me"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-v1-me"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-v1-me"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
 
             
 
