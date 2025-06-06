@@ -8,3 +8,11 @@ Route::prefix('/users')->group(function () {
         Route::get('/{id}', 'show');
     });
 });
+
+Route::prefix('/me')->group(function () {
+    Route::middleware(['auth:sanctum'])->group(function (){
+        Route::controller(UserController::class)->group(function () {
+            Route::get('/', 'me');
+        });
+    });
+});
