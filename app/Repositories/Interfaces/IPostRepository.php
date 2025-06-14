@@ -14,10 +14,15 @@ interface IPostRepository
     public function getAllWithAuthorsAndAvatars();
     public function findById(int $id): ?Post;
     public function create(array $data): Post;
-    public function commentPost(array $data): Comment;
+    public function commentPost(array $data): array;
     public function likePost(int $postId, int $userId): string;
+
+    /** @return Comment[] */
+    public function getComments(int $postId, int $userId): array;
 
     public function getAllTags(): Collection;
     public function createTag(array $data): Tag;
     public function getIdsOfTags(array $slugs): array;
+
+    public function autocomplete(string $text): array;
 }

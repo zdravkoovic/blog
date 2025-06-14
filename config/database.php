@@ -62,6 +62,20 @@ return [
             ]) : [],
         ],
 
+        'manticore' => [
+            'driver'    => 'mysql',
+            'host'      => env('MANTICORE_MYSQL_HOST', '127.0.0.1'),
+            'port'      => env('MANTICORE_MYSQL_PORT', 9306),
+            'database'  => env('MANTICORE_MYSQL_DB', ''),
+            'username'  => env('MANTICORE_MYSQL_USER', ''),  
+            'password'  => env('MANTICORE_MYSQL_PASS', ''),  
+            'charset'   => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix'    => '',
+            'strict'    => false,
+            'engine'    => null,
+        ],
+
         'mariadb' => [
             'driver' => 'mariadb',
             'url' => env('DB_URL'),

@@ -20,7 +20,7 @@ class AuthDTO
         );
     }
 
-    public static function fromLoginReques(array $data): self
+    public static function fromLoginRequest(array $data): self
     {
         return new self(
             '',

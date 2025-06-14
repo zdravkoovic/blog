@@ -28,7 +28,7 @@ class AuthController extends Controller
 
     public function login(LoginRequest $request)
     {
-        $authDTO = AuthDTO::fromLoginReques($request->validated());
+        $authDTO = AuthDTO::fromLoginRequest($request->validated());
         $data = $this->authService->login($authDTO);
 
         return ResponseHelper::success($data);
