@@ -8,16 +8,22 @@ use App\DTOs\PostDTO;
 use App\DTOs\TagDTO;
 use App\Models\Post;
 use App\Models\Tag;
+use App\Repositories\Interfaces\ICommentRepository;
 use App\Repositories\Interfaces\IPostRepository;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Redis;
 
 class PostService {
     private IPostRepository $postRepo;
+    private ICommentRepository $commentRepo;
 
-    public function __construct(IPostRepository $postRepo)
+    public function __construct(
+        IPostRepository $postRepo,
+        ICommentRepository $commentRepo
+    )
     {
         $this->postRepo = $postRepo;
+        $this->commentRepo = $commentRepo;
     }
 
     public function getPosts(int $page)
@@ -59,5 +65,22 @@ class PostService {
     public function createTag(TagDTO $tagDTO)
     {
         $this->postRepo->createTag($tagDTO->toArray());
+    }
+
+    public function recommends(string $text)
+    {
+        return $this->postRepo->autocomplete($text);
+    }
+
+    public function comments(int $post_id, int $user_id)
+    {
+        $comment = $this->postRepo->getComments($post_id, $user_id);
+
+        return $comment;
+    }
+
+    public function deleteComment(int $id) : int
+    {
+        return $this->commentRepo->delete($id);
     }
 }

@@ -98,6 +98,15 @@
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-POSTapi-v1-posts-like">
                                 <a href="#endpoints-POSTapi-v1-posts-like">POST api/v1/posts/like</a>
                             </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-posts-comments--id-">
+                                <a href="#endpoints-GETapi-v1-posts-comments--id-">GET api/v1/posts/comments/{id}</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-DELETEapi-v1-posts-comments--id-">
+                                <a href="#endpoints-DELETEapi-v1-posts-comments--id-">DELETE api/v1/posts/comments/{id}</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-manticore-autocomplete--text-">
+                                <a href="#endpoints-GETapi-v1-manticore-autocomplete--text-">GET api/v1/manticore/autocomplete/{text}</a>
+                            </li>
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-users">
                                 <a href="#endpoints-GETapi-v1-users">GET api/v1/users</a>
                             </li>
@@ -118,7 +127,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: June 5, 2025</li>
+        <li>Last updated: June 11, 2025</li>
     </ul>
 </div>
 
@@ -626,13 +635,11 @@ vary: Origin
                 &quot;content&quot;: &quot;`Bearer ${req.cookies.access_token}`&quot;,
                 &quot;created_at&quot;: &quot;2025-06-05T19:01:51.000000Z&quot;,
                 &quot;updated_at&quot;: &quot;2025-06-05T19:01:51.000000Z&quot;,
-                &quot;comments_count&quot;: 0,
+                &quot;comments_count&quot;: 2,
                 &quot;likes_count&quot;: 0,
-                &quot;author&quot;: {
-                    &quot;id&quot;: 4,
-                    &quot;name&quot;: &quot;Goran Zoran&quot;,
-                    &quot;avatar&quot;: &quot;storage/images/IMG_1801.jpg&quot;,
-                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/IMG_1801.jpg&quot;
+                &quot;category&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Backend developing - PHP&quot;
                 },
                 &quot;tags&quot;: [
                     {
@@ -644,6 +651,26 @@ vary: Origin
                             &quot;tag_id&quot;: 2,
                             &quot;tagged_by_user_id&quot;: 4
                         }
+                    }
+                ],
+                &quot;author&quot;: {
+                    &quot;id&quot;: 4,
+                    &quot;name&quot;: &quot;Goran Zoran&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/IMG_1801.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/IMG_1801.jpg&quot;
+                },
+                &quot;comments&quot;: [
+                    {
+                        &quot;id&quot;: 2,
+                        &quot;post_id&quot;: 41,
+                        &quot;user_id&quot;: 4,
+                        &quot;content&quot;: &quot;Sta probas ti koi qrc?!&quot;
+                    },
+                    {
+                        &quot;id&quot;: 4,
+                        &quot;post_id&quot;: 41,
+                        &quot;user_id&quot;: 1,
+                        &quot;content&quot;: &quot;Tu sam i ja, samo da se javim! :D&quot;
                     }
                 ]
             },
@@ -658,51 +685,18 @@ vary: Origin
                 &quot;updated_at&quot;: &quot;2025-06-05T18:46:55.000000Z&quot;,
                 &quot;comments_count&quot;: 0,
                 &quot;likes_count&quot;: 0,
+                &quot;category&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Backend developing - PHP&quot;
+                },
+                &quot;tags&quot;: [],
                 &quot;author&quot;: {
                     &quot;id&quot;: 1,
                     &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
                     &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
                     &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
                 },
-                &quot;tags&quot;: []
-            },
-            {
-                &quot;id&quot;: 37,
-                &quot;user_id&quot;: 67,
-                &quot;category_id&quot;: 7,
-                &quot;title&quot;: &quot;Odit enim labore error.&quot;,
-                &quot;slug&quot;: &quot;odit-enim-labore-error&quot;,
-                &quot;content&quot;: &quot;Et doloremque sit rem ullam voluptatum. Reiciendis eum esse nemo reiciendis. Et tempore aut minima consequuntur ducimus. Molestias velit aut qui rem.\n\nIure dignissimos doloribus atque ducimus rem culpa. Ullam voluptates nam dicta consectetur itaque. Et eaque autem impedit impedit et deleniti.\n\nCupiditate delectus assumenda non beatae magnam doloribus quidem doloremque. Omnis sed ipsa dolorem rerum non voluptatibus. Nihil qui repellendus esse reprehenderit exercitationem.\n\nOfficia ut perferendis amet tenetur sit. Eum delectus et sed sint amet ex illum occaecati. Aut molestias adipisci veniam sed. Soluta et quia quis laboriosam aperiam consequatur. Dignissimos iste consequatur non molestias distinctio sapiente.\n\nVitae rem fugit dolorem explicabo. At eveniet a ea reprehenderit. Praesentium sed velit rerum et velit sed nobis.\n\nVeritatis assumenda unde voluptatem iure nostrum. Quos magnam ut ad ut nesciunt numquam. Culpa expedita ut pariatur sequi.&quot;,
-                &quot;created_at&quot;: &quot;2025-05-31T22:17:37.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2025-05-31T22:17:37.000000Z&quot;,
-                &quot;comments_count&quot;: 0,
-                &quot;likes_count&quot;: 0,
-                &quot;author&quot;: {
-                    &quot;id&quot;: 67,
-                    &quot;name&quot;: &quot;Prof. Agustin Simonis Jr.&quot;,
-                    &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
-                    &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
-                },
-                &quot;tags&quot;: []
-            },
-            {
-                &quot;id&quot;: 38,
-                &quot;user_id&quot;: 68,
-                &quot;category_id&quot;: 8,
-                &quot;title&quot;: &quot;Possimus rem repudiandae cupiditate magnam repudiandae quo.&quot;,
-                &quot;slug&quot;: &quot;possimus-rem-repudiandae-cupiditate-magnam-repudiandae-quo&quot;,
-                &quot;content&quot;: &quot;Harum consequuntur dolor maiores quisquam officia. Et excepturi id laudantium quibusdam ex distinctio. Aperiam repellat consequatur veniam totam.\n\nSaepe voluptatem magnam nam nesciunt odio velit necessitatibus. Sit excepturi ipsam numquam optio. Accusamus dicta alias officia perferendis necessitatibus expedita. Quia blanditiis incidunt esse quia ut.\n\nConsequatur quos aut libero libero cumque eum iusto blanditiis. Id quos recusandae quia quo accusantium optio. Quae ut incidunt mollitia odio sunt. Dolorum assumenda unde labore beatae tempore.\n\nAccusamus modi voluptas sit est velit ea. Ut optio earum soluta non totam itaque qui sint. Aut omnis qui at debitis sit non. Ipsa repellendus libero labore ut enim mollitia nihil sed.\n\nAdipisci minima eius nihil qui libero architecto. Maiores ea voluptatem non natus nihil quis. Cumque et non aliquid iusto.\n\nAccusamus suscipit minus dicta autem. Iusto autem sunt qui dolor aperiam quaerat ex. Dignissimos ullam quasi asperiores.&quot;,
-                &quot;created_at&quot;: &quot;2025-05-31T22:17:37.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2025-05-31T22:17:37.000000Z&quot;,
-                &quot;comments_count&quot;: 0,
-                &quot;likes_count&quot;: 0,
-                &quot;author&quot;: {
-                    &quot;id&quot;: 68,
-                    &quot;name&quot;: &quot;Eddie Haley&quot;,
-                    &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
-                    &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
-                },
-                &quot;tags&quot;: []
+                &quot;comments&quot;: []
             },
             {
                 &quot;id&quot;: 39,
@@ -715,13 +709,66 @@ vary: Origin
                 &quot;updated_at&quot;: &quot;2025-05-31T22:17:37.000000Z&quot;,
                 &quot;comments_count&quot;: 0,
                 &quot;likes_count&quot;: 0,
+                &quot;category&quot;: {
+                    &quot;id&quot;: 9,
+                    &quot;name&quot;: &quot;Kultura&quot;
+                },
+                &quot;tags&quot;: [],
                 &quot;author&quot;: {
                     &quot;id&quot;: 69,
                     &quot;name&quot;: &quot;Agnes Hodkiewicz&quot;,
                     &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
                     &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
                 },
-                &quot;tags&quot;: []
+                &quot;comments&quot;: []
+            },
+            {
+                &quot;id&quot;: 38,
+                &quot;user_id&quot;: 68,
+                &quot;category_id&quot;: 8,
+                &quot;title&quot;: &quot;Possimus rem repudiandae cupiditate magnam repudiandae quo.&quot;,
+                &quot;slug&quot;: &quot;possimus-rem-repudiandae-cupiditate-magnam-repudiandae-quo&quot;,
+                &quot;content&quot;: &quot;Harum consequuntur dolor maiores quisquam officia. Et excepturi id laudantium quibusdam ex distinctio. Aperiam repellat consequatur veniam totam.\n\nSaepe voluptatem magnam nam nesciunt odio velit necessitatibus. Sit excepturi ipsam numquam optio. Accusamus dicta alias officia perferendis necessitatibus expedita. Quia blanditiis incidunt esse quia ut.\n\nConsequatur quos aut libero libero cumque eum iusto blanditiis. Id quos recusandae quia quo accusantium optio. Quae ut incidunt mollitia odio sunt. Dolorum assumenda unde labore beatae tempore.\n\nAccusamus modi voluptas sit est velit ea. Ut optio earum soluta non totam itaque qui sint. Aut omnis qui at debitis sit non. Ipsa repellendus libero labore ut enim mollitia nihil sed.\n\nAdipisci minima eius nihil qui libero architecto. Maiores ea voluptatem non natus nihil quis. Cumque et non aliquid iusto.\n\nAccusamus suscipit minus dicta autem. Iusto autem sunt qui dolor aperiam quaerat ex. Dignissimos ullam quasi asperiores.&quot;,
+                &quot;created_at&quot;: &quot;2025-05-31T22:17:37.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-31T22:17:37.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;category&quot;: {
+                    &quot;id&quot;: 8,
+                    &quot;name&quot;: &quot;Kultura&quot;
+                },
+                &quot;tags&quot;: [],
+                &quot;author&quot;: {
+                    &quot;id&quot;: 68,
+                    &quot;name&quot;: &quot;Eddie Haley&quot;,
+                    &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+                },
+                &quot;comments&quot;: []
+            },
+            {
+                &quot;id&quot;: 37,
+                &quot;user_id&quot;: 67,
+                &quot;category_id&quot;: 7,
+                &quot;title&quot;: &quot;Odit enim labore error.&quot;,
+                &quot;slug&quot;: &quot;odit-enim-labore-error&quot;,
+                &quot;content&quot;: &quot;Et doloremque sit rem ullam voluptatum. Reiciendis eum esse nemo reiciendis. Et tempore aut minima consequuntur ducimus. Molestias velit aut qui rem.\n\nIure dignissimos doloribus atque ducimus rem culpa. Ullam voluptates nam dicta consectetur itaque. Et eaque autem impedit impedit et deleniti.\n\nCupiditate delectus assumenda non beatae magnam doloribus quidem doloremque. Omnis sed ipsa dolorem rerum non voluptatibus. Nihil qui repellendus esse reprehenderit exercitationem.\n\nOfficia ut perferendis amet tenetur sit. Eum delectus et sed sint amet ex illum occaecati. Aut molestias adipisci veniam sed. Soluta et quia quis laboriosam aperiam consequatur. Dignissimos iste consequatur non molestias distinctio sapiente.\n\nVitae rem fugit dolorem explicabo. At eveniet a ea reprehenderit. Praesentium sed velit rerum et velit sed nobis.\n\nVeritatis assumenda unde voluptatem iure nostrum. Quos magnam ut ad ut nesciunt numquam. Culpa expedita ut pariatur sequi.&quot;,
+                &quot;created_at&quot;: &quot;2025-05-31T22:17:37.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-31T22:17:37.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;category&quot;: {
+                    &quot;id&quot;: 7,
+                    &quot;name&quot;: &quot;Devops&quot;
+                },
+                &quot;tags&quot;: [],
+                &quot;author&quot;: {
+                    &quot;id&quot;: 67,
+                    &quot;name&quot;: &quot;Prof. Agustin Simonis Jr.&quot;,
+                    &quot;avatar&quot;: &quot;storage/avatars/avatar.png&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/avatars/avatar.png&quot;
+                },
+                &quot;comments&quot;: []
             },
             {
                 &quot;id&quot;: 36,
@@ -734,13 +781,18 @@ vary: Origin
                 &quot;updated_at&quot;: &quot;2025-05-29T12:53:15.000000Z&quot;,
                 &quot;comments_count&quot;: 0,
                 &quot;likes_count&quot;: 0,
+                &quot;category&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Backend developing - PHP&quot;
+                },
+                &quot;tags&quot;: [],
                 &quot;author&quot;: {
                     &quot;id&quot;: 4,
                     &quot;name&quot;: &quot;Goran Zoran&quot;,
                     &quot;avatar&quot;: &quot;storage/images/IMG_1801.jpg&quot;,
                     &quot;avatar_url&quot;: &quot;http://localhost/storage/images/IMG_1801.jpg&quot;
                 },
-                &quot;tags&quot;: []
+                &quot;comments&quot;: []
             },
             {
                 &quot;id&quot;: 35,
@@ -753,11 +805,9 @@ vary: Origin
                 &quot;updated_at&quot;: &quot;2025-05-23T18:28:51.000000Z&quot;,
                 &quot;comments_count&quot;: 0,
                 &quot;likes_count&quot;: 0,
-                &quot;author&quot;: {
-                    &quot;id&quot;: 4,
-                    &quot;name&quot;: &quot;Goran Zoran&quot;,
-                    &quot;avatar&quot;: &quot;storage/images/IMG_1801.jpg&quot;,
-                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/IMG_1801.jpg&quot;
+                &quot;category&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Backend developing - PHP&quot;
                 },
                 &quot;tags&quot;: [
                     {
@@ -770,7 +820,14 @@ vary: Origin
                             &quot;tagged_by_user_id&quot;: 4
                         }
                     }
-                ]
+                ],
+                &quot;author&quot;: {
+                    &quot;id&quot;: 4,
+                    &quot;name&quot;: &quot;Goran Zoran&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/IMG_1801.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/IMG_1801.jpg&quot;
+                },
+                &quot;comments&quot;: []
             },
             {
                 &quot;id&quot;: 34,
@@ -783,11 +840,9 @@ vary: Origin
                 &quot;updated_at&quot;: &quot;2025-05-23T17:50:11.000000Z&quot;,
                 &quot;comments_count&quot;: 0,
                 &quot;likes_count&quot;: 0,
-                &quot;author&quot;: {
+                &quot;category&quot;: {
                     &quot;id&quot;: 1,
-                    &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
-                    &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
-                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+                    &quot;name&quot;: &quot;Backend developing - PHP&quot;
                 },
                 &quot;tags&quot;: [
                     {
@@ -800,7 +855,14 @@ vary: Origin
                             &quot;tagged_by_user_id&quot;: 1
                         }
                     }
-                ]
+                ],
+                &quot;author&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+                },
+                &quot;comments&quot;: []
             },
             {
                 &quot;id&quot;: 33,
@@ -813,11 +875,9 @@ vary: Origin
                 &quot;updated_at&quot;: &quot;2025-05-23T17:48:50.000000Z&quot;,
                 &quot;comments_count&quot;: 0,
                 &quot;likes_count&quot;: 0,
-                &quot;author&quot;: {
+                &quot;category&quot;: {
                     &quot;id&quot;: 1,
-                    &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
-                    &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
-                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+                    &quot;name&quot;: &quot;Backend developing - PHP&quot;
                 },
                 &quot;tags&quot;: [
                     {
@@ -830,7 +890,14 @@ vary: Origin
                             &quot;tagged_by_user_id&quot;: 1
                         }
                     }
-                ]
+                ],
+                &quot;author&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+                },
+                &quot;comments&quot;: []
             },
             {
                 &quot;id&quot;: 32,
@@ -843,11 +910,9 @@ vary: Origin
                 &quot;updated_at&quot;: &quot;2025-05-23T15:45:36.000000Z&quot;,
                 &quot;comments_count&quot;: 0,
                 &quot;likes_count&quot;: 0,
-                &quot;author&quot;: {
+                &quot;category&quot;: {
                     &quot;id&quot;: 1,
-                    &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
-                    &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
-                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+                    &quot;name&quot;: &quot;Backend developing - PHP&quot;
                 },
                 &quot;tags&quot;: [
                     {
@@ -860,13 +925,827 @@ vary: Origin
                             &quot;tagged_by_user_id&quot;: 1
                         }
                     }
-                ]
+                ],
+                &quot;author&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+                },
+                &quot;comments&quot;: []
+            },
+            {
+                &quot;id&quot;: 31,
+                &quot;user_id&quot;: 1,
+                &quot;category_id&quot;: 1,
+                &quot;title&quot;: &quot;Sumnjivo je i dalje&quot;,
+                &quot;slug&quot;: &quot;sumnjivo-je-i-dalje&quot;,
+                &quot;content&quot;: &quot;Mozda ce da radi&quot;,
+                &quot;created_at&quot;: &quot;2025-05-23T15:44:21.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-23T15:44:21.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;category&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Backend developing - PHP&quot;
+                },
+                &quot;tags&quot;: [
+                    {
+                        &quot;id&quot;: 2,
+                        &quot;name&quot;: &quot;Laravel&quot;,
+                        &quot;slug&quot;: &quot;laravel&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 31,
+                            &quot;tag_id&quot;: 2,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
+                    }
+                ],
+                &quot;author&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+                },
+                &quot;comments&quot;: []
+            },
+            {
+                &quot;id&quot;: 30,
+                &quot;user_id&quot;: 1,
+                &quot;category_id&quot;: 1,
+                &quot;title&quot;: &quot;Sumnjivo je&quot;,
+                &quot;slug&quot;: &quot;sumnjivo-je&quot;,
+                &quot;content&quot;: &quot;Mozda ce da radi&quot;,
+                &quot;created_at&quot;: &quot;2025-05-23T15:41:59.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-23T15:41:59.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;category&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Backend developing - PHP&quot;
+                },
+                &quot;tags&quot;: [
+                    {
+                        &quot;id&quot;: 2,
+                        &quot;name&quot;: &quot;Laravel&quot;,
+                        &quot;slug&quot;: &quot;laravel&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 30,
+                            &quot;tag_id&quot;: 2,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
+                    },
+                    {
+                        &quot;id&quot;: 4,
+                        &quot;name&quot;: &quot;Vue.js&quot;,
+                        &quot;slug&quot;: &quot;vue-js&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 30,
+                            &quot;tag_id&quot;: 4,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
+                    }
+                ],
+                &quot;author&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+                },
+                &quot;comments&quot;: []
+            },
+            {
+                &quot;id&quot;: 29,
+                &quot;user_id&quot;: 1,
+                &quot;category_id&quot;: 1,
+                &quot;title&quot;: &quot;Jos malo samo&quot;,
+                &quot;slug&quot;: &quot;jos-malo-samo&quot;,
+                &quot;content&quot;: &quot;Samo jos malo i bice&quot;,
+                &quot;created_at&quot;: &quot;2025-05-23T15:38:14.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-23T15:38:14.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;category&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Backend developing - PHP&quot;
+                },
+                &quot;tags&quot;: [
+                    {
+                        &quot;id&quot;: 2,
+                        &quot;name&quot;: &quot;Laravel&quot;,
+                        &quot;slug&quot;: &quot;laravel&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 29,
+                            &quot;tag_id&quot;: 2,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
+                    }
+                ],
+                &quot;author&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+                },
+                &quot;comments&quot;: []
+            },
+            {
+                &quot;id&quot;: 28,
+                &quot;user_id&quot;: 1,
+                &quot;category_id&quot;: 1,
+                &quot;title&quot;: &quot;Mislim da ce ovo da proradi&quot;,
+                &quot;slug&quot;: &quot;mislim-da-ce-ovo-da-proradi&quot;,
+                &quot;content&quot;: &quot;Ovo mora sad da proradi - sad ili nikad!&quot;,
+                &quot;created_at&quot;: &quot;2025-05-23T15:29:04.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-23T15:29:04.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;category&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Backend developing - PHP&quot;
+                },
+                &quot;tags&quot;: [
+                    {
+                        &quot;id&quot;: 2,
+                        &quot;name&quot;: &quot;Laravel&quot;,
+                        &quot;slug&quot;: &quot;laravel&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 28,
+                            &quot;tag_id&quot;: 2,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
+                    }
+                ],
+                &quot;author&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+                },
+                &quot;comments&quot;: []
+            },
+            {
+                &quot;id&quot;: 27,
+                &quot;user_id&quot;: 4,
+                &quot;category_id&quot;: 1,
+                &quot;title&quot;: &quot;Laravel 1&quot;,
+                &quot;slug&quot;: &quot;1-laravel-1&quot;,
+                &quot;content&quot;: &quot;Laravel...&quot;,
+                &quot;created_at&quot;: &quot;2025-05-23T14:10:47.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-23T14:10:47.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;category&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Backend developing - PHP&quot;
+                },
+                &quot;tags&quot;: [
+                    {
+                        &quot;id&quot;: 1,
+                        &quot;name&quot;: &quot;PHP&quot;,
+                        &quot;slug&quot;: &quot;php&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 27,
+                            &quot;tag_id&quot;: 1,
+                            &quot;tagged_by_user_id&quot;: 4
+                        }
+                    },
+                    {
+                        &quot;id&quot;: 2,
+                        &quot;name&quot;: &quot;Laravel&quot;,
+                        &quot;slug&quot;: &quot;laravel&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 27,
+                            &quot;tag_id&quot;: 2,
+                            &quot;tagged_by_user_id&quot;: 4
+                        }
+                    }
+                ],
+                &quot;author&quot;: {
+                    &quot;id&quot;: 4,
+                    &quot;name&quot;: &quot;Goran Zoran&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/IMG_1801.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/IMG_1801.jpg&quot;
+                },
+                &quot;comments&quot;: []
+            },
+            {
+                &quot;id&quot;: 26,
+                &quot;user_id&quot;: 4,
+                &quot;category_id&quot;: 1,
+                &quot;title&quot;: &quot;Laravel 1&quot;,
+                &quot;slug&quot;: &quot;laravel-1&quot;,
+                &quot;content&quot;: &quot;Laravel...&quot;,
+                &quot;created_at&quot;: &quot;2025-05-23T14:04:37.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-23T14:04:37.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;category&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Backend developing - PHP&quot;
+                },
+                &quot;tags&quot;: [],
+                &quot;author&quot;: {
+                    &quot;id&quot;: 4,
+                    &quot;name&quot;: &quot;Goran Zoran&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/IMG_1801.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/IMG_1801.jpg&quot;
+                },
+                &quot;comments&quot;: []
+            },
+            {
+                &quot;id&quot;: 25,
+                &quot;user_id&quot;: 4,
+                &quot;category_id&quot;: 1,
+                &quot;title&quot;: &quot;Laravel nije kako treba&quot;,
+                &quot;slug&quot;: &quot;1-laravel-nije-kako-treba&quot;,
+                &quot;content&quot;: &quot;Imam problema sa laravelom&quot;,
+                &quot;created_at&quot;: &quot;2025-05-23T12:19:21.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-23T12:19:21.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;category&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Backend developing - PHP&quot;
+                },
+                &quot;tags&quot;: [],
+                &quot;author&quot;: {
+                    &quot;id&quot;: 4,
+                    &quot;name&quot;: &quot;Goran Zoran&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/IMG_1801.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/IMG_1801.jpg&quot;
+                },
+                &quot;comments&quot;: []
+            },
+            {
+                &quot;id&quot;: 24,
+                &quot;user_id&quot;: 4,
+                &quot;category_id&quot;: 1,
+                &quot;title&quot;: &quot;Laravel nije kako treba&quot;,
+                &quot;slug&quot;: &quot;laravel-nije-kako-treba&quot;,
+                &quot;content&quot;: &quot;Imam problema sa laravelom&quot;,
+                &quot;created_at&quot;: &quot;2025-05-23T12:14:20.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-23T12:14:20.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;category&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Backend developing - PHP&quot;
+                },
+                &quot;tags&quot;: [],
+                &quot;author&quot;: {
+                    &quot;id&quot;: 4,
+                    &quot;name&quot;: &quot;Goran Zoran&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/IMG_1801.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/IMG_1801.jpg&quot;
+                },
+                &quot;comments&quot;: []
+            },
+            {
+                &quot;id&quot;: 23,
+                &quot;user_id&quot;: 4,
+                &quot;category_id&quot;: 1,
+                &quot;title&quot;: &quot;Projekat u Laravel-u&quot;,
+                &quot;slug&quot;: &quot;projekat-u-laravel-u&quot;,
+                &quot;content&quot;: &quot;Hteo bih da čujem razna iskustva sa Laravelom.&quot;,
+                &quot;created_at&quot;: &quot;2025-05-23T12:02:29.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-23T12:02:29.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;category&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Backend developing - PHP&quot;
+                },
+                &quot;tags&quot;: [
+                    {
+                        &quot;id&quot;: 1,
+                        &quot;name&quot;: &quot;PHP&quot;,
+                        &quot;slug&quot;: &quot;php&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 23,
+                            &quot;tag_id&quot;: 1,
+                            &quot;tagged_by_user_id&quot;: 4
+                        }
+                    },
+                    {
+                        &quot;id&quot;: 2,
+                        &quot;name&quot;: &quot;Laravel&quot;,
+                        &quot;slug&quot;: &quot;laravel&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 23,
+                            &quot;tag_id&quot;: 2,
+                            &quot;tagged_by_user_id&quot;: 4
+                        }
+                    }
+                ],
+                &quot;author&quot;: {
+                    &quot;id&quot;: 4,
+                    &quot;name&quot;: &quot;Goran Zoran&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/IMG_1801.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/IMG_1801.jpg&quot;
+                },
+                &quot;comments&quot;: []
+            },
+            {
+                &quot;id&quot;: 22,
+                &quot;user_id&quot;: 1,
+                &quot;category_id&quot;: 3,
+                &quot;title&quot;: &quot;Sviram bas gitaru 10 i mrsim muda&quot;,
+                &quot;slug&quot;: &quot;sviram-bas-gitaru-10-i-mrsim-muda&quot;,
+                &quot;content&quot;: &quot;Kupujem klasičnu gitaru, javite mi se.&quot;,
+                &quot;created_at&quot;: &quot;2025-05-22T17:37:35.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-22T17:37:35.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;category&quot;: {
+                    &quot;id&quot;: 3,
+                    &quot;name&quot;: &quot;Muzika&quot;
+                },
+                &quot;tags&quot;: [
+                    {
+                        &quot;id&quot;: 1,
+                        &quot;name&quot;: &quot;PHP&quot;,
+                        &quot;slug&quot;: &quot;php&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 22,
+                            &quot;tag_id&quot;: 1,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
+                    },
+                    {
+                        &quot;id&quot;: 6,
+                        &quot;name&quot;: &quot;Gitara&quot;,
+                        &quot;slug&quot;: &quot;gitara&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 22,
+                            &quot;tag_id&quot;: 6,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
+                    }
+                ],
+                &quot;author&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+                },
+                &quot;comments&quot;: []
+            },
+            {
+                &quot;id&quot;: 21,
+                &quot;user_id&quot;: 1,
+                &quot;category_id&quot;: 3,
+                &quot;title&quot;: &quot;Sviram bas gitaru 9 i mrsim muda&quot;,
+                &quot;slug&quot;: &quot;sviram-bas-gitaru-9-i-mrsim-muda&quot;,
+                &quot;content&quot;: &quot;Kupujem klasičnu gitaru, javite mi se.&quot;,
+                &quot;created_at&quot;: &quot;2025-05-22T17:36:19.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-22T17:36:19.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;category&quot;: {
+                    &quot;id&quot;: 3,
+                    &quot;name&quot;: &quot;Muzika&quot;
+                },
+                &quot;tags&quot;: [
+                    {
+                        &quot;id&quot;: 1,
+                        &quot;name&quot;: &quot;PHP&quot;,
+                        &quot;slug&quot;: &quot;php&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 21,
+                            &quot;tag_id&quot;: 1,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
+                    },
+                    {
+                        &quot;id&quot;: 6,
+                        &quot;name&quot;: &quot;Gitara&quot;,
+                        &quot;slug&quot;: &quot;gitara&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 21,
+                            &quot;tag_id&quot;: 6,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
+                    }
+                ],
+                &quot;author&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+                },
+                &quot;comments&quot;: []
+            },
+            {
+                &quot;id&quot;: 20,
+                &quot;user_id&quot;: 1,
+                &quot;category_id&quot;: 3,
+                &quot;title&quot;: &quot;Sviram bas gitaru 8 i mrsim muda&quot;,
+                &quot;slug&quot;: &quot;sviram-bas-gitaru-8-i-mrsim-muda&quot;,
+                &quot;content&quot;: &quot;Kupujem klasičnu gitaru, javite mi se.&quot;,
+                &quot;created_at&quot;: &quot;2025-05-22T17:13:13.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-22T17:13:13.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;category&quot;: {
+                    &quot;id&quot;: 3,
+                    &quot;name&quot;: &quot;Muzika&quot;
+                },
+                &quot;tags&quot;: [
+                    {
+                        &quot;id&quot;: 1,
+                        &quot;name&quot;: &quot;PHP&quot;,
+                        &quot;slug&quot;: &quot;php&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 20,
+                            &quot;tag_id&quot;: 1,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
+                    },
+                    {
+                        &quot;id&quot;: 6,
+                        &quot;name&quot;: &quot;Gitara&quot;,
+                        &quot;slug&quot;: &quot;gitara&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 20,
+                            &quot;tag_id&quot;: 6,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
+                    }
+                ],
+                &quot;author&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+                },
+                &quot;comments&quot;: []
+            },
+            {
+                &quot;id&quot;: 19,
+                &quot;user_id&quot;: 1,
+                &quot;category_id&quot;: 3,
+                &quot;title&quot;: &quot;Sviram bas gitaru 7 i mrsim muda&quot;,
+                &quot;slug&quot;: &quot;sviram-bas-gitaru-7-i-mrsim-muda&quot;,
+                &quot;content&quot;: &quot;Kupujem klasičnu gitaru, javite mi se.&quot;,
+                &quot;created_at&quot;: &quot;2025-05-22T17:01:39.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-22T17:01:39.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;category&quot;: {
+                    &quot;id&quot;: 3,
+                    &quot;name&quot;: &quot;Muzika&quot;
+                },
+                &quot;tags&quot;: [
+                    {
+                        &quot;id&quot;: 1,
+                        &quot;name&quot;: &quot;PHP&quot;,
+                        &quot;slug&quot;: &quot;php&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 19,
+                            &quot;tag_id&quot;: 1,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
+                    },
+                    {
+                        &quot;id&quot;: 6,
+                        &quot;name&quot;: &quot;Gitara&quot;,
+                        &quot;slug&quot;: &quot;gitara&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 19,
+                            &quot;tag_id&quot;: 6,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
+                    }
+                ],
+                &quot;author&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+                },
+                &quot;comments&quot;: []
+            },
+            {
+                &quot;id&quot;: 18,
+                &quot;user_id&quot;: 1,
+                &quot;category_id&quot;: 3,
+                &quot;title&quot;: &quot;Sviram bas gitaru 6 i mrsim muda&quot;,
+                &quot;slug&quot;: &quot;sviram-bas-gitaru-6-i-mrsim-muda&quot;,
+                &quot;content&quot;: &quot;Kupujem klasičnu gitaru, javite mi se.&quot;,
+                &quot;created_at&quot;: &quot;2025-05-22T14:58:05.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-22T14:58:05.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;category&quot;: {
+                    &quot;id&quot;: 3,
+                    &quot;name&quot;: &quot;Muzika&quot;
+                },
+                &quot;tags&quot;: [
+                    {
+                        &quot;id&quot;: 1,
+                        &quot;name&quot;: &quot;PHP&quot;,
+                        &quot;slug&quot;: &quot;php&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 18,
+                            &quot;tag_id&quot;: 1,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
+                    },
+                    {
+                        &quot;id&quot;: 6,
+                        &quot;name&quot;: &quot;Gitara&quot;,
+                        &quot;slug&quot;: &quot;gitara&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 18,
+                            &quot;tag_id&quot;: 6,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
+                    }
+                ],
+                &quot;author&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+                },
+                &quot;comments&quot;: []
+            },
+            {
+                &quot;id&quot;: 17,
+                &quot;user_id&quot;: 1,
+                &quot;category_id&quot;: 3,
+                &quot;title&quot;: &quot;Sviram bas gitaru 5 i mrsim muda&quot;,
+                &quot;slug&quot;: &quot;sviram-bas-gitaru-5-i-mrsim-muda&quot;,
+                &quot;content&quot;: &quot;Kupujem klasičnu gitaru, javite mi se.&quot;,
+                &quot;created_at&quot;: &quot;2025-05-22T14:40:41.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-22T14:40:41.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;category&quot;: {
+                    &quot;id&quot;: 3,
+                    &quot;name&quot;: &quot;Muzika&quot;
+                },
+                &quot;tags&quot;: [
+                    {
+                        &quot;id&quot;: 1,
+                        &quot;name&quot;: &quot;PHP&quot;,
+                        &quot;slug&quot;: &quot;php&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 17,
+                            &quot;tag_id&quot;: 1,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
+                    },
+                    {
+                        &quot;id&quot;: 6,
+                        &quot;name&quot;: &quot;Gitara&quot;,
+                        &quot;slug&quot;: &quot;gitara&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 17,
+                            &quot;tag_id&quot;: 6,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
+                    }
+                ],
+                &quot;author&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+                },
+                &quot;comments&quot;: []
+            },
+            {
+                &quot;id&quot;: 16,
+                &quot;user_id&quot;: 1,
+                &quot;category_id&quot;: 3,
+                &quot;title&quot;: &quot;Sviram bas gitaru 4 i mrsim muda&quot;,
+                &quot;slug&quot;: &quot;sviram-bas-gitaru-4-i-mrsim-muda&quot;,
+                &quot;content&quot;: &quot;Kupujem klasičnu gitaru, javite mi se.&quot;,
+                &quot;created_at&quot;: &quot;2025-05-22T14:37:59.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-22T14:37:59.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;category&quot;: {
+                    &quot;id&quot;: 3,
+                    &quot;name&quot;: &quot;Muzika&quot;
+                },
+                &quot;tags&quot;: [
+                    {
+                        &quot;id&quot;: 1,
+                        &quot;name&quot;: &quot;PHP&quot;,
+                        &quot;slug&quot;: &quot;php&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 16,
+                            &quot;tag_id&quot;: 1,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
+                    },
+                    {
+                        &quot;id&quot;: 6,
+                        &quot;name&quot;: &quot;Gitara&quot;,
+                        &quot;slug&quot;: &quot;gitara&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 16,
+                            &quot;tag_id&quot;: 6,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
+                    }
+                ],
+                &quot;author&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+                },
+                &quot;comments&quot;: []
+            },
+            {
+                &quot;id&quot;: 15,
+                &quot;user_id&quot;: 1,
+                &quot;category_id&quot;: 3,
+                &quot;title&quot;: &quot;Sviram bas gitaru 3 i mrsim muda&quot;,
+                &quot;slug&quot;: &quot;sviram-bas-gitaru-3-i-mrsim-muda&quot;,
+                &quot;content&quot;: &quot;Kupujem klasičnu gitaru, javite mi se.&quot;,
+                &quot;created_at&quot;: &quot;2025-05-22T14:35:00.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-22T14:35:00.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;category&quot;: {
+                    &quot;id&quot;: 3,
+                    &quot;name&quot;: &quot;Muzika&quot;
+                },
+                &quot;tags&quot;: [
+                    {
+                        &quot;id&quot;: 1,
+                        &quot;name&quot;: &quot;PHP&quot;,
+                        &quot;slug&quot;: &quot;php&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 15,
+                            &quot;tag_id&quot;: 1,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
+                    },
+                    {
+                        &quot;id&quot;: 6,
+                        &quot;name&quot;: &quot;Gitara&quot;,
+                        &quot;slug&quot;: &quot;gitara&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 15,
+                            &quot;tag_id&quot;: 6,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
+                    }
+                ],
+                &quot;author&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+                },
+                &quot;comments&quot;: []
+            },
+            {
+                &quot;id&quot;: 14,
+                &quot;user_id&quot;: 1,
+                &quot;category_id&quot;: 3,
+                &quot;title&quot;: &quot;Sviram bas gitaru 2 i mrsim muda&quot;,
+                &quot;slug&quot;: &quot;sviram-bas-gitaru-2-i-mrsim-muda&quot;,
+                &quot;content&quot;: &quot;Kupujem klasičnu gitaru, javite mi se.&quot;,
+                &quot;created_at&quot;: &quot;2025-05-22T14:32:32.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-22T14:32:32.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;category&quot;: {
+                    &quot;id&quot;: 3,
+                    &quot;name&quot;: &quot;Muzika&quot;
+                },
+                &quot;tags&quot;: [
+                    {
+                        &quot;id&quot;: 1,
+                        &quot;name&quot;: &quot;PHP&quot;,
+                        &quot;slug&quot;: &quot;php&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 14,
+                            &quot;tag_id&quot;: 1,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
+                    },
+                    {
+                        &quot;id&quot;: 6,
+                        &quot;name&quot;: &quot;Gitara&quot;,
+                        &quot;slug&quot;: &quot;gitara&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 14,
+                            &quot;tag_id&quot;: 6,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
+                    }
+                ],
+                &quot;author&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+                },
+                &quot;comments&quot;: []
+            },
+            {
+                &quot;id&quot;: 13,
+                &quot;user_id&quot;: 1,
+                &quot;category_id&quot;: 3,
+                &quot;title&quot;: &quot;Sviram bas gitaru i mrsim muda&quot;,
+                &quot;slug&quot;: &quot;sviram-bas-gitaru-i-mrsim-muda&quot;,
+                &quot;content&quot;: &quot;Kupujem klasičnu gitaru, javite mi se.&quot;,
+                &quot;created_at&quot;: &quot;2025-05-22T14:30:56.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-22T14:30:56.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;category&quot;: {
+                    &quot;id&quot;: 3,
+                    &quot;name&quot;: &quot;Muzika&quot;
+                },
+                &quot;tags&quot;: [
+                    {
+                        &quot;id&quot;: 1,
+                        &quot;name&quot;: &quot;PHP&quot;,
+                        &quot;slug&quot;: &quot;php&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 13,
+                            &quot;tag_id&quot;: 1,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
+                    },
+                    {
+                        &quot;id&quot;: 6,
+                        &quot;name&quot;: &quot;Gitara&quot;,
+                        &quot;slug&quot;: &quot;gitara&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 13,
+                            &quot;tag_id&quot;: 6,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
+                    }
+                ],
+                &quot;author&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+                },
+                &quot;comments&quot;: []
+            },
+            {
+                &quot;id&quot;: 12,
+                &quot;user_id&quot;: 1,
+                &quot;category_id&quot;: 3,
+                &quot;title&quot;: &quot;Sviram klasičnu gitaru i mrsim muda&quot;,
+                &quot;slug&quot;: &quot;sviram-klasicnu-gitaru-i-mrsim-muda&quot;,
+                &quot;content&quot;: &quot;Kupujem klasičnu gitaru, javite mi se.&quot;,
+                &quot;created_at&quot;: &quot;2025-05-22T14:22:42.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-05-22T14:22:42.000000Z&quot;,
+                &quot;comments_count&quot;: 0,
+                &quot;likes_count&quot;: 0,
+                &quot;category&quot;: {
+                    &quot;id&quot;: 3,
+                    &quot;name&quot;: &quot;Muzika&quot;
+                },
+                &quot;tags&quot;: [
+                    {
+                        &quot;id&quot;: 1,
+                        &quot;name&quot;: &quot;PHP&quot;,
+                        &quot;slug&quot;: &quot;php&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 12,
+                            &quot;tag_id&quot;: 1,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
+                    },
+                    {
+                        &quot;id&quot;: 6,
+                        &quot;name&quot;: &quot;Gitara&quot;,
+                        &quot;slug&quot;: &quot;gitara&quot;,
+                        &quot;pivot&quot;: {
+                            &quot;post_id&quot;: 12,
+                            &quot;tag_id&quot;: 6,
+                            &quot;tagged_by_user_id&quot;: 1
+                        }
+                    }
+                ],
+                &quot;author&quot;: {
+                    &quot;id&quot;: 1,
+                    &quot;name&quot;: &quot;Nikola Zdravkovic&quot;,
+                    &quot;avatar&quot;: &quot;storage/images/DSC_0563.jpg&quot;,
+                    &quot;avatar_url&quot;: &quot;http://localhost/storage/images/DSC_0563.jpg&quot;
+                },
+                &quot;comments&quot;: []
             }
         ],
         &quot;first_page_url&quot;: &quot;http://localhost/api/v1/posts?page=1&quot;,
         &quot;from&quot;: 1,
-        &quot;last_page&quot;: 5,
-        &quot;last_page_url&quot;: &quot;http://localhost/api/v1/posts?page=5&quot;,
+        &quot;last_page&quot;: 2,
+        &quot;last_page_url&quot;: &quot;http://localhost/api/v1/posts?page=2&quot;,
         &quot;links&quot;: [
             {
                 &quot;url&quot;: null,
@@ -884,21 +1763,6 @@ vary: Origin
                 &quot;active&quot;: false
             },
             {
-                &quot;url&quot;: &quot;http://localhost/api/v1/posts?page=3&quot;,
-                &quot;label&quot;: &quot;3&quot;,
-                &quot;active&quot;: false
-            },
-            {
-                &quot;url&quot;: &quot;http://localhost/api/v1/posts?page=4&quot;,
-                &quot;label&quot;: &quot;4&quot;,
-                &quot;active&quot;: false
-            },
-            {
-                &quot;url&quot;: &quot;http://localhost/api/v1/posts?page=5&quot;,
-                &quot;label&quot;: &quot;5&quot;,
-                &quot;active&quot;: false
-            },
-            {
                 &quot;url&quot;: &quot;http://localhost/api/v1/posts?page=2&quot;,
                 &quot;label&quot;: &quot;Next &amp;raquo;&quot;,
                 &quot;active&quot;: false
@@ -906,9 +1770,9 @@ vary: Origin
         ],
         &quot;next_page_url&quot;: &quot;http://localhost/api/v1/posts?page=2&quot;,
         &quot;path&quot;: &quot;http://localhost/api/v1/posts&quot;,
-        &quot;per_page&quot;: 10,
+        &quot;per_page&quot;: 30,
         &quot;prev_page_url&quot;: null,
-        &quot;to&quot;: 10,
+        &quot;to&quot;: 30,
         &quot;total&quot;: 41
     }
 }</code>
@@ -1818,6 +2682,449 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <p>The <code>id</code> of an existing record in the posts table. Example: <code>16</code></p>
         </div>
         </form>
+
+                    <h2 id="endpoints-GETapi-v1-posts-comments--id-">GET api/v1/posts/comments/{id}</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-GETapi-v1-posts-comments--id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/v1/posts/comments/1" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/v1/posts/comments/1"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-v1-posts-comments--id-">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+vary: Origin
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-v1-posts-comments--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-v1-posts-comments--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-v1-posts-comments--id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-v1-posts-comments--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-v1-posts-comments--id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-v1-posts-comments--id-" data-method="GET"
+      data-path="api/v1/posts/comments/{id}"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-posts-comments--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-v1-posts-comments--id-"
+                    onclick="tryItOut('GETapi-v1-posts-comments--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-v1-posts-comments--id-"
+                    onclick="cancelTryOut('GETapi-v1-posts-comments--id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-v1-posts-comments--id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/v1/posts/comments/{id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-v1-posts-comments--id-"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-v1-posts-comments--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-v1-posts-comments--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="id"                data-endpoint="GETapi-v1-posts-comments--id-"
+               value="1"
+               data-component="url">
+    <br>
+<p>The ID of the comment. Example: <code>1</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="endpoints-DELETEapi-v1-posts-comments--id-">DELETE api/v1/posts/comments/{id}</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-DELETEapi-v1-posts-comments--id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request DELETE \
+    "http://localhost/api/v1/posts/comments/1" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/v1/posts/comments/1"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "DELETE",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-DELETEapi-v1-posts-comments--id-">
+</span>
+<span id="execution-results-DELETEapi-v1-posts-comments--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-DELETEapi-v1-posts-comments--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-DELETEapi-v1-posts-comments--id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-DELETEapi-v1-posts-comments--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-DELETEapi-v1-posts-comments--id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-DELETEapi-v1-posts-comments--id-" data-method="DELETE"
+      data-path="api/v1/posts/comments/{id}"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('DELETEapi-v1-posts-comments--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-DELETEapi-v1-posts-comments--id-"
+                    onclick="tryItOut('DELETEapi-v1-posts-comments--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-DELETEapi-v1-posts-comments--id-"
+                    onclick="cancelTryOut('DELETEapi-v1-posts-comments--id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-DELETEapi-v1-posts-comments--id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-red">DELETE</small>
+            <b><code>api/v1/posts/comments/{id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="DELETEapi-v1-posts-comments--id-"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="DELETEapi-v1-posts-comments--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="DELETEapi-v1-posts-comments--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="id"                data-endpoint="DELETEapi-v1-posts-comments--id-"
+               value="1"
+               data-component="url">
+    <br>
+<p>The ID of the comment. Example: <code>1</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="endpoints-GETapi-v1-manticore-autocomplete--text-">GET api/v1/manticore/autocomplete/{text}</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-GETapi-v1-manticore-autocomplete--text-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/v1/manticore/autocomplete/architecto" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/v1/manticore/autocomplete/architecto"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-v1-manticore-autocomplete--text-">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+vary: Origin
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;status&quot;: 200,
+    &quot;success&quot;: true,
+    &quot;message&quot;: &quot;Success&quot;,
+    &quot;data&quot;: [
+        {
+            &quot;qpos&quot;: &quot;1&quot;,
+            &quot;tokenized&quot;: &quot;architecto*&quot;,
+            &quot;normalized&quot;: &quot;architecto*&quot;
+        }
+    ]
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-v1-manticore-autocomplete--text-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-v1-manticore-autocomplete--text-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-v1-manticore-autocomplete--text-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-v1-manticore-autocomplete--text-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-v1-manticore-autocomplete--text-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-v1-manticore-autocomplete--text-" data-method="GET"
+      data-path="api/v1/manticore/autocomplete/{text}"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-manticore-autocomplete--text-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-v1-manticore-autocomplete--text-"
+                    onclick="tryItOut('GETapi-v1-manticore-autocomplete--text-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-v1-manticore-autocomplete--text-"
+                    onclick="cancelTryOut('GETapi-v1-manticore-autocomplete--text-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-v1-manticore-autocomplete--text-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/v1/manticore/autocomplete/{text}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-v1-manticore-autocomplete--text-"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-v1-manticore-autocomplete--text-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-v1-manticore-autocomplete--text-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>text</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="text"                data-endpoint="GETapi-v1-manticore-autocomplete--text-"
+               value="architecto"
+               data-component="url">
+    <br>
+<p>Example: <code>architecto</code></p>
+            </div>
+                    </form>
 
                     <h2 id="endpoints-GETapi-v1-users">GET api/v1/users</h2>
 

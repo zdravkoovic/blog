@@ -3,7 +3,9 @@
 namespace App\Providers;
 
 use App\Repositories\AuthRepository;
+use App\Repositories\CommentRepository;
 use App\Repositories\Interfaces\IAuthRepository;
+use App\Repositories\Interfaces\ICommentRepository;
 use App\Repositories\Interfaces\IUserRepository;
 use App\Repositories\UserRepository;
 use App\Repositories\Interfaces\IPostRepository;
@@ -20,7 +22,8 @@ class AppServiceProvider extends ServiceProvider
         $bindings = [
             IAuthRepository::class => AuthRepository::class,
             IUserRepository::class => UserRepository::class,
-            IPostRepository::class => PostRepository::class
+            IPostRepository::class => PostRepository::class,
+            ICommentRepository::class => CommentRepository::class
         ];
 
         foreach ($bindings as $interface => $repository)

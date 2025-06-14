@@ -4,6 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Laravel\Scout\Searchable;
+use RomanStruk\ManticoreScoutEngine\Mysql\ManticoreVector;
 
 /**
  * @property int $id
@@ -39,14 +41,16 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Post extends Model
 {
-    use HasFactory;
+    use HasFactory, Searchable;
 
     protected $fillable = [
         'user_id',
         'category_id',
         'title',
         'slug',
-        'content',
+        'content', 
+        'created_at',
+        'updated_at'
     ];
 
     public function author()
@@ -75,5 +79,43 @@ class Post extends Model
     public function likes()
     {
         return $this->hasMany(Like::class);
+    }
+
+    public function toSearchableArray(): array
+    {
+        return array_filter([
+            // 'id' => $this->id,
+            'title' => $this->title,
+            'title_attr' => $this->title,
+            // 'tags_id' => $this->tags->pluck('id')->all()
+        ]);
+    }
+
+    public function scoutIndexMigration(): array
+    {
+        return [
+            'fields' => [
+                
+                // 'content' => ['type' => 'text'],// string|text [stored|attribute] [indexed],
+                'title' => ['type' => 'text'],
+                'title_attr' => ['type' => 'string']
+                // 'created_at' => ['type' => 'timestamp'],
+                // 'updated_at' => ['type' => 'timestamp']
+                // 'tags_id' => ['type' => 'multi']
+
+            ],
+            'attributes' => [
+                'id' => ['type' => 'bigint'],
+            ],
+            'settings' => [
+                'min_prefix_len' => '2',
+                'min_infix_len' => '2',
+                // 'prefix_fields' => 'title',
+                'infix_fields' => 'title',
+                'fuzzy_search' => '2',
+                'expand_keywords' => '1',
+                // 'engine' => 'columnar', // [default] row-wise - traditional storage available in Manticore Search out of the box; columnar - provided by Manticore Columnar Library
+            ],
+        ];
     }
 }

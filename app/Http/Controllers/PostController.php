@@ -11,7 +11,10 @@ use App\Helpers\ResponseHelper;
 use App\Http\Requests\CommentRequest;
 use App\Http\Requests\LikeRequest;
 use App\Http\Requests\PostRequest;
+use App\Models\Comment;
+use App\Models\User;
 use App\Services\PostService;
+use Auth;
 
 /** 
  * @authenticated
@@ -80,5 +83,30 @@ class PostController extends Controller
     public function getAllTags()
     {
         return ResponseHelper::success($this->postService->getAllTags());
+    }
+
+    public function autocomplete(string $text)
+    {
+        $recommends = $this->postService->recommends($text);
+
+        return ResponseHelper::success($recommends);
+    }
+
+    public function comments(int $post_id)
+    {
+        $user_id = Auth::user()->id;
+
+        return ResponseHelper::success($this->postService->comments($post_id, $user_id));
+    }
+
+    public function deleteComment(int $comment_id)
+    {
+        /** @var Comment $comment */
+        $comment = Comment::find($comment_id);        
+
+        if($comment->user_id !== Auth::user()->id) return ResponseHelper::success([], "Nemate dozvolu da obrisete ovaj komentar!", 403);
+        
+        $id = $this->postService->deleteComment($comment_id);
+        return ResponseHelper::success($id);
     }
 }
