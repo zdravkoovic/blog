@@ -8,7 +8,6 @@ use App\Models\Like;
 use App\Models\Post;
 use App\Models\Tag;
 use App\Repositories\Interfaces\IPostRepository;
-use DB;
 use Illuminate\Database\Eloquent\Collection;
 use RomanStruk\ManticoreScoutEngine\Mysql\Builder;
 
