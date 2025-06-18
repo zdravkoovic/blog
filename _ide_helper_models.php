@@ -117,9 +117,11 @@ namespace App\Models{
  * @mixin \Eloquent
  * @method \Illuminate\Database\Eloquent\Relations\BelongsToMany tags()
  * @mixin IdeHelperPost
+ * @property string|null $lemma_title
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \App\Models\Comment> $comments
  * @property-read int|null $comments_count
  * @method static \Database\Factories\PostFactory factory($count = null, $state = [])
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereLemmaTitle($value)
  */
 	class Post extends \Eloquent {}
 }

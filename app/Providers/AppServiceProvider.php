@@ -30,6 +30,8 @@ class AppServiceProvider extends ServiceProvider
         {
             $this->app->bind($interface, $repository);
         }
+
+        $this->app->singleton(\App\Services\LemmatizerService::class);
     }
 
     /**

@@ -1,15 +1,21 @@
 <?php
 
 use App\Http\Controllers\PostController;
-use App\Models\Post;
 use Illuminate\Support\Facades\Route;
-use RomanStruk\ManticoreScoutEngine\Mysql\Builder;
 
 Route::prefix('posts')->group(function () {
     Route::middleware([])->group(function () {
         Route::controller(PostController::class)->group(function () {
             Route::get('/', 'index');
             Route::get('/tags', 'getAllTags');
+        });
+    });
+});
+
+Route::prefix('categories')->group(function () {
+    Route::middleware([])->group(function () {
+        Route::controller(PostController::class)->group(function () {
+            Route::get('/', 'getAllCategories');
         });
     });
 });
@@ -29,8 +35,9 @@ Route::prefix('posts')->group(function () {
 
 Route::prefix('manticore')->group(function () {
     Route::controller(PostController::class)->group(function () {
-            Route::get('/autocomplete/{text}', 'autocomplete');
-        });
+        Route::get('/autocomplete/{text}', 'autocomplete');
+        Route::get('/search', 'blogs');
+    });
     // Route::get('/{text}', function (string $text) {
         
     //     // $result = Post::search(json_encode(['title' => $text]), function (Builder $builder) {

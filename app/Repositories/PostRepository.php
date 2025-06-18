@@ -2,6 +2,7 @@
 
 namespace App\Repositories;
 
+use App\Models\Category;
 use App\Models\Comment;
 use App\Models\Like;
 use App\Models\Post;
@@ -66,6 +67,21 @@ class PostRepository implements IPostRepository
             ->findOrFail($id);
             // ->get(['id', 'title', 'content', 'user_id']);
     }
+
+    public function findByIds(array $ids): array
+    {
+        return Post::with([
+            'category:id,name,slug',
+            'tags:id,name,slug',
+            'author:id,name,avatar',
+        ])
+        ->whereIn('id', collect($ids)->flatten()->toArray())
+        ->orderBy('created_at', 'desc')
+        ->withCount(['comments', 'likes'])
+        ->get()
+        ->toArray();
+    }
+
     public function create(array $data): Post
     {
         /**@var \App\Models\Post $post */
@@ -148,8 +164,8 @@ class PostRepository implements IPostRepository
             return $builder->autocomplete(['"', '^'])->highlight()->select(['title']);
 
         })->raw();
+        
 
-        // $recommends = DB::connection('manticore')->select("CALL AUTOCOMPLETE(?, posts)", [$text]);
 
         return $recommends;
     }
@@ -173,5 +189,19 @@ class PostRepository implements IPostRepository
                         })->toArray();
         
         return $comments;
+    }
+
+    public function IdsOfBlogsSearchedByTitle(string $title) : array
+    {
+        $ids = Post::search($title . '*', function (Builder $builder) use ($title) {
+            return $builder
+            ->select(['id']);
+        })->get()->pluck('id')->toArray();
+        return $ids;
+    }
+
+    public function getAllCategories(): Collection
+    {
+        return Category::all();
     }
 }

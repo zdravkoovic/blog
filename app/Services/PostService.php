@@ -69,7 +69,9 @@ class PostService {
 
     public function recommends(string $text)
     {
-        return $this->postRepo->autocomplete($text);
+        $recommends = $this->postRepo->autocomplete($text);
+
+        return array_column($recommends, 'normalized');
     }
 
     public function comments(int $post_id, int $user_id)
@@ -82,5 +84,21 @@ class PostService {
     public function deleteComment(int $id) : int
     {
         return $this->commentRepo->delete($id);
+    }
+
+
+    public function searchedBlogsByTitle(string $title)
+    {
+        $ids = $this->postRepo->IdsOfBlogsSearchedByTitle($title);
+        if (empty($ids)) {
+            return [];
+        }
+        $blogs = $this->postRepo->findByIds($ids);
+        return $blogs;
+    }
+
+    public function getAllCategories()
+    {
+        return $this->postRepo->getAllCategories();
     }
 }

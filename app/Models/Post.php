@@ -47,6 +47,7 @@ class Post extends Model
         'user_id',
         'category_id',
         'title',
+        'lemma_title', 
         'slug',
         'content', 
         'created_at',
@@ -85,7 +86,8 @@ class Post extends Model
     {
         return array_filter([
             // 'id' => $this->id,
-            'title' => $this->title,
+            // 'title' => $this->title,
+            'lemma_title' => $this->lemma_title,
             'title_attr' => $this->title,
             // 'tags_id' => $this->tags->pluck('id')->all()
         ]);
@@ -97,7 +99,8 @@ class Post extends Model
             'fields' => [
                 
                 // 'content' => ['type' => 'text'],// string|text [stored|attribute] [indexed],
-                'title' => ['type' => 'text'],
+                // 'title' => ['type' => 'text'],
+                'lemma_title' => ['type' => 'text'],
                 'title_attr' => ['type' => 'string']
                 // 'created_at' => ['type' => 'timestamp'],
                 // 'updated_at' => ['type' => 'timestamp']
@@ -111,8 +114,8 @@ class Post extends Model
                 'min_prefix_len' => '2',
                 'min_infix_len' => '2',
                 // 'prefix_fields' => 'title',
-                'infix_fields' => 'title',
-                'fuzzy_search' => '2',
+                'infix_fields' => 'lemma_title',
+                'fuzzy_search' => '1',
                 'expand_keywords' => '1',
                 // 'engine' => 'columnar', // [default] row-wise - traditional storage available in Manticore Search out of the box; columnar - provided by Manticore Columnar Library
             ],

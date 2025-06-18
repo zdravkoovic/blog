@@ -13,6 +13,7 @@ use App\Http\Requests\LikeRequest;
 use App\Http\Requests\PostRequest;
 use App\Models\Comment;
 use App\Models\User;
+use App\Services\LemmatizerService;
 use App\Services\PostService;
 use Auth;
 
@@ -22,10 +23,12 @@ use Auth;
 class PostController extends Controller
 {
     private PostService $postService;
+    private LemmatizerService $lemmatizerService;
 
-    public function __construct(PostService $postService)
+    public function __construct(PostService $postService, LemmatizerService $lemmatizerService)
     {
         $this->postService = $postService;
+        $this->lemmatizerService = $lemmatizerService;
     }
 
     /** 
@@ -108,5 +111,48 @@ class PostController extends Controller
         
         $id = $this->postService->deleteComment($comment_id);
         return ResponseHelper::success($id);
+    }
+
+    /**
+     * @unauthenticated
+    * @queryParam text string Optional. Search text for blog titles. Example: laravel
+     */
+    public function blogs()
+    {
+        $title = request()->query('text', '');
+        if (empty($title)) {
+            return ResponseHelper::error("Search text is required", 400);
+        }
+        $title = $this->lemmatizerService->lemmatize($title);
+        $blogs = $this->postService->searchedBlogsByTitle($title);
+        return ResponseHelper::success($blogs);
+    }
+
+    /**
+     * Get all blog categories.
+     *
+     * Retrieves a list of all available categories for blogs.
+     *
+     * @response 200 {
+     *   "success": true,
+     *   "data": [
+     *     {
+     *       "id": 1,
+     *       "name": "Technology"
+     *     },
+     *     {
+     *       "id": 2,
+     *       "name": "Lifestyle"
+     *     }
+     *   ]
+     * }
+     *
+     * @unauthenticated
+     *
+     * @return \Illuminate\Http\JsonResponse List of categories.
+     */
+    public function getAllCategories()
+    {
+        return ResponseHelper::success($this->postService->getAllCategories());
     }
 }
