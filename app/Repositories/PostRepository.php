@@ -9,9 +9,6 @@ use App\Models\Post;
 use App\Models\Tag;
 use App\Repositories\Interfaces\IPostRepository;
 use Illuminate\Database\Eloquent\Collection;
-use RomanStruk\ManticoreScoutEngine\Mysql\Builder;
-
-use function PHPSTORM_META\map;
 
 class PostRepository implements IPostRepository
 {
@@ -40,18 +37,18 @@ class PostRepository implements IPostRepository
             ->get();
     }
 
-    public function getAllWithAuthorsAndAvatars()
+    public function getAllWithAuthorsAndAvatars() : \Illuminate\Pagination\LengthAwarePaginator
     {
         return Post::with(
             'category:id,name',
             'tags:id,name,slug',
             'author:id,name,avatar',
             'comments:id,post_id,user_id,content',
+            'likes:id,user_id,post_id'
         )
             ->latest()
             ->withCount(['comments', 'likes'])
-            ->paginate(30)
-            ->jsonSerialize();
+            ->paginate(30);
     }
 
     public function findById(int $id): ?Post
@@ -67,7 +64,7 @@ class PostRepository implements IPostRepository
             // ->get(['id', 'title', 'content', 'user_id']);
     }
 
-    public function findByIds(array $ids): array
+    public function findByIds(array $ids): Collection
     {
         return Post::with([
             'category:id,name,slug',
@@ -77,8 +74,7 @@ class PostRepository implements IPostRepository
         ->whereIn('id', collect($ids)->flatten()->toArray())
         ->orderBy('created_at', 'desc')
         ->withCount(['comments', 'likes'])
-        ->get()
-        ->toArray();
+        ->get();
     }
 
     public function create(array $data): Post
@@ -123,7 +119,7 @@ class PostRepository implements IPostRepository
         
         if($like){
             $like->delete();
-            return 'unliked';
+            return -1;
         }
 
         Like::create([
@@ -131,7 +127,7 @@ class PostRepository implements IPostRepository
             'user_id' => $userId
         ]);
         
-        return 'liked';
+        return 1;
     }
 
     public function getAllTags(): Collection
@@ -157,16 +153,10 @@ class PostRepository implements IPostRepository
     }
 
 
-    public function autocomplete(string $text) : array
+    public function autocomplete(string $text): array
     {
-        $recommends = Post::search($text.'*', function (Builder $builder) {
-            return $builder->autocomplete(['"', '^'])->highlight()->select(['title']);
-
-        })->raw();
-        
-
-
-        return $recommends;
+        // Implement the method or return an empty array for now
+        return [];
     }
 
     public function getComments(int $post_id, int $userId): array
@@ -190,17 +180,16 @@ class PostRepository implements IPostRepository
         return $comments;
     }
 
-    public function IdsOfBlogsSearchedByTitle(string $title) : array
+    public function searchIdsInManticore(string $title): array
     {
-        $ids = Post::search($title . '*', function (Builder $builder) use ($title) {
-            return $builder
-            ->select(['id']);
-        })->get()->pluck('id')->toArray();
-        return $ids;
+        // Implement the method or leave as an empty array for now
+        return [];
     }
 
     public function getAllCategories(): Collection
     {
-        return Category::all();
+        return Category::orderByRaw("name = 'Saved' DESC")
+            ->orderBy('name')
+            ->get();
     }
 }

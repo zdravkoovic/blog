@@ -22681,53 +22681,6 @@ namespace Illuminate\Support\Facades {
             }
     }
 
-namespace Illuminate\Support {
-    /**
-     * 
-     *
-     * @template TKey of array-key
-     * @template-covariant TValue
-     * @implements \ArrayAccess<TKey, TValue>
-     * @implements \Illuminate\Support\Enumerable<TKey, TValue>
-     */
-    class Collection {
-        /**
-         * 
-         *
-         * @see \RomanStruk\ManticoreScoutEngine\ManticoreServiceProvider::configureMysqlEngine()
-         * @param mixed $group
-         * @static 
-         */
-        public static function getFacet($group)
-        {
-            return \Illuminate\Support\Collection::getFacet($group);
-        }
-
-        /**
-         * 
-         *
-         * @see \RomanStruk\ManticoreScoutEngine\ManticoreServiceProvider::configureMysqlEngine()
-         * @static 
-         */
-        public static function getFacets()
-        {
-            return \Illuminate\Support\Collection::getFacets();
-        }
-
-        /**
-         * 
-         *
-         * @see \RomanStruk\ManticoreScoutEngine\ManticoreServiceProvider::configureMysqlEngine()
-         * @static 
-         */
-        public static function getHighlight()
-        {
-            return \Illuminate\Support\Collection::getHighlight();
-        }
-
-            }
-    }
-
 namespace Illuminate\Http {
     /**
      * 
@@ -22807,52 +22760,6 @@ namespace Illuminate\Http {
         public static function hasValidRelativeSignatureWhileIgnoring($ignoreQuery = [])
         {
             return \Illuminate\Http\Request::hasValidRelativeSignatureWhileIgnoring($ignoreQuery);
-        }
-
-            }
-    }
-
-namespace Illuminate\Database\Eloquent {
-    /**
-     * 
-     *
-     * @template TKey of array-key
-     * @template TModel of \Illuminate\Database\Eloquent\Model
-     * @extends \Illuminate\Support\Collection<TKey, TModel>
-     */
-    class Collection {
-        /**
-         * 
-         *
-         * @see \RomanStruk\ManticoreScoutEngine\ManticoreServiceProvider::configureMysqlEngine()
-         * @param mixed $group
-         * @static 
-         */
-        public static function getFacet($group)
-        {
-            return \Illuminate\Database\Eloquent\Collection::getFacet($group);
-        }
-
-        /**
-         * 
-         *
-         * @see \RomanStruk\ManticoreScoutEngine\ManticoreServiceProvider::configureMysqlEngine()
-         * @static 
-         */
-        public static function getFacets()
-        {
-            return \Illuminate\Database\Eloquent\Collection::getFacets();
-        }
-
-        /**
-         * 
-         *
-         * @see \RomanStruk\ManticoreScoutEngine\ManticoreServiceProvider::configureMysqlEngine()
-         * @static 
-         */
-        public static function getHighlight()
-        {
-            return \Illuminate\Database\Eloquent\Collection::getHighlight();
         }
 
             }

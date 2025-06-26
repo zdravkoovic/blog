@@ -29,15 +29,13 @@ class AuthService
         ];
     }
 
-    public function login(AuthDTO $authDTO) : array
+    public function login(AuthDTO $authDTO) : array|null
     {
         $user = $this->authRepos->findUserByEmail($authDTO->email);
 
         // validacioni servis/sloj/validator
         if(! $user || ! Hash::check($authDTO->password, $user->password)){
-            throw ValidationException::withMessages([
-                'email' => ['The provided credentials are incorrect.']
-            ]);
+            return null;
         }
 
         $token = $user->createToken('auth_token')->plainTextToken;

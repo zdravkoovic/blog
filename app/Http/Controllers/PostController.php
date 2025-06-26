@@ -11,6 +11,8 @@ use App\Helpers\ResponseHelper;
 use App\Http\Requests\CommentRequest;
 use App\Http\Requests\LikeRequest;
 use App\Http\Requests\PostRequest;
+use App\Http\Resources\BlogCompactResource;
+use App\Http\Resources\BlogFullResource;
 use App\Models\Comment;
 use App\Models\User;
 use App\Services\LemmatizerService;
@@ -32,14 +34,20 @@ class PostController extends Controller
     }
 
     /** 
-    * @unauthenticated
+    * @authenticated
     */
     public function index()
     {
         $page = request('page', 1);
 
-        $posts = $this->postService->getPosts((int)$page);
-        return ResponseHelper::success($posts);
+        $user = auth('sanctum')->user();
+        $user_id = -1;
+        if($user) {
+            $user_id = $user->id;
+        }
+
+        $posts = $this->postService->getPosts((int)$page, $user_id);
+        return ResponseHelper::success(BlogCompactResource::collection($posts));
     }
 
     public function show($id)
@@ -113,19 +121,19 @@ class PostController extends Controller
         return ResponseHelper::success($id);
     }
 
-    /**
-     * @unauthenticated
-    * @queryParam text string Optional. Search text for blog titles. Example: laravel
-     */
+    /** 
+    * @unauthenticated
+    * @queryParam query string Optional. Searching for blog titles and users nickname. Example: react 
+    */
     public function blogs()
     {
-        $title = request()->query('text', '');
+        $title = request()->query('query', '');
         if (empty($title)) {
             return ResponseHelper::error("Search text is required", 400);
         }
-        $title = $this->lemmatizerService->lemmatize($title);
+        // $title = $this->lemmatizerService->lemmatize($title);
         $blogs = $this->postService->searchedBlogsByTitle($title);
-        return ResponseHelper::success($blogs);
+        return ResponseHelper::success(BlogCompactResource::collection($blogs));
     }
 
     /**

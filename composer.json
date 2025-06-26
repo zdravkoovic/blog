@@ -11,8 +11,8 @@
         "laravel/reverb": "^1.0",
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.10.1",
+        "manticoresoftware/manticoresearch-php": "dev-master",
         "predis/predis": "^3.0",
-        "romanstruk/manticore-scout-engine": "^7.0",
         "zircote/swagger-php": "^5.1"
     },
     "require-dev": {

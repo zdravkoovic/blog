@@ -4,11 +4,13 @@ namespace App\Services;
 
 use App\DTOs\CommentDTO;
 use App\DTOs\LikeDTO;
+use App\DTOs\PaginateBlogsDTO;
 use App\DTOs\PostDTO;
 use App\DTOs\TagDTO;
 use App\Models\Post;
 use App\Models\Tag;
 use App\Repositories\Interfaces\ICommentRepository;
+use App\Repositories\Interfaces\IManticoreRepository;
 use App\Repositories\Interfaces\IPostRepository;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Redis;
@@ -16,26 +18,34 @@ use Illuminate\Support\Facades\Redis;
 class PostService {
     private IPostRepository $postRepo;
     private ICommentRepository $commentRepo;
+    private IManticoreRepository $manticoreRepo;
 
     public function __construct(
         IPostRepository $postRepo,
-        ICommentRepository $commentRepo
+        ICommentRepository $commentRepo,
+        IManticoreRepository $manticoreRepo
     )
     {
         $this->postRepo = $postRepo;
         $this->commentRepo = $commentRepo;
+        $this->manticoreRepo = $manticoreRepo;
     }
 
-    public function getPosts(int $page)
+    public function getPosts(int $page, int $user_id) : \Illuminate\Contracts\Pagination\LengthAwarePaginator
     {
         $cacheVersion = Cache::get('blog_cache_version', 1);
         $cacheKey = "blogs_page_{$page}_v{$cacheVersion}";
 
-        return $this->postRepo->getAllWithAuthorsAndAvatars();
-        $blogs = Cache::tags(['blogs'])->remember($cacheKey, now()->addMinutes(30), function () {
+        $paginator = $this->postRepo->getAllWithAuthorsAndAvatars();
+
+        $paginator->getCollection()->transform(function (Post $post) use ($user_id){
+            $post->setAttribute('did_user_like', $post->likes->contains('user_id', $user_id));
+            return $post;
         });
 
-        return $blogs;
+        // $blogs = Cache::tags(['blogs'])->remember($cacheKey, now()->addMinutes(30), function () {});
+
+        return $paginator;
     }
 
     public function getPostById(int $id){
@@ -89,11 +99,17 @@ class PostService {
 
     public function searchedBlogsByTitle(string $title)
     {
-        $ids = $this->postRepo->IdsOfBlogsSearchedByTitle($title);
+        // $ids = $this->postRepo->searchIdsInManticore($title);
+        $ids = $this->manticoreRepo->searchBlogTitles($title);
         if (empty($ids)) {
             return [];
         }
-        $blogs = $this->postRepo->findByIds($ids);
+        $result = [];
+        foreach ($ids as $doc) {
+            $result[] = $doc->getId();
+        }
+        // return $result or use as needed
+        $blogs = $this->postRepo->findByIds($result);
         return $blogs;
     }
 

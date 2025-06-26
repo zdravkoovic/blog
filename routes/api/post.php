@@ -8,6 +8,7 @@ Route::prefix('posts')->group(function () {
         Route::controller(PostController::class)->group(function () {
             Route::get('/', 'index');
             Route::get('/tags', 'getAllTags');
+            Route::get('/search', 'blogs');
         });
     });
 });
@@ -31,31 +32,4 @@ Route::prefix('posts')->group(function () {
             Route::delete('/comments/{id}', 'deleteComment');
         });
     });
-});
-
-Route::prefix('manticore')->group(function () {
-    Route::controller(PostController::class)->group(function () {
-        Route::get('/autocomplete/{text}', 'autocomplete');
-        Route::get('/search', 'blogs');
-    });
-    // Route::get('/{text}', function (string $text) {
-        
-    //     // $result = Post::search(json_encode(['title' => $text]), function (Builder $builder) {
-    //     //     return $builder->percolateQuery(docs:true, docsJson:true);
-    //     // })->get();
-    // //    $autocomplete = Post::search($text.'* ^',function (Builder $builder) {
-    // //         return $builder->autocomplete(['"','^'], true); // "" ^ * allow full-text operators; stats - Show statistics of keywords, default is 0
-    // //     })->raw();
-
-    //     // $recommends = Post::search('*'.$text.'*', function (Builder $builder) use ($text) {
-    //     //     return $builder
-    //     //         ->groupBy('title_attr')
-    //     //         ->inWeightOrder('desc');
-                
-    //     // })->get()->pluck('title');
-
-    //     // return $recommends;
-
-        
-    // });
 });

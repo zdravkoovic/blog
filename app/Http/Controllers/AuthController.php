@@ -31,6 +31,8 @@ class AuthController extends Controller
         $authDTO = AuthDTO::fromLoginRequest($request->validated());
         $data = $this->authService->login($authDTO);
 
+        if(!$data) return ResponseHelper::error('Invalid credential', 401);
+
         return ResponseHelper::success($data);
     }
 

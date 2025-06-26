@@ -41,7 +41,7 @@ use RomanStruk\ManticoreScoutEngine\Mysql\ManticoreVector;
  */
 class Post extends Model
 {
-    use HasFactory, Searchable;
+    use HasFactory;
 
     protected $fillable = [
         'user_id',
@@ -82,6 +82,10 @@ class Post extends Model
         return $this->hasMany(Like::class);
     }
 
+    public function getDidUserLikeAttribute() {
+        return $this->attributes['did_user_like'] ?? false;
+    }
+
     public function toSearchableArray(): array
     {
         return array_filter([
@@ -115,7 +119,7 @@ class Post extends Model
                 'min_infix_len' => '2',
                 // 'prefix_fields' => 'title',
                 'infix_fields' => 'lemma_title',
-                'fuzzy_search' => '1',
+                // 'fuzzy_search' => '1',
                 'expand_keywords' => '1',
                 // 'engine' => 'columnar', // [default] row-wise - traditional storage available in Manticore Search out of the box; columnar - provided by Manticore Columnar Library
             ],

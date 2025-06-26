@@ -120,6 +120,7 @@ namespace App\Models{
  * @property string|null $lemma_title
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \App\Models\Comment> $comments
  * @property-read int|null $comments_count
+ * @property-read mixed $did_user_like
  * @method static \Database\Factories\PostFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereLemmaTitle($value)
  */

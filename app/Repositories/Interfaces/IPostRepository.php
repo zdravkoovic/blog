@@ -11,9 +11,9 @@ interface IPostRepository
 {
     public function getAll();
     public function getAllWithAuthors();
-    public function getAllWithAuthorsAndAvatars();
+    public function getAllWithAuthorsAndAvatars() : \Illuminate\Pagination\LengthAwarePaginator;
     public function findById(int $id): ?Post;
-    public function findByIds(array $ids): array;
+    public function findByIds(array $ids): Collection;
     public function create(array $data): Post;
     public function commentPost(array $data): array;
     public function likePost(int $postId, int $userId): string;
@@ -26,7 +26,7 @@ interface IPostRepository
     public function getIdsOfTags(array $slugs): array;
 
     public function autocomplete(string $text): array;
-    public function IdsOfBlogsSearchedByTitle(string $title) : array;
+    public function searchIdsInManticore(string $title) : array;
 
     public function getAllCategories(): Collection;
 }

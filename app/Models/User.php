@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Laravel\Scout\Searchable;
 
 /**
  * @property int $id
@@ -108,5 +109,29 @@ class User extends Authenticatable
         return $this->hasMany(Like::class);
     }
 
+    public function toSearchableArray(): array
+    {
+        return array_filter([
+            'name' => $this->name,
+        ]);
+    }
 
+    public function scoutIndexMigration(): array
+    {
+        return [
+            'fields' => [
+                'name' => ['type' => 'text'],
+
+            ],
+            'attributes' => [
+                'id' => ['type' => 'bigint'],
+            ],
+            'settings' => [
+                'min_prefix_len' => '2',
+                'min_infix_len' => '2',
+                'infix_fields' => 'name',
+                'expand_keywords' => '1',
+            ],
+        ];
+    }
 }

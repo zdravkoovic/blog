@@ -27,8 +27,10 @@ class LemmatizerService
         $process = new Process([
             $this->python,
             $this->script,
-            escapeshellarg($text)
-        ]);
+            $text
+        ],
+        base_path()
+    );
 
         $process->setTimeout(60);
         $process->run();
