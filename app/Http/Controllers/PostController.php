@@ -50,7 +50,10 @@ class PostController extends Controller
         return ResponseHelper::success(BlogCompactResource::collection($posts));
     }
 
-    public function show($id)
+    /**
+     * @param integer $id
+     */
+    public function show(int $id)
     {
         $post = $this->postService->getPostById($id);
         return $post ? ResponseHelper::success($post) : ResponseHelper::error("Post not found", 404); 
@@ -162,5 +165,21 @@ class PostController extends Controller
     public function getAllCategories()
     {
         return ResponseHelper::success($this->postService->getAllCategories());
+    }
+
+    public function save1unsave(int $post_id)
+    {   
+        $user_id = request()->user()->id;
+        $result = $this->postService->save1unsave($post_id, $user_id);
+        return ResponseHelper::success($result, $result ? "Saved" : "Unsaved");
+    }
+
+    public function savedBlogsByUser()
+    {
+        $user_id = request()->user()->id;
+
+        $results = $this->postService->savedBlogs($user_id);
+
+        return ResponseHelper::success(BlogCompactResource::collection($results));
     }
 }

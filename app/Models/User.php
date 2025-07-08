@@ -99,6 +99,12 @@ class User extends Authenticatable
         return $this->hasMany(Post::class);
     }
 
+    public function savedPosts() 
+    {
+        return $this->belongsToMany(Post::class, 'saved_posts')
+                    ->withPivot('post_id', 'user_id');
+    }
+
     public function comments()
     {
         return $this->hasMany(Comment::class);

@@ -59,6 +59,12 @@ class Post extends Model
         return $this->belongsTo(User::class, 'user_id');
     }
 
+    public function savedByUsers()
+    {
+        return $this->belongsToMany(User::class, 'saved_posts')
+                    ->withPivot('post_id', 'user_id');
+    }
+
     public function category()
     {
         return $this->belongsTo(Category::class);
@@ -84,6 +90,10 @@ class Post extends Model
 
     public function getDidUserLikeAttribute() {
         return $this->attributes['did_user_like'] ?? false;
+    }
+
+    public function getDidUserSaveAttribute() {
+        return $this->attributes['did_user_save'] ?? false;
     }
 
     public function toSearchableArray(): array

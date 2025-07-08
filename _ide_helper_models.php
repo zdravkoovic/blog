@@ -121,6 +121,9 @@ namespace App\Models{
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \App\Models\Comment> $comments
  * @property-read int|null $comments_count
  * @property-read mixed $did_user_like
+ * @property-read mixed $did_user_save
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \App\Models\User> $savedByUsers
+ * @property-read int|null $saved_by_users_count
  * @method static \Database\Factories\PostFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Post whereLemmaTitle($value)
  */
@@ -206,6 +209,8 @@ namespace App\Models{
  * @mixin IdeHelperUser
  * @property string $avatar
  * @property-read mixed $avatar_url
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \App\Models\Post> $savedPosts
+ * @property-read int|null $saved_posts_count
  * @method static \Illuminate\Database\Eloquent\Builder<static>|User whereAvatar($value)
  */
 	class User extends \Eloquent {}

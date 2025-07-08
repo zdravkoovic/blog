@@ -12,6 +12,8 @@ use App\Models\Tag;
 use App\Repositories\Interfaces\ICommentRepository;
 use App\Repositories\Interfaces\IManticoreRepository;
 use App\Repositories\Interfaces\IPostRepository;
+use Illuminate\Contracts\Pagination\LengthAwarePaginator;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Redis;
 
@@ -31,7 +33,7 @@ class PostService {
         $this->manticoreRepo = $manticoreRepo;
     }
 
-    public function getPosts(int $page, int $user_id) : \Illuminate\Contracts\Pagination\LengthAwarePaginator
+    public function getPosts(int $page, int $user_id) : LengthAwarePaginator
     {
         $cacheVersion = Cache::get('blog_cache_version', 1);
         $cacheKey = "blogs_page_{$page}_v{$cacheVersion}";
@@ -40,6 +42,7 @@ class PostService {
 
         $paginator->getCollection()->transform(function (Post $post) use ($user_id){
             $post->setAttribute('did_user_like', $post->likes->contains('user_id', $user_id));
+            $post->setAttribute('did_user_save', $post->savedByUsers->contains('id', $user_id));
             return $post;
         });
 
@@ -64,7 +67,7 @@ class PostService {
 
     public function toggleLikePost(LikeDTO $likeDTO)
     {
-        return $this->postRepo->likePost($likeDTO->postId, $likeDTO->userId);
+        return $this->postRepo->like1unlike($likeDTO->postId, $likeDTO->userId);
     }
 
     public function getAllTags()
@@ -117,4 +120,22 @@ class PostService {
     {
         return $this->postRepo->getAllCategories();
     }
+
+    public function save1unsave(int $post_id, int $user_id): bool
+    {
+        return $this->postRepo->save1unsave($post_id, $user_id);
+    }
+
+    public function savedBlogs(int $user_id) : LengthAwarePaginator
+    {   
+        $blogs = $this->postRepo->savedBlogs($user_id);
+        
+        $blogs->getCollection()->transform(function (Post $item) use ($user_id){
+            $item->setAttribute('did_user_save', true);
+            $item->setAttribute('did_user_like', $item->likes->contains($user_id));
+            return $item;
+        });
+
+        return $blogs;
+    } 
 }

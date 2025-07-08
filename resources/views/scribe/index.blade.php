@@ -92,8 +92,8 @@
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-categories">
                                 <a href="#endpoints-GETapi-v1-categories">Get all blog categories.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-posts--id-">
-                                <a href="#endpoints-GETapi-v1-posts--id-">GET api/v1/posts/{id}</a>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-posts-savedBlogs">
+                                <a href="#endpoints-GETapi-v1-posts-savedBlogs">GET api/v1/posts/savedBlogs</a>
                             </li>
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-POSTapi-v1-posts">
                                 <a href="#endpoints-POSTapi-v1-posts">POST api/v1/posts</a>
@@ -109,6 +109,12 @@
                             </li>
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-DELETEapi-v1-posts-comments--id-">
                                 <a href="#endpoints-DELETEapi-v1-posts-comments--id-">DELETE api/v1/posts/comments/{id}</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-v1-posts-toggle_saving--id-">
+                                <a href="#endpoints-POSTapi-v1-posts-toggle_saving--id-">POST api/v1/posts/toggle_saving/{id}</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-posts--id-">
+                                <a href="#endpoints-GETapi-v1-posts--id-">GET api/v1/posts/{id}</a>
                             </li>
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-users">
                                 <a href="#endpoints-GETapi-v1-users">GET api/v1/users</a>
@@ -133,7 +139,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: June 26, 2025</li>
+        <li>Last updated: July 8, 2025</li>
     </ul>
 </div>
 
@@ -693,9 +699,10 @@ vary: Origin
                 ]
             },
             &quot;comments_count&quot;: 0,
-            &quot;likes_count&quot;: 1,
+            &quot;likes_count&quot;: 0,
             &quot;cover_image&quot;: null,
-            &quot;didUserLike&quot;: false
+            &quot;did_user_like&quot;: false,
+            &quot;did_user_save&quot;: false
         },
         {
             &quot;id&quot;: 46,
@@ -722,7 +729,8 @@ vary: Origin
             &quot;comments_count&quot;: 0,
             &quot;likes_count&quot;: 0,
             &quot;cover_image&quot;: null,
-            &quot;didUserLike&quot;: false
+            &quot;did_user_like&quot;: false,
+            &quot;did_user_save&quot;: false
         },
         {
             &quot;id&quot;: 45,
@@ -747,9 +755,10 @@ vary: Origin
                 ]
             },
             &quot;comments_count&quot;: 0,
-            &quot;likes_count&quot;: 0,
+            &quot;likes_count&quot;: 1,
             &quot;cover_image&quot;: null,
-            &quot;didUserLike&quot;: false
+            &quot;did_user_like&quot;: false,
+            &quot;did_user_save&quot;: false
         },
         {
             &quot;id&quot;: 44,
@@ -774,9 +783,10 @@ vary: Origin
                 ]
             },
             &quot;comments_count&quot;: 0,
-            &quot;likes_count&quot;: 0,
+            &quot;likes_count&quot;: 1,
             &quot;cover_image&quot;: null,
-            &quot;didUserLike&quot;: false
+            &quot;did_user_like&quot;: false,
+            &quot;did_user_save&quot;: false
         },
         {
             &quot;id&quot;: 43,
@@ -801,9 +811,10 @@ vary: Origin
                 ]
             },
             &quot;comments_count&quot;: 0,
-            &quot;likes_count&quot;: 0,
+            &quot;likes_count&quot;: 1,
             &quot;cover_image&quot;: null,
-            &quot;didUserLike&quot;: false
+            &quot;did_user_like&quot;: false,
+            &quot;did_user_save&quot;: false
         },
         {
             &quot;id&quot;: 42,
@@ -828,9 +839,10 @@ vary: Origin
                 ]
             },
             &quot;comments_count&quot;: 0,
-            &quot;likes_count&quot;: 0,
+            &quot;likes_count&quot;: 1,
             &quot;cover_image&quot;: null,
-            &quot;didUserLike&quot;: false
+            &quot;did_user_like&quot;: false,
+            &quot;did_user_save&quot;: false
         },
         {
             &quot;id&quot;: 41,
@@ -855,9 +867,10 @@ vary: Origin
                 ]
             },
             &quot;comments_count&quot;: 1,
-            &quot;likes_count&quot;: 0,
+            &quot;likes_count&quot;: 1,
             &quot;cover_image&quot;: null,
-            &quot;didUserLike&quot;: false
+            &quot;did_user_like&quot;: false,
+            &quot;did_user_save&quot;: false
         },
         {
             &quot;id&quot;: 40,
@@ -876,9 +889,10 @@ vary: Origin
                 &quot;slugs&quot;: []
             },
             &quot;comments_count&quot;: 1,
-            &quot;likes_count&quot;: 0,
+            &quot;likes_count&quot;: 1,
             &quot;cover_image&quot;: null,
-            &quot;didUserLike&quot;: false
+            &quot;did_user_like&quot;: false,
+            &quot;did_user_save&quot;: false
         },
         {
             &quot;id&quot;: 37,
@@ -897,9 +911,10 @@ vary: Origin
                 &quot;slugs&quot;: []
             },
             &quot;comments_count&quot;: 0,
-            &quot;likes_count&quot;: 0,
+            &quot;likes_count&quot;: 1,
             &quot;cover_image&quot;: null,
-            &quot;didUserLike&quot;: false
+            &quot;did_user_like&quot;: false,
+            &quot;did_user_save&quot;: false
         },
         {
             &quot;id&quot;: 39,
@@ -918,9 +933,10 @@ vary: Origin
                 &quot;slugs&quot;: []
             },
             &quot;comments_count&quot;: 1,
-            &quot;likes_count&quot;: 0,
+            &quot;likes_count&quot;: 1,
             &quot;cover_image&quot;: null,
-            &quot;didUserLike&quot;: false
+            &quot;did_user_like&quot;: false,
+            &quot;did_user_save&quot;: false
         },
         {
             &quot;id&quot;: 38,
@@ -941,7 +957,8 @@ vary: Origin
             &quot;comments_count&quot;: 0,
             &quot;likes_count&quot;: 0,
             &quot;cover_image&quot;: null,
-            &quot;didUserLike&quot;: false
+            &quot;did_user_like&quot;: false,
+            &quot;did_user_save&quot;: false
         },
         {
             &quot;id&quot;: 36,
@@ -962,7 +979,8 @@ vary: Origin
             &quot;comments_count&quot;: 0,
             &quot;likes_count&quot;: 0,
             &quot;cover_image&quot;: null,
-            &quot;didUserLike&quot;: false
+            &quot;did_user_like&quot;: false,
+            &quot;did_user_save&quot;: false
         },
         {
             &quot;id&quot;: 35,
@@ -989,7 +1007,8 @@ vary: Origin
             &quot;comments_count&quot;: 0,
             &quot;likes_count&quot;: 0,
             &quot;cover_image&quot;: null,
-            &quot;didUserLike&quot;: false
+            &quot;did_user_like&quot;: false,
+            &quot;did_user_save&quot;: false
         },
         {
             &quot;id&quot;: 34,
@@ -1016,7 +1035,8 @@ vary: Origin
             &quot;comments_count&quot;: 0,
             &quot;likes_count&quot;: 0,
             &quot;cover_image&quot;: null,
-            &quot;didUserLike&quot;: false
+            &quot;did_user_like&quot;: false,
+            &quot;did_user_save&quot;: false
         },
         {
             &quot;id&quot;: 33,
@@ -1043,7 +1063,8 @@ vary: Origin
             &quot;comments_count&quot;: 0,
             &quot;likes_count&quot;: 0,
             &quot;cover_image&quot;: null,
-            &quot;didUserLike&quot;: false
+            &quot;did_user_like&quot;: false,
+            &quot;did_user_save&quot;: false
         },
         {
             &quot;id&quot;: 32,
@@ -1070,7 +1091,8 @@ vary: Origin
             &quot;comments_count&quot;: 0,
             &quot;likes_count&quot;: 0,
             &quot;cover_image&quot;: null,
-            &quot;didUserLike&quot;: false
+            &quot;did_user_like&quot;: false,
+            &quot;did_user_save&quot;: false
         },
         {
             &quot;id&quot;: 31,
@@ -1097,7 +1119,8 @@ vary: Origin
             &quot;comments_count&quot;: 0,
             &quot;likes_count&quot;: 0,
             &quot;cover_image&quot;: null,
-            &quot;didUserLike&quot;: false
+            &quot;did_user_like&quot;: false,
+            &quot;did_user_save&quot;: false
         },
         {
             &quot;id&quot;: 30,
@@ -1127,7 +1150,8 @@ vary: Origin
             &quot;comments_count&quot;: 0,
             &quot;likes_count&quot;: 0,
             &quot;cover_image&quot;: null,
-            &quot;didUserLike&quot;: false
+            &quot;did_user_like&quot;: false,
+            &quot;did_user_save&quot;: false
         },
         {
             &quot;id&quot;: 29,
@@ -1154,7 +1178,8 @@ vary: Origin
             &quot;comments_count&quot;: 0,
             &quot;likes_count&quot;: 0,
             &quot;cover_image&quot;: null,
-            &quot;didUserLike&quot;: false
+            &quot;did_user_like&quot;: false,
+            &quot;did_user_save&quot;: false
         },
         {
             &quot;id&quot;: 28,
@@ -1181,7 +1206,8 @@ vary: Origin
             &quot;comments_count&quot;: 0,
             &quot;likes_count&quot;: 0,
             &quot;cover_image&quot;: null,
-            &quot;didUserLike&quot;: false
+            &quot;did_user_like&quot;: false,
+            &quot;did_user_save&quot;: false
         },
         {
             &quot;id&quot;: 27,
@@ -1211,7 +1237,8 @@ vary: Origin
             &quot;comments_count&quot;: 0,
             &quot;likes_count&quot;: 0,
             &quot;cover_image&quot;: null,
-            &quot;didUserLike&quot;: false
+            &quot;did_user_like&quot;: false,
+            &quot;did_user_save&quot;: false
         },
         {
             &quot;id&quot;: 26,
@@ -1232,7 +1259,8 @@ vary: Origin
             &quot;comments_count&quot;: 0,
             &quot;likes_count&quot;: 0,
             &quot;cover_image&quot;: null,
-            &quot;didUserLike&quot;: false
+            &quot;did_user_like&quot;: false,
+            &quot;did_user_save&quot;: false
         },
         {
             &quot;id&quot;: 25,
@@ -1253,7 +1281,8 @@ vary: Origin
             &quot;comments_count&quot;: 0,
             &quot;likes_count&quot;: 0,
             &quot;cover_image&quot;: null,
-            &quot;didUserLike&quot;: false
+            &quot;did_user_like&quot;: false,
+            &quot;did_user_save&quot;: false
         },
         {
             &quot;id&quot;: 24,
@@ -1274,7 +1303,8 @@ vary: Origin
             &quot;comments_count&quot;: 0,
             &quot;likes_count&quot;: 0,
             &quot;cover_image&quot;: null,
-            &quot;didUserLike&quot;: false
+            &quot;did_user_like&quot;: false,
+            &quot;did_user_save&quot;: false
         },
         {
             &quot;id&quot;: 23,
@@ -1304,7 +1334,8 @@ vary: Origin
             &quot;comments_count&quot;: 0,
             &quot;likes_count&quot;: 0,
             &quot;cover_image&quot;: null,
-            &quot;didUserLike&quot;: false
+            &quot;did_user_like&quot;: false,
+            &quot;did_user_save&quot;: false
         },
         {
             &quot;id&quot;: 22,
@@ -1332,9 +1363,10 @@ vary: Origin
                 ]
             },
             &quot;comments_count&quot;: 0,
-            &quot;likes_count&quot;: 0,
+            &quot;likes_count&quot;: 1,
             &quot;cover_image&quot;: null,
-            &quot;didUserLike&quot;: false
+            &quot;did_user_like&quot;: false,
+            &quot;did_user_save&quot;: false
         },
         {
             &quot;id&quot;: 21,
@@ -1364,7 +1396,8 @@ vary: Origin
             &quot;comments_count&quot;: 0,
             &quot;likes_count&quot;: 0,
             &quot;cover_image&quot;: null,
-            &quot;didUserLike&quot;: false
+            &quot;did_user_like&quot;: false,
+            &quot;did_user_save&quot;: false
         },
         {
             &quot;id&quot;: 20,
@@ -1394,7 +1427,8 @@ vary: Origin
             &quot;comments_count&quot;: 0,
             &quot;likes_count&quot;: 0,
             &quot;cover_image&quot;: null,
-            &quot;didUserLike&quot;: false
+            &quot;did_user_like&quot;: false,
+            &quot;did_user_save&quot;: false
         },
         {
             &quot;id&quot;: 19,
@@ -1424,7 +1458,8 @@ vary: Origin
             &quot;comments_count&quot;: 0,
             &quot;likes_count&quot;: 0,
             &quot;cover_image&quot;: null,
-            &quot;didUserLike&quot;: false
+            &quot;did_user_like&quot;: false,
+            &quot;did_user_save&quot;: false
         },
         {
             &quot;id&quot;: 18,
@@ -1454,7 +1489,8 @@ vary: Origin
             &quot;comments_count&quot;: 0,
             &quot;likes_count&quot;: 0,
             &quot;cover_image&quot;: null,
-            &quot;didUserLike&quot;: false
+            &quot;did_user_like&quot;: false,
+            &quot;did_user_save&quot;: false
         }
     ]
 }</code>
@@ -2002,7 +2038,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                         </form>
 
-                    <h2 id="endpoints-GETapi-v1-posts--id-">GET api/v1/posts/{id}</h2>
+                    <h2 id="endpoints-GETapi-v1-posts-savedBlogs">GET api/v1/posts/savedBlogs</h2>
 
 <p>
 <small class="badge badge-darkred">requires authentication</small>
@@ -2010,13 +2046,13 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 
 
-<span id="example-requests-GETapi-v1-posts--id-">
+<span id="example-requests-GETapi-v1-posts-savedBlogs">
 <blockquote>Example request:</blockquote>
 
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/v1/posts/1" \
+    --get "http://localhost/api/v1/posts/savedBlogs" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -2024,7 +2060,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/v1/posts/1"
+    "http://localhost/api/v1/posts/savedBlogs"
 );
 
 const headers = {
@@ -2040,7 +2076,7 @@ fetch(url, {
 
 </span>
 
-<span id="example-responses-GETapi-v1-posts--id-">
+<span id="example-responses-GETapi-v1-posts-savedBlogs">
             <blockquote>
             <p>Example response (401):</p>
         </blockquote>
@@ -2058,43 +2094,43 @@ vary: Origin
 }</code>
  </pre>
     </span>
-<span id="execution-results-GETapi-v1-posts--id-" hidden>
+<span id="execution-results-GETapi-v1-posts-savedBlogs" hidden>
     <blockquote>Received response<span
-                id="execution-response-status-GETapi-v1-posts--id-"></span>:
+                id="execution-response-status-GETapi-v1-posts-savedBlogs"></span>:
     </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-v1-posts--id-"
+    <pre class="json"><code id="execution-response-content-GETapi-v1-posts-savedBlogs"
       data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
 </span>
-<span id="execution-error-GETapi-v1-posts--id-" hidden>
+<span id="execution-error-GETapi-v1-posts-savedBlogs" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-v1-posts--id-">
+    <pre><code id="execution-error-message-GETapi-v1-posts-savedBlogs">
 
 Tip: Check that you&#039;re properly connected to the network.
 If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
 You can check the Dev Tools console for debugging information.</code></pre>
 </span>
-<form id="form-GETapi-v1-posts--id-" data-method="GET"
-      data-path="api/v1/posts/{id}"
+<form id="form-GETapi-v1-posts-savedBlogs" data-method="GET"
+      data-path="api/v1/posts/savedBlogs"
       data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-posts--id-', this);">
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-posts-savedBlogs', this);">
     <h3>
         Request&nbsp;&nbsp;&nbsp;
                     <button type="button"
                     style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-v1-posts--id-"
-                    onclick="tryItOut('GETapi-v1-posts--id-');">Try it out ⚡
+                    id="btn-tryout-GETapi-v1-posts-savedBlogs"
+                    onclick="tryItOut('GETapi-v1-posts-savedBlogs');">Try it out ⚡
             </button>
             <button type="button"
                     style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-v1-posts--id-"
-                    onclick="cancelTryOut('GETapi-v1-posts--id-');" hidden>Cancel 🛑
+                    id="btn-canceltryout-GETapi-v1-posts-savedBlogs"
+                    onclick="cancelTryOut('GETapi-v1-posts-savedBlogs');" hidden>Cancel 🛑
             </button>&nbsp;&nbsp;
             <button type="submit"
                     style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-v1-posts--id-"
+                    id="btn-executetryout-GETapi-v1-posts-savedBlogs"
                     data-initial-text="Send Request 💥"
                     data-loading-text="⏱ Sending..."
                     hidden>Send Request 💥
@@ -2102,7 +2138,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </h3>
             <p>
             <small class="badge badge-green">GET</small>
-            <b><code>api/v1/posts/{id}</code></b>
+            <b><code>api/v1/posts/savedBlogs</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
                                 <div style="padding-left: 28px; clear: unset;">
@@ -2110,7 +2146,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Authorization" class="auth-value"               data-endpoint="GETapi-v1-posts--id-"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-v1-posts-savedBlogs"
                value="Bearer {YOUR_AUTH_KEY}"
                data-component="header">
     <br>
@@ -2121,7 +2157,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-v1-posts--id-"
+                              name="Content-Type"                data-endpoint="GETapi-v1-posts-savedBlogs"
                value="application/json"
                data-component="header">
     <br>
@@ -2132,25 +2168,13 @@ You can check the Dev Tools console for debugging information.</code></pre>
 &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-v1-posts--id-"
+                              name="Accept"                data-endpoint="GETapi-v1-posts-savedBlogs"
                value="application/json"
                data-component="header">
     <br>
 <p>Example: <code>application/json</code></p>
             </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="id"                data-endpoint="GETapi-v1-posts--id-"
-               value="1"
-               data-component="url">
-    <br>
-<p>The ID of the post. Example: <code>1</code></p>
-            </div>
-                    </form>
+                        </form>
 
                     <h2 id="endpoints-POSTapi-v1-posts">POST api/v1/posts</h2>
 
@@ -2933,6 +2957,290 @@ You can check the Dev Tools console for debugging information.</code></pre>
                data-component="url">
     <br>
 <p>The ID of the comment. Example: <code>1</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="endpoints-POSTapi-v1-posts-toggle_saving--id-">POST api/v1/posts/toggle_saving/{id}</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-POSTapi-v1-posts-toggle_saving--id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "http://localhost/api/v1/posts/toggle_saving/architecto" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/v1/posts/toggle_saving/architecto"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTapi-v1-posts-toggle_saving--id-">
+</span>
+<span id="execution-results-POSTapi-v1-posts-toggle_saving--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-v1-posts-toggle_saving--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-v1-posts-toggle_saving--id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-POSTapi-v1-posts-toggle_saving--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-v1-posts-toggle_saving--id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-POSTapi-v1-posts-toggle_saving--id-" data-method="POST"
+      data-path="api/v1/posts/toggle_saving/{id}"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-v1-posts-toggle_saving--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-v1-posts-toggle_saving--id-"
+                    onclick="tryItOut('POSTapi-v1-posts-toggle_saving--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-v1-posts-toggle_saving--id-"
+                    onclick="cancelTryOut('POSTapi-v1-posts-toggle_saving--id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-v1-posts-toggle_saving--id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/v1/posts/toggle_saving/{id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-v1-posts-toggle_saving--id-"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="POSTapi-v1-posts-toggle_saving--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="POSTapi-v1-posts-toggle_saving--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="id"                data-endpoint="POSTapi-v1-posts-toggle_saving--id-"
+               value="architecto"
+               data-component="url">
+    <br>
+<p>The ID of the toggle saving. Example: <code>architecto</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="endpoints-GETapi-v1-posts--id-">GET api/v1/posts/{id}</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-GETapi-v1-posts--id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/v1/posts/1" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/v1/posts/1"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-v1-posts--id-">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+vary: Origin
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-v1-posts--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-v1-posts--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-v1-posts--id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-v1-posts--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-v1-posts--id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-v1-posts--id-" data-method="GET"
+      data-path="api/v1/posts/{id}"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-posts--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-v1-posts--id-"
+                    onclick="tryItOut('GETapi-v1-posts--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-v1-posts--id-"
+                    onclick="cancelTryOut('GETapi-v1-posts--id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-v1-posts--id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/v1/posts/{id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-v1-posts--id-"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-v1-posts--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-v1-posts--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="id"                data-endpoint="GETapi-v1-posts--id-"
+               value="1"
+               data-component="url">
+    <br>
+<p>The ID of the post. Example: <code>1</code></p>
             </div>
                     </form>
 

@@ -36,7 +36,8 @@ class BlogCompactResource extends JsonResource
             'comments_count' => $this->comments_count,
             'likes_count' => $this->likes_count,
             'cover_image' => $this->cover_image_url ? null : null,
-            'did_user_like' => $this->did_user_like
+            'did_user_like' => $this->did_user_like,
+            'did_user_save' => $this->did_user_save,
         ];
     }
 }

@@ -8,6 +8,7 @@ use App\Models\Like;
 use App\Models\Post;
 use App\Models\Tag;
 use App\Repositories\Interfaces\IPostRepository;
+use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Database\Eloquent\Collection;
 
 class PostRepository implements IPostRepository
@@ -44,7 +45,8 @@ class PostRepository implements IPostRepository
             'tags:id,name,slug',
             'author:id,name,avatar',
             'comments:id,post_id,user_id,content',
-            'likes:id,user_id,post_id'
+            'likes:id,user_id,post_id',
+            'savedByUsers:id'
         )
             ->latest()
             ->withCount(['comments', 'likes'])
@@ -111,7 +113,7 @@ class PostRepository implements IPostRepository
         ];
     }
     
-    public function likePost(int $postId, int $userId): string
+    public function like1unlike(int $postId, int $userId): string
     {
         $like = Like::query()->where('post_id', $postId)
             ->where('user_id', $userId)
@@ -191,5 +193,44 @@ class PostRepository implements IPostRepository
         return Category::orderByRaw("name = 'Saved' DESC")
             ->orderBy('name')
             ->get();
+    }
+
+    public function save1unsave(int $post_id, int $user_id): bool
+    {
+        $post = Post::findOrFail($post_id);
+
+        $result = $post->savedByUsers()->toggle([$user_id]);
+
+        return count($result['attached']) > 0;
+    }
+
+    public function savedBlogs(int $user_id) : LengthAwarePaginator
+    {
+        return Post::whereHas('savedByUsers', function ($query) use ($user_id) {
+            $query->where('users.id', $user_id);
+        })
+        ->with([
+            'category:id,name,slug',
+            'tags:id,name,slug',
+            'author:id,name,avatar',
+            'comments.user:id,name',
+            'likes.user:id,name',
+            'savedByUsers:id'
+        ])
+        ->paginate(30);
+    }
+
+    public function searchByCategory(int $categoryId) : LengthAwarePaginator
+    {
+        return Post::whereCategoryId($categoryId)
+            ->with([
+                'category:id,name,slug',
+                'tags:id,name,slug',
+                'author:id,name,email',
+                'comments.user:id,name',
+                'likes.user:id,name',
+                'savedByUsers:id'
+            ])
+            ->paginate(30);
     }
 }
